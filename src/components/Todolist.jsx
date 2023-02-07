@@ -1,20 +1,27 @@
 import React, { useState } from "react";
-import Task from "./Task";
+// import Task from "./Task";
+import { BsTrash } from "react-icons/bs";
 
 
 const Todolist = () => {
 
     const [tasks, setTasks] = useState([
-        "test",
-        "test1"
+
     ]);
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState()
 
     function handleAdd (event) {
+        // const newTask = {id: }
         event.preventDefault();
         setTasks([...tasks, input]);
         setInput('');
-        console.log(tasks)
+        // console.log(tasks)
+    }
+
+    function handleDeteleTask(id) {
+        console.log(id)
+    //  setTasks(tasks.filter((task, index) => {return index !== id}))
+        // console.log(tasks)
     }
 
      return (
@@ -25,10 +32,12 @@ const Todolist = () => {
             </div>
             <div className="tasks p-1">
                 {tasks.map((task, index) => (
-                    <Task key={index} task={task} />
+                    <div className='task h-10 px-2 my-2 bg-slate-500 rounded flex justify-between items-center cursor-pointer'>
+                        <p>{ task }</p>
+                        <BsTrash className='' onClick={()=> {setTasks(tasks.filter((task, id) => {return id !== index}))}}/>
+                    </div>  
                 ))}
             </div>
-
         </form>
     )
 }
