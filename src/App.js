@@ -1,12 +1,17 @@
-import Todolist from './components/Todolist';
 import React from 'react';
+import Header from './components/Header';
 
 function App() {
+
   return (
-    <div className="bg-gradient-to-b from-green-400 to-blue-500 w-screen h-screen flex flex-col mx-auto items-center justify-center">
-      <Todolist/>
+    <div className="bg-gray-200 w-screen h-screen dark">
+      <div className='container w-[1252px] h-screen bg-gray-300 m-auto'>
+        <Header />
+      </div>
     </div>
   );
 }
+
+
 
 export default App;
