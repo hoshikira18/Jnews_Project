@@ -17,12 +17,5 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --color-primary: 2 132 199;
-    --color-secondary: 22 163 74;
-    /* ... */
-  }
-}
-
+* {box-sizing: border-box;}
 
