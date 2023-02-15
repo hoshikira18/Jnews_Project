@@ -1,6 +1,7 @@
 import React from "react";
 // import dropdownNav from "../javascripts/dropdownNav";
-import { Dropdown, Navbar, Avatar } from "flowbite-react";
+import { Dropdown, Navbar } from "flowbite-react";
+import ButtonDarkmode from "./ButtonDarkmode";
 
 function Header() {
   return (
@@ -41,6 +42,8 @@ function Header() {
           <Navbar.Link href="/navbars">Pricing</Navbar.Link>
           <Navbar.Link href="/navbars">Contact</Navbar.Link>
         </Navbar.Collapse>
+        <ButtonDarkmode /> 
+
       </Navbar>
     </div>
   );
