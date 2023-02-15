@@ -17,8 +17,8 @@ function Header() {
             Jnews
           </span>
         </Navbar.Brand>
-        <div className="flex md:order-2 text-white">
-          <Dropdown arrowIcon={false} inline={true} label={"Jnews"}>
+        <div className="flex md:order-2 text-black dark:text-white">
+          <Dropdown arrowIcon={false} inline={true} label={"Jnews"} className=''>
             <Dropdown.Header>
               <span className="block text-sm">Bonnie Green</span>
               <span className="block truncate text-sm font-medium">
