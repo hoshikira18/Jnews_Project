@@ -14,7 +14,7 @@ export default function Buttondarkmode() {
             <div className='moon hidden text-white'>
                 <FaMoon />
             </div>
-            Test part 2
+            Test part 22
 
 
         </button>
