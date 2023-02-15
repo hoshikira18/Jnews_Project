@@ -19,8 +19,8 @@ code {
 
 @layer base {
   :root {
-    --color-primary: 2 132 199;
-    --color-secondary: 22 163 74;
+    --color-dark: 37 99 235;
+    --color-light: 34 197 94;
     /* ... */
   }
 }
