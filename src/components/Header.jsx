@@ -1,10 +1,12 @@
 import React from "react";
 // import dropdownNav from "../javascripts/dropdownNav";
 import { Dropdown, Navbar } from "flowbite-react";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import ButtonDarkmode from "./ButtonDarkmode";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Culture from "../pages/Culture";
 
 function Header() {
+  console.log(Navbar);
   return (
     <div id="header">
       <Navbar fluid={true} rounded={true}>
@@ -19,29 +21,28 @@ function Header() {
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2 text-white">
-          <Dropdown arrowIcon={false} inline={true} label={"Jnews"}>
-            <Dropdown.Header>
-              <span className="block text-sm">Bonnie Green</span>
-              <span className="block truncate text-sm font-medium">
-                name@flowbite.com
-              </span>
-            </Dropdown.Header>
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse>
+          <Dropdown
+            arrowIcon={false}
+            inline={true}
+            label={<Navbar.Link>JNews</Navbar.Link>}
+          >
             <Dropdown.Item>Dashboard</Dropdown.Item>
             <Dropdown.Item>Settings</Dropdown.Item>
             <Dropdown.Item>Earnings</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
-          <Navbar.Toggle />
-        </div>
-        <Navbar.Collapse>
-          <Navbar.Link href="/navbars" active={true}>
-            Home
-          </Navbar.Link>
-          <Navbar.Link href="/navbars">About</Navbar.Link>
-          <Navbar.Link href="/navbars">Services</Navbar.Link>
-          <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-          <Navbar.Link href="/navbars">Contact</Navbar.Link>
+
+          {/* <Route exact path="/culture" element={<Culture />}>
+            Culture
+          </Route>
+
+          <Route exact path="/culture" element={<Culture />}>
+            Culture */}
+          {/* </Route> */}
         </Navbar.Collapse>
         <ButtonDarkmode />
       </Navbar>
