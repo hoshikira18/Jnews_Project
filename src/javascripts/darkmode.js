@@ -1,23 +1,35 @@
 function darkmodeToggle() {
-  const container = document.querySelector('.container')
-  container.classList.toggle('dark')
+  toggleColor();
+  toggleIcon();
+  saveDarkmode();
+}
+
+function holdDarkmode() {
+  const isDark = localStorage.getItem("isDarkMode") === "true";
+  if (isDark) {
+    toggleColor();
+    toggleIcon();
+  }
   
+}
+
+function toggleColor() {
+  const container = document.querySelector(".container");
+  container.classList.toggle("dark");
+}
+
+function toggleIcon() {
   const sunIcon = document.querySelector(".sun");
   const moonIcon = document.querySelector(".moon");
-  moonIcon.classList.toggle("hidden");
   sunIcon.classList.toggle("hidden");
-  const isDarkMode = container.classList.contains('dark');
-  localStorage.setItem('isDarkMode', isDarkMode);
+  moonIcon.classList.toggle("hidden");
 }
-function holdDarkmode() {
-  const container = document.querySelector('.container')
-  const isDarkMode = container.classList.contains('dark');
 
-  localStorage.setItem('isDarkMode', isDarkMode);
-  
-  const isDark = localStorage.getItem('isDarkMode') === 'true';
-  if (isDark) {
-    container.classList.toggle('dark');
-  }
+function saveDarkmode() {
+  const container = document.querySelector(".container");
+  const isDarkMode = container.classList.contains("dark");
+  localStorage.setItem("isDarkMode", isDarkMode);
 }
-export default darkmodeToggle
+
+export default darkmodeToggle;
+export { holdDarkmode };
