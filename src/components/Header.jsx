@@ -1,9 +1,12 @@
 import React from "react";
 // import dropdownNav from "../javascripts/dropdownNav";
 import { Dropdown, Navbar } from "flowbite-react";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import ButtonDarkmode from "./ButtonDarkmode";
+import Culture from "../pages/Culture";
 
 function Header() {
+  console.log(Navbar);
   return (
     <div id="header">
       <Navbar fluid={true} rounded={true}>
@@ -17,6 +20,7 @@ function Header() {
             Jnews
           </span>
         </Navbar.Brand>
+
         <div className="flex md:order-2 text-black dark:text-white">
           <Dropdown arrowIcon={false} inline={true} label={"Jnews"} className=''>
             <Dropdown.Header>
@@ -31,19 +35,16 @@ function Header() {
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
-          <Navbar.Toggle />
-        </div>
-        <Navbar.Collapse>
-          <Navbar.Link href="/navbars" active={true}>
-            Home
-          </Navbar.Link>
-          <Navbar.Link href="/navbars">About</Navbar.Link>
-          <Navbar.Link href="/navbars">Services</Navbar.Link>
-          <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-          <Navbar.Link href="/navbars">Contact</Navbar.Link>
-        </Navbar.Collapse>
-        <ButtonDarkmode /> 
 
+          {/* <Route exact path="/culture" element={<Culture />}>
+            Culture
+          </Route>
+
+          <Route exact path="/culture" element={<Culture />}>
+            Culture */}
+          {/* </Route> */}
+        </Navbar.Collapse>
+        <ButtonDarkmode />
       </Navbar>
     </div>
   );
