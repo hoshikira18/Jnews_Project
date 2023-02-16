@@ -20,15 +20,15 @@ function Header() {
             Jnews
           </span>
         </Navbar.Brand>
-
-        <div className="flex md:order-2 text-black dark:text-white">
-          <Dropdown arrowIcon={false} inline={true} label={"Jnews"} className=''>
-            <Dropdown.Header>
-              <span className="block text-sm">Bonnie Green</span>
-              <span className="block truncate text-sm font-medium">
-                name@flowbite.com
-              </span>
-            </Dropdown.Header>
+        <div className="flex md:order-2 text-white">
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse>
+          <Dropdown
+            arrowIcon={false}
+            inline={true}
+            label={<Navbar.Link>JNews</Navbar.Link>}
+          >
             <Dropdown.Item>Dashboard</Dropdown.Item>
             <Dropdown.Item>Settings</Dropdown.Item>
             <Dropdown.Item>Earnings</Dropdown.Item>
@@ -36,19 +36,14 @@ function Header() {
             <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
 
-          {/* <Route exact path="/culture" element={<Culture />}>
+          <Route exact path="/culture" element={<Culture />}>
             Culture
           </Route>
-
-          <Route exact path="/culture" element={<Culture />}>
-            Culture */}
-          {/* </Route> */}
         </Navbar.Collapse>
         <ButtonDarkmode />
       </Navbar>
     </div>
   );
-
 }
 
-export default Header
+export default Header;
