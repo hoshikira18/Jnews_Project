@@ -17,7 +17,16 @@ code {
 @tailwind components;
 @tailwind utilities;
 
-
 * {box-sizing: border-box;}
+@layer base {
+  :root {
+    --color-dark: 37 99 235;
+    --color-light: 34 197 94;
+    /* ... */
+  }
+}
+
+
+
 
 
