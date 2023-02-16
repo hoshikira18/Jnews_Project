@@ -10,7 +10,6 @@ function holdDarkmode() {
     toggleColor();
     toggleIcon();
   }
-  
 }
 
 function toggleColor() {
