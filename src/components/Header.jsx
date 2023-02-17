@@ -1,9 +1,7 @@
 import React from "react";
-// import dropdownNav from "../javascripts/dropdownNav";
 import { Dropdown, Navbar } from "flowbite-react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ButtonDarkmode from "./ButtonDarkmode";
-import Culture from "../pages/Culture";
 
 function Header() {
   console.log(Navbar);
@@ -34,11 +32,10 @@ function Header() {
             <Dropdown.Item>Earnings</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
+            <Dropdown.Item>
+              <Link to="/culture">Culture</Link>
+            </Dropdown.Item>
           </Dropdown>
-
-          <Route exact path="/culture" element={<Culture />}>
-            Culture
-          </Route>
         </Navbar.Collapse>
         <ButtonDarkmode />
       </Navbar>
