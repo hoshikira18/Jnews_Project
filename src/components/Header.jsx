@@ -32,11 +32,9 @@ function Header() {
             <Dropdown.Item>Earnings</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item>Sign out</Dropdown.Item>
-            <Dropdown.Item>
-              <Link to="/culture">Culture</Link>
-            </Dropdown.Item>
           </Dropdown>
         </Navbar.Collapse>
+        <Link to="/culture">Culture</Link>
         <ButtonDarkmode />
       </Navbar>
     </div>
