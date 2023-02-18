@@ -1,11 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
-
+import Scrollbackbutton from "../components/Scrollbackbutton";
 export default function Culture() {
   return (
-    <div className="bg-gray-200 w-screen h-screen">
-      <div className="container w-[1252px] h-screen bg-gray-300 m-auto">
-      </div>
+    <div className="h-[40000px]">
+      <Scrollbackbutton />
     </div>
   );
 }

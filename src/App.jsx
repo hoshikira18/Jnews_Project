@@ -8,15 +8,15 @@ import Home from "./pages/Home";
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-gray-200 w-screen h-screen">
-        <div className="container w-[1252px] h-screen bg-gray-300 m-auto">
+      <div className="bg-gray-200 w-screen">
+        <div className="container w-[1252px] bg-gray-300 m-auto">
           <Header />
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/culture" element={<Culture />} />
+          </Routes>
         </div>
       </div>
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="/culture" element={<Culture />} />
-      </Routes>
     </BrowserRouter>
   );
 }
