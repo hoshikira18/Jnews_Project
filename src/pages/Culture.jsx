@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import React from "react";
 import Header from "../components/Header";
 import Scrollbackbutton from "../components/Scrollbackbutton";
@@ -7,7 +8,7 @@ export default function Culture() {
   return (
     <div className="h-[40000px]">
       {/* Breadcrumb*/}
-      <nav className=" sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
+      <nav className="z-10 sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
             <a
@@ -40,7 +41,7 @@ export default function Culture() {
                 href="#1"
                 className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
               >
-                Phong tục
+                Văn hóa
               </a>
             </div>
           </li>
@@ -99,46 +100,22 @@ export default function Culture() {
       </nav>
       {/* <!--.................................................. Body............................................................ --> */}
 
-      {/* <!-- Phongtuc --> */}
+      {/* <!-- Văn hóa --> */}
       <div id="1">
-        <div className="h-[51.2px] "></div>
-        <div className="h-[650px] flex w-full">
-          <div className="w-2/3 bg-red-700 relative">
-            <div className=" w-4/5 h-1/3 absolute bottom-0 left-2">
-              <h1 className="font-bold">Title</h1>
-              <p className="font-thin text-xs">
-                mô tả mô tả mô tả mô tả mô tả mô tả mô tả mô tả mô tả mô tả mô
-                tả mô tả mô tảmô tả mô tả mô tả mô tả mô tả mô tả mô tả mô tả mô
-                tả mô tả mô tả mô tả mô tả
-              </p>
+        <div className="h-[51.2px]"></div>
+
+        <div className=" grid h-[450px] w-full grid-cols-2 gap-4 ">
+          <div className="bg-blue-200 relative">
+            <div className="h-1/2 w-4/5 absolute bottom-0 left-0">
+              <h1></h1>
+              <p></p>
             </div>
           </div>
-
-          <div className="w-1/3 flex flex-col">
-            <div className=" h-1/3  bg-rose-500">
-              <div className="w-2/3 h-full relative">
-                <div className=" w-4/5 h-1/2 absolute bottom-0 left-2">
-                  <h1 className="font-bold">Title</h1>
-                  <p className="font-thin text-xs"> mô tả mô tả mô tả mô tả</p>
-                </div>
-              </div>
-            </div>
-            <div className=" h-1/3  bg-blue-300">
-              <div className="w-2/3 h-full relative">
-                <div className=" w-4/5 h-1/2 absolute bottom-0 left-2">
-                  <h1 className="font-bold">Title</h1>
-                  <p className="font-thin text-xs"> mô tả mô tả mô tả mô tả</p>
-                </div>
-              </div>
-            </div>
-            <div className=" h-1/3  bg-pink-300 ">
-              <div className="w-2/3 h-full relative">
-                <div className=" w-4/5 h-1/2 absolute bottom-0 left-2">
-                  <h1 className="font-bold">Title</h1>
-                  <p className="font-thin text-xs">mô tả mô tả mô tả mô tả</p>
-                </div>
-              </div>
-            </div>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4">
+            <div className="bg-blue-50"></div>
+            <div className="bg-blue-100"></div>
+            <div className="bg-blue-200"></div>
+            <div className="bg-blue-400"></div>
           </div>
         </div>
       </div>
@@ -224,22 +201,16 @@ export default function Culture() {
       </div>
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="4">
+      <div id="4" className="h-[700px]">
         <div className="h-[51.2px]"></div>
-        <div className="h-[650px] w-full bg-pink-700">
-          <h1 className="text-7xl"> Lễ hội ở đây</h1>
-        </div>
+        <ScrollTimeline />
       </div>
 
       {/* <!-- .........................................................Footer ..............................................................--> */}
 
-      <footer className="h-56 flex mt-4">
-        <div className="w-1/2 h-full bg-red-200"> Contact us</div>
-        <div className="w-1/4 h-full bg-red-300"> ....</div>
-        <div className="w-1/4 h-full bg-red-400">.....</div>
+      <footer className="h-56 ">
+        <Footer />
       </footer>
-      <div className=" h-40"></div>
-      <ScrollTimeline />
     </div>
   );
 }

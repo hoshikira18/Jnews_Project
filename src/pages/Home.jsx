@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import Scrollbackbutton from "../components/Scrollbackbutton";
 import Footer from "../components/Footer";
-import Post from "../components/Post";
 
 function Home() {
   return (

@@ -25,7 +25,7 @@ function Header() {
       </Link>
 
       {/* JNews, Culture */}
-      <div className="flex items-center relative ">
+      <div className="flex items-center relative z-20">
         <div
           className="dropdown h-full"
           onMouseEnter={dropdownNav}
