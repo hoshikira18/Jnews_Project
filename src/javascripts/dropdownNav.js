@@ -1,5 +1,5 @@
-function dropdownNav () {
-    document.querySelector('#dropdownNavbar').classList.toggle('hidden')
+function dropdownNav() {
+  document.querySelector("#dropdownHover").classList.toggle("hidden");
 }
 
-export default dropdownNav  
+export default dropdownNav;
