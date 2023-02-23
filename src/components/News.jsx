@@ -5,7 +5,13 @@ export default function(){
     // const num=(a)=> a+1;
     return(
         //  <div className="border-t-4 border-sky-500 h-[230px] w-[750px] bg-slate-200 relative"> 
-            <div className=" flex h-[200px] w-full bg-slate-100 py-3 border-t border-slate-300 drop-shadow-xl dark:bg-gray-700 dark:border-slate-500" > {/* bỏ absolute*/} 
+        <div className="h-[200px] w-full my-3 bg-cyan-200 dark:bg-sky-700"> 
+            <div className=" transition-all flex h-[200px] w-full bg-slate-100 my-3 py-3 border-[2px] border-slate-300 drop-shadow-xl dark:bg-gray-700 dark:border-slate-500 hover:translate-x-2 hover:translate-y-[-8px]" > {/* bỏ absolute*/} 
+                <div className=" tamgiac h-0 w-0 mt-[-5px] ml-[11.5px] border-solid border-l-[3px] border-l-transparent border-t-[3px] border-t-transparent border-r-[3px] border-r-cyan-700 border-b-[3px] border-b-cyan-700 absolute"></div>
+                <div className=" tamgiac h-0 w-0 mt-[-5px] ml-[81px]  border-solid border-l-[3px] border-l-cyan-700 border-t-[3px] border-t-transparent border-r-[3px] border-r-transparent border-b-[3px] border-b-cyan-700 absolute"></div>
+                <div className=" absolute rounded-b-[4px] ml-4 mt-[-6px] bg-cyan-500 px-4 py-1 text-sm font-bold text-white dark:bg-cyan-700 dark:text-slate-300" >
+                    NEW
+                </div>
                 <div className="ml-2 w-[250px]">
                     <img className=" w-full h-full" src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2023/2/18/photo-6-16767070829331501250869.png"></img>
                 </div>
@@ -18,7 +24,8 @@ export default function(){
                     <p className=" text-sm dark:text-slate-300">Mới đây, Xoài Non và Xemesis đã chia sẻ những khoảnh khắc dễ thương và bất ngờ, kỷ niệm 5 năm bên nhau.</p>
                 </div>
             </div>
-        //  </div>   
+        </div>
+ 
     )
 
     
