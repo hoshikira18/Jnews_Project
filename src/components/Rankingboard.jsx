@@ -46,7 +46,7 @@ function Rankingboard () {
               <div class="text-center basis-2/12 pt-1 font-medium">05</div>
               <div class="basis-10/12 pt-1 font-light text-xs hover:underline pl-2">Tiêu đề dsao in coinason vona dop</div>
             </div>
-            <div class="w-[270px] h-8 border border-[#eee] bg-gray-100"></div>
+            {/* <div class="w-[270px] h-8 border border-[#eee] bg-gray-100"></div> */}
         </div> 
         <div class="hidden" id="more">
           <div class="grid grid-rows-5 w-[270px] h-72 ">
