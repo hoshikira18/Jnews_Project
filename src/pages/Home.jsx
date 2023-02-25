@@ -16,23 +16,26 @@ function Home() {
 
   return (
     <div className="w-full">
-      <div className="h-[1000px]">
-        {posts.map((post) => {
-          return (
-            <div key={post.id}>
-              <News
-                title={post.title}
-                topic={post.topic}
-                image={post.image.url}
-                content={post.content.text}
-                time={post.time}
-                id={post.id}
-              />
-            </div>
-          );
-        })}
+      <div className="">
+        <div className="w-2/3">
+          {posts.map((post) => {
+            return (
+              <div key={post.id}>
+                <News
+                  title={post.title}
+                  topic={post.topic}
+                  image={post.image.url}
+                  content={post.content.text}
+                  time={post.time}
+                  id={post.id}
+                  description={post.description}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
 
       <Scrollbackbutton />
     </div>
