@@ -10,7 +10,7 @@ function Header() {
   return (
     <div
       id="header"
-      className="w-full h-16 bg-white flex justify-between rounded drop-shadow-sm dark:bg-gray-900 sticky top-0"
+      className="z-10 w-full h-16 bg-white flex justify-between rounded drop-shadow-sm dark:bg-gray-900 sticky top-0"
     >
       {/* Logo */}
       <Link to="/home" element={Home} class="flex items-center m-4">
