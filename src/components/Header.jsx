@@ -25,15 +25,15 @@ function Header() {
       </Link>
 
       {/* JNews, Culture */}
-      <div className="flex items-center relative">
+      <div className="flex items-center relative ">
         <div
-          className="dropdown  h-full"
+          className="dropdown h-full"
           onMouseEnter={dropdownNav}
           onMouseLeave={dropdownNav}
         >
           <button
             id="dropdownHoverButton"
-            class="text-gray-700 text-md h-full px-4 text-center inline-flex items-center hover:text-black dark:text-gray-300 dark:hover:text-white"
+            class="text-gray-700 text-md h-full px-4 text-center inline-flex items-center hover:text-black dark:text-gray-300 dark:hover:text-white hover:bg-gray-200"
           >
             Jnews{" "}
           </button>
@@ -41,46 +41,39 @@ function Header() {
           <div
             id="dropdownHover"
             npm
-            class="z-10 mt-0.5 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-16 left-0"
+            class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700 absolute top-16 left-0"
           >
             <ul
               class="py-2 text-sm text-gray-700 dark:text-gray-200"
               aria-labelledby="dropdownHoverButton"
             >
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Settings
-                </a>
+              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                <Link to="/culture" element={Culture}>
+                  Culture
+                </Link>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Earnings
-                </a>
+              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                <Link to="/culture" element={Culture}>
+                  Culture
+                </Link>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >
-                  Sign out
-                </a>
+              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">
+                <Link to="/culture" element={Culture}>
+                  Culture
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-        <Link
-          to="/culture"
-          element={Culture}
-          className="m-4 text-md text-gray-700 dark:text-gray-300 hover:text-black"
-        >
-          Culture
-        </Link>
+        <div className="hover:bg-gray-200">
+          <Link
+            to="/culture"
+            element={Culture}
+            className="m-4 text-md h-full w-full text-gray-700 dark:text-gray-300 hover:text-black flex items-center"
+          >
+            Culture
+          </Link>
+        </div>
       </div>
 
       {/* Search box */}
@@ -92,7 +85,7 @@ function Header() {
         >
           Search
         </label>
-        <div class="relative">
+        <div class="relative hidden md:block">
           <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
             <svg
               aria-hidden="true"
