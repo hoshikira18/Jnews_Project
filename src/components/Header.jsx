@@ -10,30 +10,30 @@ function Header() {
   return (
     <div
       id="header"
-      className="w-full h-16 bg-white flex justify-between rounded drop-shadow-sm dark:bg-gray-900"
+      className="md:w-full md:h-12 md:bg-white md:flex md:justify-between md:rounded md:drop-shadow-sm dark:bg-gray-900"
     >
       {/* Logo */}
-      <Link to="/home" element={Home} class="flex items-center m-4">
+      <Link to="/home" element={Home} class="md:flex md:items-center md:m-4">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
-          class="h-6 mr-3 sm:h-9"
+          class="md:h-6 md:mr-3 sm:h-9"
           alt="Flowbite Logo"
         />
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+        <span class="md:self-center md:text-xl md:font-semibold md:whitespace-nowrap dark:text-white">
           JNews
         </span>
       </Link>
 
       {/* JNews, Culture */}
-      <div className="flex items-center relative ">
+      <div className="md:flex md:items-center md:relative ">
         <div
-          className="dropdown h-full"
+          className="dropdown md:h-full"
           onMouseEnter={dropdownNav}
           onMouseLeave={dropdownNav}
         >
           <button
             id="dropdownHoverButton"
-            class="text-gray-700 text-md h-full px-4 text-center inline-flex items-center hover:text-black dark:text-gray-300 dark:hover:text-white hover:bg-gray-200"
+            class="md:text-gray-700 md:text-md md:h-full md:px-4 md:text-center md:inline-flex md:items-center hover:text-black dark:text-gray-300 dark:hover:text-white hover:bg-gray-200"
           >
             Jnews{" "}
           </button>
@@ -41,23 +41,23 @@ function Header() {
           <div
             id="dropdownHover"
             npm
-            class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700 absolute top-16 left-0"
+            class="md:z-50 md:hidden md:bg-white md:divide-y md:divide-gray-100 md:shadow md:w-44 dark:bg-gray-700 md:absolute md:top-16 md:left-0"
           >
             <ul
-              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              class="md:py-2 md:text-sm md:text-gray-700 dark:text-gray-200"
               aria-labelledby="dropdownHoverButton"
             >
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              <li class="md:block md:px-4 md:py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                 <Link to="/culture" element={Culture}>
                   Culture
                 </Link>
               </li>
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              <li class="md:block md:px-4 md:py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
                 <Link to="/culture" element={Culture}>
                   Culture
                 </Link>
               </li>
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">
+              <li class="md:block md:px-4 md:py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">
                 <Link to="/culture" element={Culture}>
                   Culture
                 </Link>
@@ -65,11 +65,11 @@ function Header() {
             </ul>
           </div>
         </div>
-        <div className="hover:bg-gray-200">
+        <div className="hover:bg-gray-200 md:h-full md:flex md:items-center">
           <Link
             to="/culture"
             element={Culture}
-            className="m-4 text-md h-full w-full text-gray-700 dark:text-gray-300 hover:text-black flex items-center"
+            className="md:m-4 md:text-md md:w-full md:text-gray-700 dark:text-gray-300 hover:text-black md:flex md:items-center"
           >
             Culture
           </Link>
@@ -78,18 +78,18 @@ function Header() {
 
       {/* Search box */}
 
-      <form className="flex items-center">
+      <form className="md:flex md:items-center">
         <label
           for="default-search"
-          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          class="md:mb-2 md:text-sm md:font-medium text-gray-900 md:sr-only dark:text-white"
         >
           Search
         </label>
-        <div class="relative hidden md:block">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <div class="md:relative md:block">
+          <div class="md:absolute md:inset-y-0 md:left-0 md:flex md:items-center md:pl-3 pointer-events-none">
             <svg
               aria-hidden="true"
-              class="w-5 h-5 text-gray-500 dark:text-gray-400"
+              class="md:w-5 md:h-5 md:text-gray-500 dark:text-gray-400"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -106,14 +106,14 @@ function Header() {
           <input
             type="search"
             id="default-search"
-            class="block w-full p-2 pl-10 outline-none text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="md:block md:w-full md:p-2 md:pl-10 md:outline-none md:text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Search News"
             required
           />
         </div>
       </form>
 
-      <button className="flex items-center pr-4">
+      <button className="md:flex md:items-center md:pr-4">
         <ButtonDarkmode />
       </button>
     </div>
