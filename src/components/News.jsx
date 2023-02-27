@@ -6,7 +6,7 @@ export default function News({ title, topic, image, content, time, id }) {
     <div className=" flex h-[200px] w-full bg-slate-100 py-3 border-t border-slate-300 ">
       {" "}
       {/* bỏ absolute*/}
-      <div className="ml-2 w-[250px]">
+      <div className="ml-2 w-1/3">
         <img className=" w-full h-full" src={image}></img>
       </div>
       <div className="flex flex-col justify-between w-[500px] mx-3">

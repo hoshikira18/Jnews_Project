@@ -20,7 +20,25 @@ function Home() {
 
   return (
     <>
-    <div className="w-full">
+    <div className="h-[6000px] bg-white">
+      <Scrollbackbutton />
+      <div class="MustWatch lg:grid lg:grid-cols-10 h-auto">
+        <div className="mb-5 h-80% col-span-7">
+          <SliderAuto />
+        </div>
+        <div className="col-span-3 lg:mt-14 items-center ">
+          
+        </div>
+        {/* <div>
+          <h1 className="text-5xl text-white font-bold">Must Watch</h1>
+        </div> */}
+      </div>
+      <Rankingboard/>
+      <div className="text-center w-full text-6xl underline font-medium text-gray-700">
+        <h1>Sport News</h1>
+      </div>
+      <SliderManual />
+      <div className="w-full">
       <div className="h-[1000px]">
         {posts.map((post) => {
           return (
@@ -38,21 +56,9 @@ function Home() {
         })}
       </div>
     </div>
-    <div className="h-[40000px]">
-      <Rankingboard/>
-      <Scrollbackbutton />
-      <div class="MustWatch grid grid-cols-10 h-300px">
-        <div className="mb-5 h-80% col-span-7">
-          <SliderAuto />
-        </div>
-        <div>
-          <h1 className="text-5xl text-white font-bold">Must Watch</h1>
-        </div>
-      </div>
-      <SliderManual />
     </div>
     <Footer/>
-    </>
+  </>
   );
 }
 

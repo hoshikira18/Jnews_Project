@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Scrollbackbutton from "../components/Scrollbackbutton";
-import ScrollTimeline from "../components/ScrollTimeline";
+// import ScrollTimeline from "../components/ScrollTimeline";
 
 export default function Culture() {
   return (
@@ -239,7 +239,7 @@ export default function Culture() {
         <div className="w-1/4 h-full bg-red-400">.....</div>
       </footer>
       <div className=" h-40"></div>
-      <ScrollTimeline />
+      {/* <ScrollTimeline /> */}
     </div>
   );
 }
