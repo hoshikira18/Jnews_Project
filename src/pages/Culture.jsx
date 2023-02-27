@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
-import Scrollbackbutton from "../components/Scrollbackbutton";
-import ScrollTimeline from "../components/ScrollTimeline";
+// import Scrollbackbutton from "../components/Scrollbackbutton";
+// import ScrollTimeline from "../components/ScrollTimeline";
 
 export default function Culture() {
   return (
     <div className="h-[40000px]">
       {/* Breadcrumb*/}
-      <nav className=" sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
+      <nav className="z-10 sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
             <a
@@ -239,7 +239,7 @@ export default function Culture() {
         <div className="w-1/4 h-full bg-red-400">.....</div>
       </footer>
       <div className=" h-40"></div>
-      <ScrollTimeline />
+      {/* <ScrollTimeline /> */}
     </div>
   );
 }

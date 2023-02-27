@@ -3,11 +3,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { getPosts } from "../graphql/queries";
 
-import Header from "../components/Header";
 import "../App.css";
 import Scrollbackbutton from "../components/Scrollbackbutton";
-import SliderAuto from "../javascripts/SliderAuto";
-import SliderManual from "../javascripts/SliderManual";
+import SliderAuto from "../components/SliderAuto";
+// import SliderManual from "../components/SliderManual";
 import Footer from "../components/Footer";
 import News from "../components/News";
 
@@ -21,6 +20,11 @@ function Home() {
 
   return (
     <div className="w-full">
+      <div class="must-watch lg:grid lg:grid-cols-3 mt-4">
+        <div className="mb-5 lg:col-span-2 md:w-full">
+          <SliderAuto />
+        </div>
+      </div>
       <div className="">
         <div className="w-2/3">
           {posts.map((post) => {
@@ -32,7 +36,6 @@ function Home() {
                   image={post.image.url}
                   content={post.content.text}
                   time={post.time}
-                  id={post.id}
                   description={post.description}
                 />
               </div>
@@ -40,18 +43,8 @@ function Home() {
           })}
         </div>
       </div>
-      <Footer />
 
       <Scrollbackbutton />
-      <div class="MustWatch grid grid-cols-10 h-300px">
-        <div className="mb-5 h-80% col-span-7">
-          <SliderAuto />
-        </div>
-        <div>
-          <h1 className="text-5xl text-white font-bold">Must Watch</h1>
-        </div>
-      </div>
-      <SliderManual />
     </div>
   );
 }

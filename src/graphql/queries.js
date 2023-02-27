@@ -15,6 +15,8 @@ export const getPosts = async () => {
         image {
           url
         }
+        id
+        description
       }
     }
   `;

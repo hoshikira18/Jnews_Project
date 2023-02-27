@@ -57,7 +57,7 @@ function SliderAuto() {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[1400px] w-full h-[540px] m-auto relative">
+    <div className="max-w-[1400px] w-full h-[500px] m-auto relative">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].URL})` }}
         className="w-full h-full rouded-2xl bg-center bg-cover duration-500"
