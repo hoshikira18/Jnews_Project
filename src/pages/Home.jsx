@@ -9,6 +9,8 @@ import SliderAuto from "../components/SliderAuto";
 // import SliderManual from "../components/SliderManual";
 import Footer from "../components/Footer";
 import News from "../components/News";
+import Footer from "../components/Footer";
+import Rankingboard from "../components/Rankingboard";
 
 function Home() {
   const [posts, setPosts] = useState([]);
