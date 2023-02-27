@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="root bg-gray-300">
-        <div className="lg:w-[1280px] bg-white dark:bg-gray-400 lg:m-auto">
+        <div className="bg-white dark:bg-gray-400 lg:m-auto lg:w-[1280px]">
           <Header />
           <Routes>
             <Route index element={<Home />} />

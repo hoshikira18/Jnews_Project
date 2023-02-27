@@ -20,8 +20,8 @@ function Home() {
 
   return (
     <div className="w-full">
-      <div class="must-watch lg:grid lg:grid-cols-3 mt-4">
-        <div className="mb-5 lg:col-span-2 md:w-full">
+      <div class="must-watch lg:grid lg:grid-cols-3">
+        <div className="mb-5 md:w-full lg:col-span-2">
           <SliderAuto />
         </div>
       </div>
