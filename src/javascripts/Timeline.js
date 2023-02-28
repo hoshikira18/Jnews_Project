@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { bindKeyboard } from "react-swipeable-views-utils";
-import "./style.css";
+
 const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 class DemoKeyboard extends Component {
