@@ -4,6 +4,7 @@ import { Dropdown, Navbar } from "flowbite-react";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import ButtonDarkmode from "./ButtonDarkmode";
 import Culture from "../pages/Culture";
+import News from "./News";
 
 function Header() {
   console.log(Navbar);
@@ -43,9 +44,15 @@ function Header() {
           <Route exact path="/culture" element={<Culture />}>
             Culture */}
           {/* </Route> */}
-        </Navbar.Collapse>
+        </div>
+        {/* </Navbar.Collapse> */}
         <ButtonDarkmode />
-      </Navbar>
+        </Navbar>
+        <div className="border-t-4 border-sky-500 h-[600px] sm:w-full lg:w-[750px] bg-slate-200 dark:border-sky-700">
+          <News />
+          <News />
+          <News />
+        </div> 
     </div>
   );
 
