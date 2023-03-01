@@ -10,20 +10,20 @@ function Header() {
   return (
     <div
       id="header"
-      className="relative z-50 flex justify-between drop-shadow-sm dark:bg-gray-900 md:h-16 md:w-full md:bg-white lg:h-16"
+      className="sticky top-0 z-50 flex justify-between drop-shadow-sm dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-white lg:h-20"
     >
       {/* Logo */}
       <Link
-        to="/home"
+        to="/"
         element={Home}
-        class="flex items-center md:ml-8 md:flex md:items-center"
+        class="flex items-center sm:ml-8 sm:flex sm:items-center lg:ml-4"
       >
         <img
           src="https://flowbite.com/docs/images/logo.svg"
-          class="sm:h-9 md:mr-3 md:h-9"
+          class="sm:mr-3 sm:h-9"
           alt="Flowbite Logo"
         />
-        <span class="self-center whitespace-nowrap font-semibold dark:text-white md:text-2xl">
+        <span class="self-center whitespace-nowrap font-semibold dark:text-white sm:text-2xl">
           JNews
         </span>
       </Link>
@@ -31,23 +31,23 @@ function Header() {
       <button
         className="hamburger mr-10 text-4xl dark:text-white lg:hidden"
         onClick={() => {
-          document.querySelector(".Nav").classList.toggle("md:hidden");
+          document.querySelector(".Nav").classList.toggle("sm:hidden");
         }}
       >
         <HiOutlineMenu className="" />
       </button>
 
-      <div className="Nav flex dark:bg-gray-900 md:fixed md:top-16 md:right-0 md:m-auto md:hidden md:w-1/2 md:flex-col md:bg-gray-300 md:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-white">
+      <div className="Nav flex dark:bg-gray-900 sm:fixed sm:top-16 sm:right-0 sm:m-auto sm:hidden sm:w-1/2 sm:flex-col sm:bg-gray-300 sm:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-white lg:p-0">
         {/* JNews, Culture */}
-        <div className="flex md:flex-col lg:relative lg:flex-row lg:items-center">
+        <div className="flex sm:flex-col lg:relative lg:flex-row lg:items-center">
           <div
-            className="dropdown md:h-full"
+            className="dropdown sm:h-full lg:h-full"
             onMouseEnter={dropdownNav}
             onMouseLeave={dropdownNav}
           >
             <button
               id="dropdownHoverButton"
-              class="md:text-md hover:bg-gray-200 hover:text-black dark:text-gray-300 dark:hover:text-white md:inline-flex md:h-12 md:w-full md:items-center md:px-4 md:text-center md:text-gray-700 lg:h-full"
+              class="sm:text-md hover:bg-gray-200 hover:text-black dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-full"
             >
               Jnews{" "}
             </button>
@@ -55,10 +55,10 @@ function Header() {
             <div
               id="dropdownHover"
               npm
-              class="dark:bg-gray-700 md:ml-4 md:w-44 md:divide-y md:divide-gray-100 lg:hidden lg:bg-white lg:shadow"
+              class="dark:bg-gray-700 sm:ml-4 sm:w-44 sm:divide-y sm:divide-gray-100 lg:absolute lg:top-20 lg:ml-0 lg:hidden lg:bg-white lg:shadow"
             >
               <ul
-                class="dark:text-gray-200 md:text-sm md:text-gray-700 lg:py-2"
+                class="dark:text-gray-200 sm:text-sm sm:text-gray-700 lg:py-2"
                 aria-labelledby="dropdownHoverButton"
               >
                 <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
@@ -79,7 +79,7 @@ function Header() {
               </ul>
             </div>
           </div>
-          <div className="hover:bg-gray-200 md:flex md:h-12 md:items-center lg:h-full">
+          <div className="hover:bg-gray-200 sm:flex sm:h-12 sm:items-center lg:h-full">
             <Link
               to="/culture"
               element={Culture}
