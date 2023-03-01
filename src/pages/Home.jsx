@@ -10,6 +10,9 @@ import News from "../components/News";
 import { useState } from "react";
 import { useEffect } from "react";
 import { getPosts } from "../graphql/queries";
+import News_next_to_slideauto from "../components/News_next_to_slideauto";
+import Bread from '../components/Test'
+
 function Home() {
   const [posts, setPosts] = useState([]);
 
@@ -20,26 +23,26 @@ function Home() {
 
   return (
     <>
-    <div className="h-[6000px] bg-white">
+    <Bread/>
+    <div className="h-[40000px] bg-white dark:bg-gray-400">
       <Scrollbackbutton />
-      <div class="MustWatch lg:grid lg:grid-cols-10 h-auto">
+      <div class="MustWatch lg:grid lg:grid-cols-10 h-auto ">
         <div className="mb-5 h-80% col-span-7">
           <SliderAuto />
         </div>
-        <div className="col-span-3 lg:mt-14 items-center ">
-          
+        <div className="col-span-3 flex place-items-center ">
+          <News_next_to_slideauto/>
         </div>
         {/* <div>
           <h1 className="text-5xl text-white font-bold">Must Watch</h1>
         </div> */}
       </div>
-      <Rankingboard/>
       <div className="text-center w-full text-6xl underline font-medium text-gray-700">
         <h1>Sport News</h1>
       </div>
       <SliderManual />
-      <div className="w-full">
-      <div className="h-[1000px]">
+      <div className="w-full grid grid-cols-3 h-[2000px] ">
+      <div className="h-[1000px] col-span-2 ">
         {posts.map((post) => {
           return (
             <div key={post.id}>
@@ -54,6 +57,9 @@ function Home() {
             </div>
           );
         })}
+      </div>
+      <div className=" ">
+        <Rankingboard/>
       </div>
     </div>
     </div>

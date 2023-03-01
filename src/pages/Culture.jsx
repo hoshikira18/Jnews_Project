@@ -7,12 +7,12 @@ export default function Culture() {
   return (
     <div className="h-[40000px]">
       {/* Breadcrumb*/}
-      <nav className=" sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
+      <nav className=" sticky top-0 px-5 py-3 text-gray-500 dark:border rounded-b-xl bg-gray-50 dark:bg-gray-900 dark:border-black ">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           <li className="inline-flex items-center">
             <a
               href="#"
-              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+              className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white hover:scale-110 transition duration-500 "
             >
               <svg
                 className="w-4 h-4 mr-2"
@@ -38,7 +38,7 @@ export default function Culture() {
               </svg>
               <a
                 href="#1"
-                className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+                className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white hover:scale-110 transition duration-500"
               >
                 Phong tục
               </a>
@@ -55,7 +55,7 @@ export default function Culture() {
               </svg>
               <a
                 href="#2"
-                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400"
+                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white hover:scale-110 transition duration-500"
               >
                 Ẩm thực
               </a>
@@ -72,7 +72,7 @@ export default function Culture() {
               </svg>
               <a
                 href="#3"
-                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400"
+                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white hover:scale-110 transition duration-500"
               >
                 Trang phục
               </a>
@@ -89,7 +89,7 @@ export default function Culture() {
               </svg>
               <a
                 href="#4"
-                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400"
+                className="ml-1 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white hover:scale-110 transition duration-500"
               >
                 Lễ Hội
               </a>
