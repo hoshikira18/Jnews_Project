@@ -25,3 +25,27 @@ export const getPosts = async () => {
 
   return result.newspapers;
 };
+
+export const getOnePost = async (id) => {
+  const query = gql`
+    query GetOnePost($id: ID!) {
+      newspapers(where: { id: $id }) {
+        title
+        author
+        content {
+          html
+        }
+        description
+        image {
+          url
+        }
+        time
+        topic
+      }
+    }
+  `;
+
+  const result = await request(graphcmc, query, { id });
+
+  return result.newspapers;
+};

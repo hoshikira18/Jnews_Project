@@ -10,7 +10,7 @@ function Header() {
   return (
     <div
       id="header"
-      className="sticky top-0 z-50 flex justify-between drop-shadow-sm dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-white lg:h-20"
+      className="sticky top-0 z-50 flex justify-between drop-shadow-sm dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-white lg:mx-auto lg:h-20 lg:w-[1280px]"
     >
       {/* Logo */}
       <Link
@@ -47,7 +47,7 @@ function Header() {
           >
             <button
               id="dropdownHoverButton"
-              class="sm:text-md hover:bg-gray-200 hover:text-black dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-full"
+              class=" sm:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-20"
             >
               Jnews{" "}
             </button>
@@ -79,11 +79,11 @@ function Header() {
               </ul>
             </div>
           </div>
-          <div className="hover:bg-gray-200 sm:flex sm:h-12 sm:items-center lg:h-full">
+          <div className="sm:flex sm:h-12 sm:items-center lg:h-full">
             <Link
               to="/culture"
               element={Culture}
-              className="text-md m-4 flex w-full items-center text-gray-700 hover:text-black dark:text-gray-300"
+              className="text-md flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition after:duration-1000 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white"
             >
               Culture
             </Link>
