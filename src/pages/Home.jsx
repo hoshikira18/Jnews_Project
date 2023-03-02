@@ -3,6 +3,7 @@ import "../App.css";
 import Scrollbackbutton from "../components/Scrollbackbutton";
 import Footer from "../components/Footer";
 
+
 function Home() {
   return (
     <div className="w-full">
@@ -10,6 +11,7 @@ function Home() {
       <Footer />
 
       <Scrollbackbutton />
+      
     </div>
   );
 }
