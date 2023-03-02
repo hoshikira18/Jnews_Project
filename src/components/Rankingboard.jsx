@@ -70,7 +70,7 @@ function Rankingboard () {
             <div class="text-center basis-2/12 lg:pt-1 pt-3 font-medium text-6xl lg:text-base md:text-5xl">10</div>
             <div class="basis-10/12 lg:pt-1 font-light lg:text-xs text-4xl w-full hover:underline lg:pl-2 pl-8 h-1/2 md:text-3xl pt-3 ">Tiêu đề dsao in coinason vona dop</div>
           </div>
-              <div class=" lg:h-5 h-20 border md:h-12 border-[#eee] bg-gray-100 w-full dark:border dark:border-black dark:hidden "></div>
+              <div class=" lg:h-6 h-20 border md:h-12 border-[#eee] bg-gray-100 w-full dark:border dark:border-black dark:hidden "></div>
           </div>
         </div>
       </div> 

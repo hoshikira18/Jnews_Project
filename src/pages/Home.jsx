@@ -26,7 +26,7 @@ function Home() {
     <Bread/>
     <div className="h-[40000px] bg-white dark:bg-gray-400">
       <Scrollbackbutton />
-      <div class="MustWatch lg:grid lg:grid-cols-10 h-auto ">
+      <div class="MustWatch lg:grid lg:grid-cols-10 h-auto  ">
         <div className="mb-5 h-80% col-span-7">
           <SliderAuto />
         </div>
