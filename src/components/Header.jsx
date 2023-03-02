@@ -10,7 +10,7 @@ function Header() {
   return (
     <div
       id="header"
-      className="sticky top-0 z-50 flex justify-between drop-shadow-sm dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-white lg:mx-auto lg:h-20 lg:w-[1280px]"
+      className="sticky top-0 flex justify-between dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-gray-100 lg:mx-auto lg:h-20 lg:w-[1280px]  "
     >
       {/* Logo */}
       <Link
@@ -37,7 +37,7 @@ function Header() {
         <HiOutlineMenu className="" />
       </button>
 
-      <div className="Nav flex dark:bg-gray-900 sm:fixed sm:top-16 sm:right-0 sm:m-auto sm:hidden sm:w-1/2 sm:flex-col sm:bg-gray-300 sm:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-white lg:p-0">
+      <div className="Nav flex dark:bg-gray-900 sm:fixed sm:top-16 sm:right-0 sm:m-auto sm:hidden sm:w-1/2 sm:flex-col sm:bg-gray-300 sm:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:bg-white lg:p-0">
         {/* JNews, Culture */}
         <div className="flex sm:flex-col lg:relative lg:flex-row lg:items-center">
           <div
@@ -47,7 +47,7 @@ function Header() {
           >
             <button
               id="dropdownHoverButton"
-              class=" sm:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-20"
+              class=" sm:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-20"
             >
               Jnews{" "}
             </button>
@@ -83,7 +83,7 @@ function Header() {
             <Link
               to="/culture"
               element={Culture}
-              className="text-md flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition after:duration-1000 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white"
+              className="text-md after: flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300"
             >
               Culture
             </Link>

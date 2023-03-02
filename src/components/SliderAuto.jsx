@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { getPosts } from "../graphql/queries";
+import useQueryPost from "../hook/useQueryPost";
+
 // import { RxDotFilled } from "react-icons/rx";
 function SliderAuto() {
+  const { posts, error } = useQueryPost({ func: getPosts });
+
   const slides = [
     {
       URL: "https://images.unsplash.com/photo-1601585612823-0d8787c1e019?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
@@ -56,11 +61,13 @@ function SliderAuto() {
     // eslint-disable-next-line
   }, [currentIndex]);
 
+  console.log(posts);
+
   return (
-    <div className="max-w-[1400px] w-full h-[500px] m-auto relative">
+    <div className="relative m-auto h-[500px] w-full max-w-[1400px]">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].URL})` }}
-        className="w-full h-full rouded-2xl bg-center bg-cover duration-500"
+        style={{ backgroundImage: `url(${posts[currentIndex].image.url})` }}
+        className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
       ></div>
       {/* create link embed title */}
       {slides[currentIndex].link ? (
@@ -68,12 +75,12 @@ function SliderAuto() {
           href={slides[currentIndex].link}
           target="_blank"
           rel="noreferrer"
-          className="absolute top-3/4 left-7 text-center text-white text-4xl font-bold hover:underline"
+          className="absolute top-3/4 left-7 text-center text-4xl font-bold text-white hover:underline"
         >
           <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
         </a>
       ) : (
-        <div className="absolute top-3/4 left-[4%] text-center text-white text-4xl font-bold hover:underline">
+        <div className="absolute top-3/4 left-[4%] text-center text-4xl font-bold text-white hover:underline">
           <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
           <p className="text-2xl font-bold">
             {slides[currentIndex].description}
@@ -82,14 +89,14 @@ function SliderAuto() {
       )}
 
       {/* create description */}
-      <div className="absolute max-w-[60%] bottom-[10%] left-[4%] text-start text-white">
+      <div className="absolute bottom-[10%] left-[4%] max-w-[60%] text-start text-white">
         <p className="text-2xm">{slides[currentIndex].describtion}</p>
       </div>
 
-      <div className="absolute top-1/2 left-5 -translate-x-0 translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+      <div className="absolute top-[200px] left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white ">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      <div className="absolute  top-1/2 right-5 -translate-x-0 translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="absolute  top-[200px] right-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
     </div>

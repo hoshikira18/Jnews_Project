@@ -16,11 +16,11 @@ const Post = ({ post }) => {
         <MdKeyboardArrowRight />
         <p className="">{post.topic}</p>
       </div>
+      <div className="flex w-full justify-center p-4">
+        <img className="w-[60%]" src={post.image.url} alt="" />
+      </div>
 
-      <div className="mx-auto w-[680px] bg-white p-4">
-        <div className="flex w-full justify-center">
-          <img src={post.image.url} alt="" />
-        </div>
+      <div className="mx-auto w-[680px] bg-white p-4 pb-40">
         <div className="title">
           <h1 className="text-4xl font-bold lg:p-4">{post.title}</h1>
         </div>
@@ -33,15 +33,24 @@ const Post = ({ post }) => {
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
       </div>
-      <div className="bg-gray-50">
-        <div className="rcm-news w-2/3 p-4">
-          {posts.map((post) => {
-            return (
-              <div>
-                <News post={post} />
-              </div>
-            );
-          })}
+      <div className="flex bg-gray-50">
+        <div className="rcm-news p-4 md:w-full lg:w-2/3">
+          <p className="p-4 text-3xl font-bold text-slate-500">
+            Recommend for you
+          </p>
+
+          <div>
+            {posts.map((post) => {
+              return (
+                <div>
+                  <News post={post} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4">
+          <div className="h-full w-full bg-gray-500"></div>
         </div>
       </div>
     </div>

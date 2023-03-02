@@ -15,10 +15,11 @@ function Home() {
 
   return (
     <div className="w-full">
-      <div class="must-watch lg:grid lg:grid-cols-3">
-        <div className="mb-5 px-4 pt-2 sm:w-full lg:col-span-2">
+      <div class="must-watch mb-5 lg:flex">
+        <div className="px-4 pt-2 sm:w-full lg:w-2/3">
           <SliderAuto />
         </div>
+        <div className="h-40 bg-gray-200 px-4 pt-2 lg:w-1/3"></div>
       </div>
       <div className="posts flex">
         <div className="px-4 sm:w-full lg:w-2/3">

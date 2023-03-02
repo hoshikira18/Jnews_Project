@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="root bg-gray-50 ">
-        <div className="header bg-white dark:bg-gray-900">
+        <div className="header z-50 bg-gray-100 drop-shadow-sm dark:bg-gray-900">
           <Header />
         </div>
         <div className="bg-white dark:bg-gray-400 sm:w-full lg:m-auto lg:w-[1280px]">

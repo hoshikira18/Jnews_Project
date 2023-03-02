@@ -18,6 +18,7 @@ const useQueryPost = ({ func }) => {
         setPosts([]);
       });
   }, [func, id]);
+  console.log(posts);
   return { posts, error };
 };
 export default useQueryPost;
