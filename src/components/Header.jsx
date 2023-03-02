@@ -10,20 +10,20 @@ function Header() {
   return (
     <div
       id="header"
-      className="sticky top-0 flex justify-between dark:bg-gray-900 sm:h-16 sm:w-full sm:bg-gray-100 lg:mx-auto lg:h-20 lg:w-[1280px]  "
+      className="sticky top-0 z-50 flex justify-between dark:bg-gray-900 min-[320px]:h-16 min-[320px]:w-full min-[320px]:bg-gray-100 lg:mx-auto lg:h-20 lg:w-[1280px]  "
     >
       {/* Logo */}
       <Link
         to="/"
         element={Home}
-        class="flex items-center sm:ml-8 sm:flex sm:items-center lg:ml-4"
+        class="flex items-center min-[320px]:ml-8 min-[320px]:flex min-[320px]:items-center lg:ml-4"
       >
         <img
           src="https://flowbite.com/docs/images/logo.svg"
-          class="sm:mr-3 sm:h-9"
+          class="min-[320px]:mr-3 min-[320px]:h-9"
           alt="Flowbite Logo"
         />
-        <span class="self-center whitespace-nowrap font-semibold dark:text-white sm:text-2xl">
+        <span class="self-center whitespace-nowrap font-semibold dark:text-white min-[320px]:text-2xl">
           JNews
         </span>
       </Link>
@@ -31,23 +31,23 @@ function Header() {
       <button
         className="hamburger mr-10 text-4xl dark:text-white lg:hidden"
         onClick={() => {
-          document.querySelector(".Nav").classList.toggle("sm:hidden");
+          document.querySelector(".Nav").classList.toggle("min-[320px]:hidden");
         }}
       >
         <HiOutlineMenu className="" />
       </button>
 
-      <div className="Nav flex dark:bg-gray-900 sm:fixed sm:top-16 sm:right-0 sm:m-auto sm:hidden sm:w-1/2 sm:flex-col sm:bg-gray-300 sm:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:bg-white lg:p-0">
+      <div className="Nav flex dark:bg-gray-900 min-[320px]:fixed min-[320px]:top-16 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
         {/* JNews, Culture */}
-        <div className="flex sm:flex-col lg:relative lg:flex-row lg:items-center">
+        <div className="flex min-[320px]:flex-col lg:relative lg:flex-row lg:items-center">
           <div
-            className="dropdown sm:h-full lg:h-full"
+            className="dropdown min-[320px]:h-full lg:h-full"
             onMouseEnter={dropdownNav}
             onMouseLeave={dropdownNav}
           >
             <button
               id="dropdownHoverButton"
-              class=" sm:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white sm:inline-flex sm:h-12 sm:w-full sm:items-center sm:px-4 sm:text-center sm:text-gray-700 lg:h-20 lg:w-20"
+              class=" min-[320px]:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-gray-700 lg:h-20 lg:w-20"
             >
               Jnews{" "}
             </button>
@@ -55,10 +55,10 @@ function Header() {
             <div
               id="dropdownHover"
               npm
-              class="dark:bg-gray-700 sm:ml-4 sm:w-44 sm:divide-y sm:divide-gray-100 lg:absolute lg:top-20 lg:ml-0 lg:hidden lg:bg-white lg:shadow"
+              class="dark:bg-gray-700 min-[320px]:ml-4 min-[320px]:w-44 min-[320px]:divide-y min-[320px]:divide-gray-100 lg:absolute lg:top-20 lg:ml-0 lg:hidden lg:bg-white lg:shadow"
             >
               <ul
-                class="dark:text-gray-200 sm:text-sm sm:text-gray-700 lg:py-2"
+                class="dark:text-gray-200 min-[320px]:text-sm min-[320px]:text-gray-700 lg:py-2"
                 aria-labelledby="dropdownHoverButton"
               >
                 <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
@@ -79,7 +79,7 @@ function Header() {
               </ul>
             </div>
           </div>
-          <div className="sm:flex sm:h-12 sm:items-center lg:h-full">
+          <div className="min-[320px]:flex min-[320px]:h-12 min-[320px]:items-center lg:h-full">
             <Link
               to="/culture"
               element={Culture}
@@ -127,7 +127,7 @@ function Header() {
           </div>
         </form>
 
-        <button className="flex items-center pr-4 sm:hidden lg:block">
+        <button className="flex items-center pr-4 min-[320px]:hidden lg:block">
           <ButtonDarkmode />
         </button>
       </div>

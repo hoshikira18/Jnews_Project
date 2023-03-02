@@ -22,8 +22,8 @@ export const getPosts = async () => {
   `;
 
   const result = await request(graphcmc, query);
-
-  return result.newspapers;
+  const awnser = await result.newspapers;
+  return awnser;
 };
 
 export const getOnePost = async (id) => {

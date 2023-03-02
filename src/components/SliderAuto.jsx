@@ -63,35 +63,22 @@ function SliderAuto() {
 
   console.log(posts);
 
-  return (
+  return !posts.length ? (
+    <div></div>
+  ) : (
     <div className="relative m-auto h-[500px] w-full max-w-[1400px]">
       <div
         style={{ backgroundImage: `url(${posts[currentIndex].image.url})` }}
         className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
       ></div>
       {/* create link embed title */}
-      {slides[currentIndex].link ? (
-        <a
-          href={slides[currentIndex].link}
-          target="_blank"
-          rel="noreferrer"
-          className="absolute top-3/4 left-7 text-center text-4xl font-bold text-white hover:underline"
-        >
-          <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
-        </a>
-      ) : (
-        <div className="absolute top-3/4 left-[4%] text-center text-4xl font-bold text-white hover:underline">
-          <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
-          <p className="text-2xl font-bold">
-            {slides[currentIndex].description}
-          </p>
-        </div>
-      )}
 
-      {/* create description */}
-      <div className="absolute bottom-[10%] left-[4%] max-w-[60%] text-start text-white">
-        <p className="text-2xm">{slides[currentIndex].describtion}</p>
-      </div>
+      <a
+        href={`detail/${posts[currentIndex].id}`}
+        className="absolute bottom-10 left-[4%] text-3xl font-bold text-white hover:underline"
+      >
+        <h1 className="text-4xl font-bold">{posts[currentIndex].title}</h1>
+      </a>
 
       <div className="absolute top-[200px] left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white ">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
