@@ -51,10 +51,10 @@ function SliderManual() {
     setcurrentIndex(index);
   };
   return (
-    <div className="max-w-[1400px] w-full h-[700px] m-auto py-16 px-4 relative">
+    <div className="relative m-auto h-[700px] w-full max-w-[1400px] py-16 px-4">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].URL})` }}
-        className="w-full h-full rouded-2xl bg-center bg-cover duration-500"
+        className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
       ></div>
 
       {/* create link embed title */}
@@ -63,12 +63,12 @@ function SliderManual() {
           href={slides[currentIndex].link}
           target="_blank"
           rel="noreferrer"
-          className="absolute top-3/4 left-7 text-center text-white text-4xl font-bold hover:underline"
+          className="absolute top-3/4 left-7 text-center text-4xl font-bold text-white hover:underline"
         >
           <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
         </a>
       ) : (
-        <div className="absolute top-3/4 left-[4%] text-center text-white text-4xl font-bold hover:underline">
+        <div className="absolute top-3/4 left-[4%] text-center text-4xl font-bold text-white hover:underline">
           <h1 className="text-4xl font-bold">{slides[currentIndex].title}</h1>
           <p className="text-2xl font-bold">
             {slides[currentIndex].description}
@@ -77,22 +77,22 @@ function SliderManual() {
       )}
 
       {/* create description */}
-      <div className="absolute max-w-[60%] bottom-[15%] left-[3%] text-start text-white">
+      <div className="absolute bottom-[15%] left-[3%] max-w-[60%] text-start text-white">
         <p className="text-2xm">{slides[currentIndex].describtion}</p>
       </div>
 
-      <div className="absolute top-1/2 left-5 -translate-x-0 translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+      <div className="absolute top-1/2 left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white ">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
 
-      <div className="absolute  top-1/2 right-5 -translate-x-0 translate-y-1/2 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="absolute  top-1/2 right-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
 
-      <div className="flex justify-center top-4  py-2 ">
+      <div className="top-4 flex justify-center  py-2 ">
         {slides.map((slides, i) => (
           <div
-            className={`text-gray-700 hover:text-gray-700 transition-color duration-300 rounded-full text-2xl cursor-poiter 
+            className={`transition-color cursor-poiter rounded-full text-2xl text-gray-700 duration-300 hover:text-gray-700 
           ${currentIndex === i ? "text-gray-700" : "text-stone-500"}`}
             key={i}
             onClick={() => goToSlide(i)}
