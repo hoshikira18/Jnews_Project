@@ -3,7 +3,7 @@ import React from 'react';
 function News_next_to_slideauto() {
 
 return(
-    <div className='w-full pb-5 px-4 hidden lg:block'>
+    <div className='w-full pb-5 px-3 hidden lg:block'>
         <div >
             <div class="relative ">
                 <img className='lg:w-[360px] lg:h-[411px] w-full  border border-slate-700' src="https://www.surfertoday.com/images/stories/sunrisesunsettime.jpg" />
