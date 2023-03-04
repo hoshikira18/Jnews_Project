@@ -15,8 +15,8 @@ export default function Culture() {
 
       {/* <!-- Văn hóa --> */}
       <div id="1">
-        <div className="h-[51.2px] relative ">
-          <h1 className=" absolute hover:text-blue-600 top-3 left-7 font-bold text-lg">
+        <div className="lg:h-[51.2px] md:h-[60px] h-[95px]  relative ">
+          <h1 className=" absolute hover:text-blue-600 top-3 left-7 font-bold lg:text-xl md:text-3xl text-6xl ">
             Văn Hóa
           </h1>
         </div>
@@ -25,8 +25,8 @@ export default function Culture() {
       <div className="h-7"></div>
       {/* <!-- Am thuc  --> */}
       <div id="2">
-        <div className="h-[49px] relative">
-          <h1 className=" absolute hover:text-blue-600 top-2 left-7 font-bold text-lg">
+        <div className="lg:h-[49px] md:h-[90px] h-[110px] relative">
+          <h1 className=" absolute hover:text-blue-600 top-2 left-7 font-bold lg:text-xl md:text-3xl text-6xl">
             Ẩm thực
           </h1>
         </div>
@@ -35,17 +35,21 @@ export default function Culture() {
       {/* <!-- Trang phuc --> */}
       <div id="3" className="h-[700px] ">
         <div className="h-[49px] relative">
-          <h1 className="  absolute hover:text-blue-600 top-3 left-7 font-bold text-lg">
+          <h1 className="  absolute hover:text-blue-600 top-3 left-7 font-bold lg:text-xl md:text-3xl text-6xl">
             Trang Phục
           </h1>
         </div>
-        <Slider />
+        <div className=' overflow-auto '>
+          <div className='md:overflow-x-scroll md:w-[8000px] lg:w-full'>
+            <Slider />
+          </div>
+        </div>
       </div>
 
       {/* <!-- Lễ Hội  --> */}
       <div id="4" className="h-[1000px]">
         <div className="h-[60px] relative ">
-          <h1 className="  absolute hover:text-blue-600 my-auto left-7 font-bold text-lg">
+          <h1 className="  absolute hover:text-blue-600 my-auto left-7 font-bold lg:text-xl md:text-3xl text-6xl">
             Lễ Hội
           </h1>
         </div>

@@ -4,10 +4,10 @@ import returncard from "../javascripts/returncard.js";
 
 function ExpandCard() {
   return (
-    <div className="h-[500px] w-full bg-slate-400 dark:bg-gray-800 flex justify-center items-center">
+    <div className="lg:h-[500px] md:h-[530px] h-[650px] w-full bg-slate-400 dark:bg-gray-800 flex justify-center items-center">
       <div className="">
         <div
-          className="item transition-all h-80 w-20 rounded-[25px] brightness-75 mx-3 relative "
+          className="item transition-all lg:h-[320px] md:h-[370px] h-[490px] w-[80px] rounded-[25px] brightness-75 mx-3 relative "
           style={{
             backgroundImage:
               "url(data:image/jpeg;base64,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)",
@@ -18,10 +18,10 @@ function ExpandCard() {
           onMouseEnter={expandcard}
           onMouseLeave={returncard}
         >
-          <div className="item-text transition-all text-white w-28 ml-[47.5%] font-bold text-lg text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
+          <div className="item-text transition-all text-white w-28 ml-[47.5%] font-bold lg:text-lg md:text-3xl text-6xl text-left absolute inset-x-0 bottom-0 origin-left -rotate-90 lg:top-[90%] md:top-[77%] top-[50%]">
             Cơm nắm
           </div>
-          <p className=" info transition-all text-white font-extralight absolute top-[55%] left-[5%] hidden">
+          <p className=" info transition-all text-white lg:text-base md:text-xl text-3xl lg:font-extralight font-normal absolute md:top-[55%] top-[46%] left-[5%] hidden">
             Cơm nắm Onigiri được xem là một trong những món ăn vặt phổ biến nhất
             của người Nhật bởi vị ngon, đặc biệt và sự tiện dụng
           </p>
@@ -41,10 +41,10 @@ function ExpandCard() {
           onMouseEnter={expandcard}
           onMouseLeave={returncard}
         >
-          <div className="item-text transition-all text-white w-28 ml-[47.5%] font-bold text-lg text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
+          <div className="item-text transition-all text-white w-28 ml-[47.5%] font-bold lg:text-lg md:text-3xl text-6xl text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
             Sushi
           </div>
-          <p className=" info transition-all text-white font-extralight absolute top-[55%] left-[5%] hidden">
+          <p className=" info transition-all text-white lg:font-extralight lg:text-base md:text-xl text-4xl absolute top-[55%] left-[5%] hidden">
             Cơm nắm Onigiri được xem là một trong những món ăn vặt phổ biến nhất
             của người Nhật bởi vị ngon, đặc biệt và sự tiện dụng
           </p>
@@ -63,10 +63,10 @@ function ExpandCard() {
           onMouseEnter={expandcard}
           onMouseLeave={returncard}
         >
-          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold text-lg text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
+          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold lg:text-lg md:text-3xl text-6xl text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
             Lẩu MiSu
           </div>
-          <p className=" info transition-all text-white font-extralight absolute top-[55%] left-[5%] hidden">
+          <p className=" info transition-all text-white lg:font-extralight lg:text-base md:text-xl text-4xl absolute top-[55%] left-[5%] hidden">
             Cơm nắm Onigiri được xem là một trong những món ăn vặt phổ biến nhất
             của người Nhật bởi vị ngon, đặc biệt và sự tiện dụng
           </p>
@@ -85,10 +85,10 @@ function ExpandCard() {
           onMouseEnter={expandcard}
           onMouseLeave={returncard}
         >
-          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold text-lg text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
+          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold lg:text-lg md:text-3xl text-6xl text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
              ramen
           </div>
-          <p className=" info transition-all text-white font-extralight absolute top-[55%] left-[5%] hidden">
+          <p className=" info transition-all text-white lg:text-base md:text-xl text-4xl lg:font-extralight absolute top-[55%] left-[5%] hidden">
             Cơm nắm Onigiri được xem là một trong những món ăn vặt phổ biến nhất
             của người Nhật bởi vị ngon, đặc biệt và sự tiện dụng
           </p>
@@ -107,10 +107,10 @@ function ExpandCard() {
           onMouseEnter={expandcard}
           onMouseLeave={returncard}
         >
-          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold text-lg text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
+          <div className="item-text transition-all text-white w-32 ml-[47.5%] font-bold lg:text-lg md:text-3xl text-6xl text-left absolute inset-x-0 bottom-0 origin-left -rotate-90">
             Sashimi
           </div>
-          <p className=" info transition-all text-white font-extralight absolute top-[55%] left-[5%] hidden">
+          <p className=" info transition-all text-white lg:font-extralight lg:text-base md:text-xl text-4xl absolute top-[55%] left-[5%] hidden">
             Cơm nắm Onigiri được xem là một trong những món ăn vặt phổ biến nhất
             của người Nhật bởi vị ngon, đặc biệt và sự tiện dụng
           </p>
