@@ -50,16 +50,26 @@ export const getOnePost = async (slug) => {
   return result.newspapers;
 };
 
-export const getPostsBySearch = async (searchQuery) => {
+export const getPostsBySearch = async (slug) => {
   const query = gql`
-    query GetPostsBySearch($searchQuery: String!) {
-      newspapers(where: { search: $searchQuery }) {
+    query MyQuery($slug: String!) {
+      newspapers(where: { _search: $slug }) {
         title
-        id
+        time
+        topic
+        content {
+          text
+        }
+        image {
+          url
+        }
+        slug
+        description
+      }
     }
   `;
 
-  const result = await request(graphcmc, query, { searchQuery });
+  const result = await request(graphcmc, query, { slug });
 
   return result.newspapers;
 };

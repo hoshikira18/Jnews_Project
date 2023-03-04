@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import removeVietnameseTones from "../javascripts/removeVietnameseTones";
 
 function Search() {
   const navigate = useNavigate();
@@ -11,8 +12,12 @@ function Search() {
     let value = search.trim().replace(/\s+/g, "-").toLocaleLowerCase();
     navigate(`/search/${value}`);
   }
+
   return (
-    <form className="w-2/3 px-4 lg:flex lg:items-center">
+    <form
+      className="w-2/3 px-4 lg:flex lg:items-center"
+      onSubmit={handleSearch}
+    >
       <label
         for="default-search"
         class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white lg:sr-only lg:mb-2 lg:text-sm lg:font-medium"
@@ -44,11 +49,8 @@ function Search() {
           placeholder="Search News"
           required
           value={search}
-          onChange={(e) => setSearch(e.target.value)}
+          onChange={(e) => setSearch(removeVietnameseTones(e.target.value))}
         />
-        {/* <div className="search-result absolute top-12 h-40 w-full bg-gray-400">
-              <SearchResult />
-            </div> */}
       </div>
     </form>
   );
