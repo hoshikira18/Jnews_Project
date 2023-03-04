@@ -10,45 +10,40 @@ import Scrollbackbutton from "../components/Scrollbackbutton";
 import "../javascripts/style.css";
 export default function Culture() {
   return (
-    <div className="h-[40000px] bg-white">
+    <div className="h-[40000px] bg-white dark:bg-gray-900 ">
       <BreadCrumb />
 
       {/* <!-- Văn hóa --> */}
-      <div id="1">
-        <div className="h-[51.2px] relative ">
-          <h1 className=" absolute hover:text-blue-600 top-3 left-7 font-bold text-lg">
-            Văn Hóa
-          </h1>
-        </div>
+      <div id="vanhoa">
+        <h1 className=" hover:text-blue-600 pl-7 font-bold text-2xl dark:text-gray-200  py-[9px]">
+          Văn Hóa
+        </h1>
         <CulturePart />
       </div>
       <div className="h-7"></div>
       {/* <!-- Am thuc  --> */}
-      <div id="2">
-        <div className="h-[49px] relative">
-          <h1 className=" absolute hover:text-blue-600 top-2 left-7 font-bold text-lg">
-            Ẩm thực
-          </h1>
-        </div>
+      <div id="amthuc" className="pt-11">
+        <h1 className="  hover:text-blue-600   pl-7 font-bold text-2xl dark:text-gray-200 py-[9px]">
+          Ẩm thực
+        </h1>
+
         <ExpandCard />
       </div>
       {/* <!-- Trang phuc --> */}
-      <div id="3" className="h-[700px] ">
-        <div className="h-[49px] relative">
-          <h1 className="  absolute hover:text-blue-600 top-3 left-7 font-bold text-lg">
-            Trang Phục
-          </h1>
-        </div>
+      <div id="trangphuc" className="h-[700px] pt-11 ">
+        <h1 className="   hover:text-blue-600 pl-7 font-bold text-2xl dark:text-gray-200 py-[9px]">
+          Trang Phục
+        </h1>
+
         <Slider />
       </div>
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="4" className="h-[1000px]">
-        <div className="h-[60px] relative ">
-          <h1 className="  absolute hover:text-blue-600 my-auto left-7 font-bold text-lg">
-            Lễ Hội
-          </h1>
-        </div>
+      <div id="lehoi" className="h-[1000px] ">
+        <h1 className="   hover:text-blue-600  pl-7 font-bold text-2xl  dark:text-gray-200 py-[9px]">
+          Lễ Hội
+        </h1>
+
         <ScrollTimeline />
       </div>
 

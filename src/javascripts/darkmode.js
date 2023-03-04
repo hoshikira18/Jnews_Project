@@ -13,8 +13,8 @@ function holdDarkmode() {
 }
 
 function toggleColor() {
-  const container = document.querySelector(".container");
-  container.classList.toggle("dark");
+  const root = document.querySelector("html");
+  root.classList.toggle("dark");
 }
 
 function toggleIcon() {
