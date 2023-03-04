@@ -43,7 +43,7 @@ export default function News({ post }) {
           ></img>
         </div>
         <div className="mx-3 flex h-[150px] flex-col justify-between sm:max-h-full sm:max-w-[470px]">
-          <a href={`/detail/${post.id}`}>
+          <a href={`/detail/${post.slug}`}>
             <h1 className="text-xl font-bold hover:drop-shadow-2xl dark:text-slate-100 sm:text-sm md:text-xl">
               {post.title}
             </h1>

@@ -6,13 +6,12 @@ import { getPosts } from "../graphql/queries";
 import News from "../components/News";
 const Post = ({ post }) => {
   const { posts, error } = useQueryPost({ func: getPosts });
-  // object content post
-  // code doan nay la ntn nhi
-  //
-  console.log(post);
-  return (
+
+  return !posts.length ? (
+    <div></div>
+  ) : (
     <div className="">
-      <div className="topic flex items-center bg-gray-50 p-4">
+      <div className="topic flex items-center bg-gray-50 p-4 dark:bg-gray-800 dark:text-blue-400">
         <MdKeyboardArrowRight />
         <p className="">{post.topic}</p>
       </div>
@@ -20,7 +19,7 @@ const Post = ({ post }) => {
         <img className="w-[60%]" src={post.image.url} alt="" />
       </div>
 
-      <div className="mx-auto w-[680px] bg-white p-4 pb-40">
+      <div className="mx-auto w-[900px] bg-white p-4 pb-40 dark:bg-gray-800 dark:text-white">
         <div className="title">
           <h1 className="text-4xl font-bold lg:p-4">{post.title}</h1>
         </div>
@@ -33,7 +32,7 @@ const Post = ({ post }) => {
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
       </div>
-      <div className="flex bg-gray-50">
+      <div className="flex bg-gray-50 dark:bg-gray-900">
         <div className="rcm-news p-4 md:w-full lg:w-2/3">
           <p className="p-4 text-3xl font-bold text-slate-500">
             Recommend for you

@@ -7,11 +7,11 @@ import publicRoutes from "./route";
 function App() {
   return (
     <BrowserRouter>
-      <div className="root bg-gray-50 ">
-        <div className="bg-gray-100 drop-shadow-sm dark:bg-gray-900">
+      <div className="bg-gray-50 dark:bg-gray-900">
+        <div className="bg-gray-100 drop-shadow-sm dark:bg-gray-800">
           <Header />
         </div>
-        <div className="bg-white dark:bg-gray-400 sm:w-full lg:m-auto lg:w-[1280px]">
+        <div className="bg-white dark:bg-gray-800 sm:w-full lg:m-auto lg:w-[1280px]">
           <Routes>
             {publicRoutes.map((route, index) => {
               return <Route path={route.path} element={<route.component />} />;

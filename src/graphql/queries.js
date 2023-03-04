@@ -15,7 +15,7 @@ export const getPosts = async () => {
         image {
           url
         }
-        id
+        slug
         description
       }
     }
@@ -26,10 +26,10 @@ export const getPosts = async () => {
   return awnser;
 };
 
-export const getOnePost = async (id) => {
+export const getOnePost = async (slug) => {
   const query = gql`
-    query GetOnePost($id: ID!) {
-      newspapers(where: { id: $id }) {
+    query GetOnePost($slug: String!) {
+      newspapers(where: { slug: $slug }) {
         title
         author
         content {
@@ -45,7 +45,21 @@ export const getOnePost = async (id) => {
     }
   `;
 
-  const result = await request(graphcmc, query, { id });
+  const result = await request(graphcmc, query, { slug });
+
+  return result.newspapers;
+};
+
+export const getPostsBySearch = async (searchQuery) => {
+  const query = gql`
+    query GetPostsBySearch($searchQuery: String!) {
+      newspapers(where: { search: $searchQuery }) {
+        title
+        id
+    }
+  `;
+
+  const result = await request(graphcmc, query, { searchQuery });
 
   return result.newspapers;
 };

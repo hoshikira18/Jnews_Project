@@ -6,10 +6,12 @@ import { getOnePost } from "../graphql/queries";
 export default function Detail() {
   const { posts, error } = useQueryPost({ func: getOnePost });
   console.log(posts);
-  return (
+  return !posts.length ? (
+    <div></div>
+  ) : (
     <div>
       {posts.map((post) => (
-        <Post key={post.id} post={post} />
+        <Post key={post.slug} post={post} />
       ))}
     </div>
   );

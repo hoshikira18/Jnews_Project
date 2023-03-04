@@ -61,12 +61,12 @@ function SliderAuto() {
     // eslint-disable-next-line
   }, [currentIndex]);
 
-  console.log(posts);
+  // console.log(posts);
 
   return !posts.length ? (
     <div></div>
   ) : (
-    <div className="relative m-auto h-[500px] w-full max-w-[1400px]">
+    <div className="relative m-auto h-[450px] w-full max-w-[1400px]">
       <div
         style={{ backgroundImage: `url(${posts[currentIndex].image.url})` }}
         className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
@@ -74,7 +74,7 @@ function SliderAuto() {
       {/* create link embed title */}
 
       <a
-        href={`detail/${posts[currentIndex].id}`}
+        href={`detail/${posts[currentIndex].slug}`}
         className="absolute bottom-10 left-[4%] text-3xl font-bold text-white hover:underline"
       >
         <h1 className="text-4xl font-bold">{posts[currentIndex].title}</h1>

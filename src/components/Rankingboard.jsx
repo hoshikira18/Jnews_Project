@@ -8,7 +8,7 @@ function Rankingboard() {
     if (show.classList.contains("hidden")) {
       show.classList.remove("hidden");
       button.innerHTML = "Hide";
-      console.log("hello");
+      // console.log("hello");
     } else {
       show.classList.add("hidden");
       button.innerHTML = " Show More";

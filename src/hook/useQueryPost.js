@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../graphql/queries";
 const useQueryPost = ({ func }) => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
-  console.log(id);
+  // console.log(posts);
   useEffect(() => {
-    func(id)
+    func(slug)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setPosts(res);
         setError(null);
       })
@@ -17,7 +17,7 @@ const useQueryPost = ({ func }) => {
         setError(error.message);
         setPosts([]);
       });
-  }, [func, id]);
+  }, [func, slug]);
   return { posts, error };
 };
 export default useQueryPost;
