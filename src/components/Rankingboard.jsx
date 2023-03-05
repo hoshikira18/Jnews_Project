@@ -16,7 +16,7 @@ function Rankingboard() {
   }
 
   return (
-    <div class="h-auto w-full pb-24 md:mx-5 lg:mx-6   ">
+    <div class="h-auto w-full pb-24 md:mx-5 lg:mx-6 pt-[10px]  ">
       <div class="flex h-auto w-full items-center justify-center pr-10 sm:pr-0 lg:h-10 lg:w-5/6 ">
         <img
           class="w-15 mx-4 h-16 md:mx-2 lg:h-7 lg:w-9"

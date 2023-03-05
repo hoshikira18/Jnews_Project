@@ -6,6 +6,7 @@ import Scrollbackbutton from "../components/Scrollbackbutton";
 import SliderAuto from "../components/SliderAuto";
 import News from "../components/News";
 import Rankingboard from "../components/Rankingboard";
+import News_next_to_slideauto from "../components/News_next_to_slideauto";
 function Home() {
   const [posts, setPosts] = useState([]);
 
@@ -18,6 +19,9 @@ function Home() {
       <div class="must-watch mb-5 lg:flex">
         <div className="px-4 pt-2 sm:w-full lg:w-2/3">
           <SliderAuto />
+        </div>
+        <div div className="pt-2 lg:w-1/3">
+          <News_next_to_slideauto/>
         </div>
         {/* <div className="h-40 bg-gray-200 px-4 pt-2 lg:w-1/3"></div> */}
       </div>
