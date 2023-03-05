@@ -15,7 +15,7 @@ export default function Culture() {
 
       {/* <!-- Văn hóa --> */}
       <div id="vanhoa">
-        <h1 className=" hover:text-blue-600 pl-7 font-bold text-2xl dark:text-gray-200  py-[9px]">
+        <h1 className=" hover:text-blue-600 pl-7 font-bold lg:text-2xl md:text-3xl text-6xl dark:text-gray-200  md:py-[9px] py-[30px]">
           Văn Hóa
         </h1>
         
@@ -31,8 +31,8 @@ export default function Culture() {
         <ExpandCard />
       </div>
       {/* <!-- Trang phuc --> */}
-      <div id="trangphuc" className="h-[700px] pt-11 ">
-        <h1 className="   hover:text-blue-600 pl-7 font-bold lg:text-xl md:text-3xl text-2x6xl dark:text-ray-200 py-[9px]">
+      <div id="trangphuc" className="lg:h-[700px] md:h-[770px] h-[850px] pt-11 ">
+        <h1 className="   hover:text-blue-600 pl-7 font-bold lg:text-3xl md:text-4xl text-6xl dark:text-ray-200 md:py-[9px] py-[28px]">
           Trang Phục
         </h1>
 
@@ -42,8 +42,8 @@ export default function Culture() {
 
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="lehoi" className="h-[1000px] ">
-        <h1 className="   hover:text-blue-600  pl-7 font-bold lg:text-xl md:text-3xl text-6xl  dark:text-ray-200 py-[9px]">
+      <div id="lehoi" className="h-[1000px] md:pt-7 pt-12 ">
+        <h1 className="   hover:text-blue-600  pl-7 font-bold lg:text-xl md:text-3xl text-6xl  dark:text-ray-200 md:py-[9px] py-[18px]">
           Lễ Hội
         </h1>
 

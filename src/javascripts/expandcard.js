@@ -5,7 +5,7 @@ function expandcard(event){
   e.querySelector('.info').style.display ="block";
   e.querySelector('.background').style.display ="block";
   Object.assign(e.style,{
-        width:'300px',
+        width:'330px',
         filter:'brightness(1)',
         borderRadius:'15px',
        });     

@@ -8,20 +8,20 @@ export default function () {
     <div className="slide rounded lg:overflow-hidden relative pt-3 overflow-x-scroll ">
       <div className="dieuhuong text-6xl flex ">
         <div
-          className="absolute  top-1/2 -translate-y-1/2 cursor-pointer dark:text-white hover:text-blue-700   bg-slate-300 bg-opacity-50 hover:bg-opacity-70   dark:hover:text-blue-700 md:hidden lg:block"
+          className="absolute  top-1/2 -translate-y-1/2 cursor-pointer dark:text-white hover:text-blue-700   bg-slate-300 bg-opacity-50 hover:bg-opacity-70   dark:hover:text-blue-700 hidden lg:block"
           onClick={Back}
         >
           <AiOutlineDoubleLeft />
         </div>
         <div
-          className="right-0 absolute top-1/2  -translate-y-1/2 cursor-pointer dark:text-white  hover:text-blue-700 dark:hover:text-blue-700 bg-slate-300 bg-opacity-50 hover:bg-opacity-70 md:hidden lg:block"
+          className="right-0 absolute top-1/2  -translate-y-1/2 cursor-pointer dark:text-white  hover:text-blue-700 dark:hover:text-blue-700 bg-slate-300 bg-opacity-50 hover:bg-opacity-70 hidden lg:block"
           onClick={Next}
         >
           <AiOutlineDoubleRight />
         </div>
       </div>
-      <div className="chuyen-slide w-[7000px] float-left flex transition-all ease-in duration-500 ">
-        <div className=" flex bg-white  dark:bg-gray-900 w-[1252px] h-[520px]">
+      <div className="chuyen-slide w-[5300px] float-left flex transition-all ease-in duration-500 ">
+        <div className=" flex bg-white  dark:bg-gray-900 md:w-[1252px] w-[1350px]  lg:h-[520px] md:h-[560px] h-[700px]">
           <div className="w-3/5">
             <img
               className="w-full h-full border-r-2 border-x-slate-600"
@@ -30,11 +30,11 @@ export default function () {
             />
           </div>
           <div className="w-2/5 ">
-            <h1 className="text-center dark:text-white font-bold text-2xl pt-6 pb-3 dark:bg-gray-900  ">
+            <h1 className="text-center dark:text-white font-bold lg:text-2xl md:text-4xl text-5xl pt-6 lg:pb-3 pb-5 dark:bg-gray-900  ">
               浴衣
             </h1>
 
-            <p className="pl-8 pr-20 dark:text-white dark:bg-gray-900">
+            <p className="pl-8 pr-20 dark:text-white md:text-base text-xl dark:bg-gray-900">
               <ul>
                 浴衣とは、夏に着用する薄手の着物です。昔は、入浴後に着用する部屋着であり、寝巻きとしても身に着けられていました。現在は、花火大会や夏祭りに浴衣を着用します。
               </ul>
