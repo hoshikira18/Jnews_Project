@@ -1,5 +1,5 @@
 let Chuyen = 0;
-function Next() {
+function Next(e) {
   var KichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
   var ChuyenSlide = document.getElementsByClassName("chuyen-slide")[0];
   var Img = ChuyenSlide.getElementsByTagName("img");
@@ -11,7 +11,7 @@ function Next() {
   } else {
     Chuyen = 0;
   }
-
+  
   ChuyenSlide.style.marginLeft = "-" + Chuyen + "px";
 }
 
