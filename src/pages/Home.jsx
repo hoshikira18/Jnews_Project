@@ -7,6 +7,7 @@ import SliderAuto from "../components/SliderAuto";
 import News from "../components/News";
 import Rankingboard from "../components/Rankingboard";
 import News_next_to_slideauto from "../components/News_next_to_slideauto";
+import Footer from '../components/Footer'
 function Home() {
   const [posts, setPosts] = useState([]);
 
@@ -39,7 +40,7 @@ function Home() {
           <Rankingboard />
         </div>
       </div>
-
+      <Footer/>
       <Scrollbackbutton />
     </div>
   );
