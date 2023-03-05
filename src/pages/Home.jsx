@@ -26,32 +26,34 @@ function Home() {
   const paginate = ({ selected }) => {
     setCurrentPage(selected + 1);
   };
-  return (
+  return !posts.length ? (
+    <div></div>
+  ) : (
     <div className="z-10 w-full">
       <div class="must-watch mb-5 lg:flex">
-        <div className="px-4 pt-2 sm:w-full lg:w-2/3">
+        <div className="px-4 pt-5 sm:w-full lg:w-2/3">
           <SliderAuto />
         </div>
-        <div className="hidden h-[450px] w-1/3 px-2 lg:block">
+
+        <div></div>
+
+        <div className="hidden w-1/3 px-3 pt-5 lg:block lg:h-[450px]">
           <div>
-            <div class="relative m-2 h-full">
+            <div class="relative ">
               <img
-                className="m-auto w-full border border-slate-700  lg:h-full lg:w-full"
-                src="https://www.surfertoday.com/images/stories/sunrisesunsettime.jpg"
+                className="h-[450px] w-full  border border-slate-700"
+                src={posts[5].image.url}
               />
               <div className="bg-gradient absolute bottom-0 w-full p-4">
                 <h5 className="mb:text-3xl overflow-hidden text-ellipsis break-words px-2 pb-8 text-5xl font-bold text-gray-100 md:pb-5 lg:pb-3 lg:text-xl lg:font-semibold">
-                  <a href="">
-                    Title kjbc ácno én inc cobc kjwoc vaownocjkw ksnalcnlan ska
-                    csajk íaci ócakn
-                  </a>
+                  <a href="">{posts[5].title}</a>
                 </h5>
                 <div className="flex items-center space-x-3 px-2">
                   <div className="md:text-md text-xl font-light leading-none text-white lg:text-xs">
-                    Tags
+                    {posts[5].topic}
                   </div>
                   <span className="md:text-md text-lg font-light text-gray-200 lg:text-xs">
-                    1 giờ trước
+                    {posts.time}
                   </span>
                 </div>
               </div>
