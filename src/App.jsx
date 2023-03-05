@@ -1,21 +1,21 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Culture from "./pages/Culture";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import publicRoutes from "./route";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-gray-200 w-screen rounded">
-        <div className="container w-[1252px] bg-gray-300 m-auto">
-          <Header /> 
+      <div className="root bg-gray-50 ">
+        <div className="bg-gray-100 drop-shadow-sm dark:bg-gray-900">
+          <Header />
+        </div>
+        <div className="bg-white dark:bg-gray-400 sm:w-full lg:m-auto lg:w-[1280px]">
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/culture" element={<Culture />} />
+            {publicRoutes.map((route, index) => {
+              return <Route path={route.path} element={<route.component />} />;
+            })}
           </Routes>
         </div>
       </div>

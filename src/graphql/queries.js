@@ -15,11 +15,37 @@ export const getPosts = async () => {
         image {
           url
         }
+        id
+        description
       }
     }
   `;
 
   const result = await request(graphcmc, query);
+  const awnser = await result.newspapers;
+  return awnser;
+};
+
+export const getOnePost = async (id) => {
+  const query = gql`
+    query GetOnePost($id: ID!) {
+      newspapers(where: { id: $id }) {
+        title
+        author
+        content {
+          html
+        }
+        description
+        image {
+          url
+        }
+        time
+        topic
+      }
+    }
+  `;
+
+  const result = await request(graphcmc, query, { id });
 
   return result.newspapers;
 };
