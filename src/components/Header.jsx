@@ -3,119 +3,102 @@ import { Link } from "react-router-dom";
 import ButtonDarkmode from "./ButtonDarkmode";
 import Culture from "../pages/Culture";
 import dropdownNav from "../javascripts/dropdownNav";
-import "../assets/css/Header.css";
 import Home from "../pages/Home";
-
+import { HiOutlineMenu } from "react-icons/hi";
+import SearchResult from "./SearchResult";
+import Search from "./Search";
 function Header() {
   return (
     <div
       id="header"
-      className="w-full h-16 bg-white flex justify-between rounded drop-shadow-sm dark:bg-gray-900"
+      className="sticky top-0 z-50 flex justify-between dark:bg-gray-800 min-[320px]:h-16 min-[320px]:w-full min-[320px]:bg-gray-100 lg:mx-auto lg:h-20 lg:w-[1280px]  "
     >
       {/* Logo */}
-      <Link to="/home" element={Home} class="flex items-center m-4">
+      <Link
+        to="/"
+        element={Home}
+        class="flex items-center min-[320px]:ml-8 min-[320px]:flex min-[320px]:items-center lg:ml-4"
+      >
         <img
           src="https://flowbite.com/docs/images/logo.svg"
-          class="h-6 mr-3 sm:h-9"
+          class="min-[320px]:mr-3 min-[320px]:h-9"
           alt="Flowbite Logo"
         />
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+        <span class="self-center whitespace-nowrap font-semibold dark:text-white min-[320px]:text-2xl">
           JNews
         </span>
       </Link>
-
-      {/* JNews, Culture */}
-      <div className="flex items-center relative ">
-        <div
-          className="dropdown h-full"
-          onMouseEnter={dropdownNav}
-          onMouseLeave={dropdownNav}
-        >
-          <button
-            id="dropdownHoverButton"
-            class="text-gray-700 text-md h-full px-4 text-center inline-flex items-center hover:text-black dark:text-gray-300 dark:hover:text-white hover:bg-gray-200"
-          >
-            Jnews{" "}
-          </button>
-          {/* <!-- Dropdown menu --> */}
-          <div
-            id="dropdownHover"
-            npm
-            class="z-10 hidden bg-white divide-y divide-gray-100 shadow w-44 dark:bg-gray-700 absolute top-16 left-0"
-          >
-            <ul
-              class="py-2 text-sm text-gray-700 dark:text-gray-200"
-              aria-labelledby="dropdownHoverButton"
-            >
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                <Link to="/culture" element={Culture}>
-                  Culture
-                </Link>
-              </li>
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                <Link to="/culture" element={Culture}>
-                  Culture
-                </Link>
-              </li>
-              <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">
-                <Link to="/culture" element={Culture}>
-                  Culture
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="hover:bg-gray-200">
-          <Link
-            to="/culture"
-            element={Culture}
-            className="m-4 text-md h-full w-full text-gray-700 dark:text-gray-300 hover:text-black flex items-center"
-          >
-            Culture
-          </Link>
-        </div>
-      </div>
-
-      {/* Search box */}
-
-      <form className="flex items-center">
-        <label
-          for="default-search"
-          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-        >
-          Search
-        </label>
-        <div class="relative hidden md:block">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg
-              aria-hidden="true"
-              class="w-5 h-5 text-gray-500 dark:text-gray-400"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
-            </svg>
-          </div>
-          <input
-            type="search"
-            id="default-search"
-            class="block w-full p-2 pl-10 outline-none text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Search News"
-            required
-          />
-        </div>
-      </form>
-
-      <button className="flex items-center pr-4">
-        <ButtonDarkmode />
+      {/* Hamburger */}
+      <button
+        className="hamburger mr-10 text-4xl dark:text-white lg:hidden"
+        onClick={() => {
+          document.querySelector(".Nav").classList.toggle("min-[320px]:hidden");
+        }}
+      >
+        <HiOutlineMenu className="" />
       </button>
+
+      <div className="Nav flex dark:bg-gray-800 min-[320px]:fixed min-[320px]:top-16 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
+        {/* JNews, Culture */}
+        <div className="flex min-[320px]:flex-col lg:relative lg:flex-row lg:items-center">
+          <div
+            className="dropdown min-[320px]:h-full lg:h-full"
+            onMouseEnter={dropdownNav}
+            onMouseLeave={dropdownNav}
+          >
+            <button
+              id="dropdownHoverButton"
+              class="min-[320px]:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-gray-700 lg:h-20 lg:w-20"
+            >
+              Jnews{" "}
+            </button>
+            {/* <!-- Dropdown menu --> */}
+            <div
+              id="dropdownHover"
+              npm
+              class="dark:bg-gray-700 min-[320px]:ml-4 min-[320px]:w-44 min-[320px]:divide-y min-[320px]:divide-gray-100 lg:absolute lg:top-20 lg:ml-0 lg:hidden lg:bg-white lg:shadow"
+            >
+              <ul
+                class="dark:text-gray-200 min-[320px]:text-sm min-[320px]:text-gray-700 lg:py-2"
+                aria-labelledby="dropdownHoverButton"
+              >
+                <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <Link to="/culture" element={Culture}>
+                    Culture
+                  </Link>
+                </li>
+                <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  <Link to="/culture" element={Culture}>
+                    Culture
+                  </Link>
+                </li>
+                <li class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white ">
+                  <Link to="/culture" element={Culture}>
+                    Culture
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="min-[320px]:flex min-[320px]:h-12 min-[320px]:items-center lg:h-full">
+            <Link
+              to="/culture"
+              element={Culture}
+              className="text-md after: flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300"
+            >
+              Culture
+            </Link>
+          </div>
+        </div>
+
+        {/* Search box */}
+
+        <Search />
+
+        <button className="flex items-center pr-4 min-[320px]:hidden lg:block">
+          <ButtonDarkmode />
+        </button>
+      </div>
     </div>
   );
 }

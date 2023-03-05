@@ -13,8 +13,8 @@ function holdDarkmode() {
 }
 
 function toggleColor() {
-  const container = document.querySelector(".container");
-  container.classList.toggle("dark");
+  const root = document.querySelector("html");
+  root.classList.toggle("dark");
 }
 
 function toggleIcon() {
@@ -25,8 +25,7 @@ function toggleIcon() {
 }
 
 function saveDarkmode() {
-  const container = document.querySelector(".container");
-  const isDarkMode = container.classList.contains("dark");
+  const isDarkMode = document.querySelector("html").classList.contains("dark");
   localStorage.setItem("isDarkMode", isDarkMode);
 }
 

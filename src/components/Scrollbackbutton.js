@@ -14,11 +14,11 @@ function Scrollback() {
   }, []);
 
   if (backToTopButton) {
-    console.log("test");
+    // console.log("test");
     return (
       <div style={{ backgroundColor: "white" }}>
         <button
-          className="border border-[#ccc] rounded-full bg-white motion-safe:hover:scale-110 "
+          className="rounded-full border border-[#ccc] bg-white motion-safe:hover:scale-110 "
           style={{
             position: "fixed",
             bottom: "50px",
