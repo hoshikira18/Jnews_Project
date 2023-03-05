@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Scrollbackbutton from "../components/Scrollbackbutton";
-import ScrollTimeline from "../components/ScrollTimeline";
+// import ScrollTimeline from "../components/ScrollTimeline";
 
 export default function Culture() {
   return (
