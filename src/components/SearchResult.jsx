@@ -10,7 +10,7 @@ function SearchResult() {
     <div></div>
   ) : (
     <div>
-      <div className="flex items-center py-2">
+      <div className="flex min-h-screen items-center py-2">
         <h1 className="font-bold text-white">Search Result</h1>
       </div>
       {posts.map((post) => (
