@@ -11,45 +11,40 @@ import Scrollbackbutton from "../components/Scrollbackbutton";
 
 export default function Culture() {
   return (
-    <div className="h-[40000px] bg-white">
+    <div className="h-[40000px] bg-white dark:bg-gray-900 ">
       <BreadCrumb />
 
       {/* <!-- Văn hóa --> */}
-      <div id="1">
-        <div className="relative h-[51.2px] ">
-          <h1 className=" absolute top-3 left-7 text-lg font-bold hover:text-blue-600">
-            Văn Hóa
-          </h1>
-        </div>
+      <div id="vanhoa">
+        <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
+          Văn Hóa
+        </h1>
         <CulturePart />
       </div>
       <div className="h-7"></div>
       {/* <!-- Am thuc  --> */}
-      <div id="2">
-        <div className="relative h-[49px]">
-          <h1 className=" absolute top-2 left-7 text-lg font-bold hover:text-blue-600">
-            Ẩm thực
-          </h1>
-        </div>
+      <div id="amthuc" className="pt-11">
+        <h1 className="  py-[9px]   pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
+          Ẩm thực
+        </h1>
+
         <ExpandCard />
       </div>
       {/* <!-- Trang phuc --> */}
-      <div id="3" className="h-[700px] ">
-        <div className="relative h-[49px]">
-          <h1 className="  absolute top-3 left-7 text-lg font-bold hover:text-blue-600">
-            Trang Phục
-          </h1>
-        </div>
+      <div id="trangphuc" className="h-[700px] pt-11 ">
+        <h1 className="   py-[9px] pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
+          Trang Phục
+        </h1>
+
         <Slider />
       </div>
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="4" className="h-[1000px]">
-        <div className="relative h-[60px] ">
-          <h1 className="  absolute left-7 my-auto text-lg font-bold hover:text-blue-600">
-            Lễ Hội
-          </h1>
-        </div>
+      <div id="lehoi" className="h-[1000px] ">
+        <h1 className="   py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
+          Lễ Hội
+        </h1>
+
         <ScrollTimeline />
       </div>
 

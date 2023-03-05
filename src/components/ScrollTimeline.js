@@ -30,12 +30,13 @@ class App extends Component {
             height: "120px",
             margin: "0 auto",          
             fontSize: "14px",
+            color:"blue"
           }}
         >
-          <HorizontalTimeline
+          <HorizontalTimeline 
             styles={{
               foreground: "blue",
-              outline: "black",
+              outline: "gray",
             }}
             index={this.state.value}
             indexClick={(index) => {

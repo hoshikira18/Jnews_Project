@@ -4,7 +4,7 @@ import { MdOutlineRamenDining } from "react-icons/md";
 
 export default function BreadCrumb() {
   return (
-    <nav className="z-20 sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-b  bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
+    <nav className="z-20 sticky top-0 px-5 py-3 text-gray-500 border border-gray-500 rounded-b bg-gray-50 dark:bg-gray-800 dark:border-gray-700 ">
       <ol className="inline-flex items-center space-x-1 md:space-x-3">
         <li className="inline-flex items-center">
           <a
@@ -27,7 +27,7 @@ export default function BreadCrumb() {
               <GiFuji />
             </div>
             <a
-              href="#1"
+              href="#vanhoa"
               className=" culture ml-3 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
             >
               Văn hóa
@@ -41,7 +41,7 @@ export default function BreadCrumb() {
             </div>
 
             <a
-              href="#2"
+              href="#amthuc"
               className="ml-3 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400  dark:hover:text-white"
             >
               Ẩm thực
@@ -54,7 +54,7 @@ export default function BreadCrumb() {
               <GiKimono />
             </div>
             <a
-              href="#3"
+              href="#trangphuc"
               className="ml-3 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400  dark:hover:text-white"
             >
               Trang phục
@@ -67,7 +67,7 @@ export default function BreadCrumb() {
               <GiAsianLantern />
             </div>
             <a
-              href="#4"
+              href="#lehoi"
               className="ml-3 text-sm font-medium text-gray-500  hover:text-blue-600 md:ml-2 dark:text-gray-400  dark:hover:text-white"
             >
               Lễ Hội
