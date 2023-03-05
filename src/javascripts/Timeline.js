@@ -17,10 +17,10 @@ class DemoKeyboard extends Component {
         }}
         enableMouseEvents
       >
-        <div className=" flex border-y-[1px] border-slate-400 ">
+        <div className=" flex ">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full border-r-2 border-gray-700"
+              className=" w-full  border-gray-700"
               src="https://gogen-yurai.jp/wp-content/uploads/2021/01/303780100_675.jpg"
               alt=""
             />
@@ -34,10 +34,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full border-r-2 border-gray-700 h-full"
+              className=" w-full  border-gray-700 h-full"
               src="https://skywardplus.jal.co.jp/wp-content/uploads/2021/12/detail_setsubun.jpg"
               alt=""
             />
@@ -59,10 +59,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://pictbook.info/wp-content/uploads/2018/02/be764e5afcd673f8282ed9794b1fc04e-e1621402393626-1200x630.jpg"
               alt=""
             />
@@ -76,10 +76,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://img01.jalannews.jp/img/2021/02/20210219_kodomonohi_010.jpg"
               alt=""
             />
@@ -93,10 +93,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://storage.tenki.jp/storage/static-images/suppl/article/image/3/30/305/30504/1/large.jpg"
               alt=""
             />
@@ -115,10 +115,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://skywardplus.jal.co.jp/wp-content/uploads/2022/07/detail_obon.jpg"
               alt=""
             />
@@ -132,10 +132,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://imgcp.aacdn.jp/img-a/1200/auto/global-aaj-front/article/2016/02/56b00eecb8289_56b00c90ed6ea_445077124.jpg"
               alt=""
             />
@@ -153,10 +153,10 @@ class DemoKeyboard extends Component {
           </div>
         </div>
 
-        <div className=" flex border-y-[1px] border-slate-400 h-[500px]">
+        <div className=" flex h-[500px]">
           <div className="w-3/5 bg-blue-400">
             <img
-              className=" w-full h-full border-r-2 border-gray-700"
+              className=" w-full h-full  border-gray-700"
               src="https://press.ikidane-nippon.com/wordpress/wp-content/uploads/2019/09/a00651_01.jpg"
               alt=""
             />

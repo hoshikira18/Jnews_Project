@@ -23,7 +23,7 @@ export default function CulturePart() {
             </a>
           </div>
           <div className="grid grid-rows-2 lg:gap-2 gap-3">
-            <div className="bg-blue-50 ">
+            <div className="bg-gray-900 ">
               <div className="bg-blue-200 w-full lg:h-auto h-[400px] relative">
                 <div className=" bottom-0 z-10 absolute lg:pl-2 pl-4 lg:h-[50px] md:h-[65px] h-[80px] bg-gradient-to-t from-[rgba(164,13,126,0.5)] to-[rgba(240,191,224,0.2)] w-full lg:text-base md:text-xl text-3xl  text-white">
                   静岡県の「河津桜」がきれいに咲いて大勢の人が楽しむ
@@ -44,7 +44,7 @@ export default function CulturePart() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
-              <div className="bg-blue-200">
+              <div className="bg-gray-900">
                 <div className="bg-blue-200 relative">
                   <div className="bottom-0 z-10 absolute pl-2  lg:h-[50px] md:h-[65px] h-[80px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl  text-white">
                     おもてなし日本の代表する文化
@@ -64,7 +64,7 @@ export default function CulturePart() {
                   </a>
                 </div>
               </div>
-              <div className="bg-blue-400">
+              <div className="bg-gray-900">
                 <div className="bg-blue-200 relative">
                   <div className=" bottom-0 z-10 absolute pl-2 lg:h-[50px] md:h-[65px] h-[80px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl text-white">
                     独自のクリスマス
@@ -107,7 +107,7 @@ export default function CulturePart() {
                       style={{
                         backgroundImage: `url(https://readyfor.jp/s3/readyfor-img/project_photos/13349/medium/faf2abb14ad2fa54665825f9f50e5a66b746c2cf.jpg?1501390035)`,
                       }}
-                      className="  lg:h-[230px] h-[410px] bg-center bg-cover hover:scale-110 transition-all duration-500 ease-in-out bg-no-repeat"
+                      className=" lg:h-[230px] h-[410px] bg-center bg-cover hover:scale-110 transition-all duration-500 ease-in-out bg-no-repeat"
                     ></div>
                   </div>
                 </a>
@@ -129,7 +129,7 @@ export default function CulturePart() {
                         style={{
                           backgroundImage: `url(https://imgcp.aacdn.jp/img-a/800/auto/aa/gm/article/4/7/6/2/8/1/201808140216/on1s.jpg)`,
                         }}
-                        className="  lg:h-[230px] h-[410px] bg-center bg-cover hover:scale-110 transition-all duration-500 ease-in-out bg-no-repeat"
+                        className=" lg:h-[230px] h-[410px] bg-center bg-cover hover:scale-110 transition-all duration-500 ease-in-out bg-no-repeat"
                       ></div>
                     </div>
                   </a>
@@ -160,7 +160,7 @@ export default function CulturePart() {
           </div>
           <div className="bg-blue-200 ">
             <div className="bg-blue-200 relative">
-              <div className="bottom-0 z-10 absolute lg:pl-2 pl-3 lg:pr-2 pr-3 lg:h-[100px] md:h-[135px] h-[145px] lg:text-base md:text-xl text-3xl bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
+              <div className=" bottom-0 z-10 absolute lg:pl-2 pl-3 lg:pr-2 pr-3 lg:h-[100px] md:h-[135px] h-[145px] lg:text-base md:text-xl text-3xl bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                 <h1 className='lg:text-xl md:text-2xl text-4xl'>日本食</h1>
                 <p>
                   海外で人気の日本食はお寿司や天ぷら、すき焼きなどです。また、日本の伝統的な懐石料理や郷土料理も海外で人気があります。日本食は、日本独特の味付けや盛りつけが魅力です.

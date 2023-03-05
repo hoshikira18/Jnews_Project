@@ -10,49 +10,43 @@ import Scrollbackbutton from "../components/Scrollbackbutton";
 import "../javascripts/style.css";
 export default function Culture() {
   return (
-    <div className="h-[40000px] bg-white">
+    <div className="h-[40000px] bg-white dark:bg-gray-900 ">
       <BreadCrumb />
 
       {/* <!-- Văn hóa --> */}
-      <div id="1">
-        <div className="lg:h-[51.2px] md:h-[60px] h-[95px]  relative ">
-          <h1 className=" absolute hover:text-blue-600 top-3 left-7 font-bold lg:text-xl md:text-3xl text-6xl ">
-            Văn Hóa
-          </h1>
-        </div>
+      <div id="vanhoa">
+        <h1 className=" hover:text-blue-600 pl-7 font-bold text-2xl dark:text-gray-200  py-[9px]">
+          Văn Hóa
+        </h1>
+        
         <CulturePart />
       </div>
       <div className="h-7"></div>
       {/* <!-- Am thuc  --> */}
-      <div id="2">
-        <div className="lg:h-[49px] md:h-[90px] h-[110px] relative">
-          <h1 className=" absolute hover:text-blue-600 top-2 left-7 font-bold lg:text-xl md:text-3xl text-6xl">
-            Ẩm thực
-          </h1>
-        </div>
+      <div id="amthuc" className="pt-11">
+        <h1 className="  hover:text-blue-600   pl-7 font-bold lg:text-2xl md:text-3xl text-6xl dark:text-gray-200 py-[9px]">
+          Ẩm thực
+        </h1>
+        
         <ExpandCard />
       </div>
       {/* <!-- Trang phuc --> */}
-      <div id="3" className="h-[700px] ">
-        <div className="h-[49px] relative">
-          <h1 className="  absolute hover:text-blue-600 top-3 left-7 font-bold lg:text-xl md:text-3xl text-6xl">
-            Trang Phục
-          </h1>
-        </div>
-        <div className=' overflow-auto '>
-          <div className='md:overflow-x-scroll md:w-[8000px] lg:w-full'>
+      <div id="trangphuc" className="h-[700px] pt-11 ">
+        <h1 className="   hover:text-blue-600 pl-7 font-bold lg:text-xl md:text-3xl text-2x6xl dark:text-ray-200 py-[9px]">
+          Trang Phục
+        </h1>
+
+       
             <Slider />
           </div>
-        </div>
-      </div>
+
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="4" className="h-[1000px]">
-        <div className="h-[60px] relative ">
-          <h1 className="  absolute hover:text-blue-600 my-auto left-7 font-bold lg:text-xl md:text-3xl text-6xl">
-            Lễ Hội
-          </h1>
-        </div>
+      <div id="lehoi" className="h-[1000px] ">
+        <h1 className="   hover:text-blue-600  pl-7 font-bold lg:text-xl md:text-3xl text-6xl  dark:text-ray-200 py-[9px]">
+          Lễ Hội
+        </h1>
+
         <ScrollTimeline />
       </div>
 
