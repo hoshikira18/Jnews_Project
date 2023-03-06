@@ -5,37 +5,37 @@ import { Back } from "../javascripts/Slider";
 
 export default function () {
   return (
-    <div className="slide rounded overflow-hidden relative">
+    <div className="slide rounded lg:overflow-hidden relative pt-3 overflow-x-scroll">
       <div className="dieuhuong text-6xl flex ">
         <div
           className="absolute top-1/2 -translate-y-1/2 cursor-pointer opacity-60 transition-all
-          dark:text-white hover:scale-125 bg-opacity-50 dark:hover:text-blue-700 z-50 "
+          dark:text-white hover:scale-125 bg-opacity-50 dark:hover:text-blue-700 z-50 lg:block hidden "
           onClick={Back}
         >
           <AiOutlineDoubleLeft />
         </div>
         <div
           className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer opacity-60 transition-all 
-          dark:text-white hover:scale-125 dark:hover:text-blue-700 bg-opacity-50 z-50  "
+          dark:text-white hover:scale-125 dark:hover:text-blue-700 bg-opacity-50 z-50 lg:block hidden "
           onClick={Next}
         >
           <AiOutlineDoubleRight />
         </div>
       </div>
-      <div className="chuyen-slide w-[7000px] float-left flex transition-all ease-in duration-500 ">
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="item sm:w-[550px] sm:h-[350px] absolute top-14 left-[10vw] hover:translate-">
+      <div className="chuyen-slide md:w-[5008px] w-[7000px] float-left flex transition-all ease-in duration-500 ">
+        <div className=" flex lg:w-[1252px] md:w-[1200px] w-[1252px] h-[520px] relative">
+          <div className=" sm:w-[550px] sm:h-[350px] absolute top-14 left-[10vw] hover:translate-">
             <img
-              className="w-full h-full border-r-2 border-x-rgba(220,206,197,0.5) rounded-[30px]"
+              className="ele-1 w-full h-full border-r-2 border-x-rgba(220,206,197,0.5) rounded-[30px]"
               src="https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/5622/%E2%91%A2Guide_2020%2C4Q_34_3.jpg"
               alt=""
             />
           </div>
-          <div className="item w-[550px] h-[350px] absolute bg-[rgba(220,206,197,1)] bottom-10 right-[7vw] rounded-[30px]">
+          <div className="ele-1 md:w-[550px] w-[500px] md:h-[350px] h-[400px] absolute bg-[rgba(220,206,197,1)] bottom-10 right-[7vw] rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-4 pb-3">
               浴衣
             </h1>
-            <p className="px-8 dark:text-white">
+            <p className="ele-1 px-8 dark:text-white">
               <ul className="mb-1 text-sm">
                 浴衣とは、夏に着用する薄手の着物です。昔は、入浴後に着用する部屋着であり、寝巻きとしても身に着けられていました。現在は、花火大会や夏祭りに浴衣を着用します。
               </ul>
@@ -49,19 +49,19 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="w-[550px] h-[350px] absolute top-14 right-[10vw] ">
+        <div className=" flex lg:w-[1252px] w-[1200px] h-[520px] relative">
+          <div className="ele-2 w-[550px] h-[350px] absolute top-14 right-[10vw] ">
             <img
               className="w-full h-full border-r-2 border-r-[rgba(211,65,117,0.5)] rounded-[30px]"
               src="https://studio-foret.jp/wp-content/uploads/2020/03/DSC_7583-e1592810518378.jpg"
               alt=""
             />
           </div>
-          <div className="w-[460px] h-[300px] absolute bg-[rgb(214,89,133)] bottom-8 left-[12vw] rounded-[30px]">
+          <div className="ele-2 w-[460px] md:h-[300px] h-[380px] absolute bg-[rgb(214,89,133)] bottom-8 left-[10vw] rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-6 pb-3">
             袴
             </h1>
-            <p className="px-8 dark:text-white">
+            <p className="ele-2 px-8 dark:text-white">
               <ul className="mb-3 text-sm">
               袴とは、洋服でいうズボンのようなもので、着物の上から下半身に履きます。 
               </ul>
@@ -74,19 +74,19 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="w-[550px] h-[350px] absolute top-12 left-[13vw] ">
+        <div className="flex lg:w-[1252px] w-[1200px] h-[520px] relative">
+          <div className="ele-3 md:w-[550px] w-[400px] md:h-[350px] h-[400px] absolute top-12 left-[13vw] ">
             <img
-              className="w-full h-full border-r-2 border-x-[rgba(67,126,156,0.5)] rounded-[30px]"
+              className=" w-full h-full border-r-2 border-x-[rgba(67,126,156,0.5)] rounded-[30px]"
               src="https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/5622/%E2%91%A2Guide_2020%2C4Q_34_4.jpg?fbclid=IwAR0Dqwy4n53Dbx5s-ThY3gHp8rL1RZSaSGbKFxfWhlyHRVTRVqy_20uU1kQ"
               alt=""
             />
           </div>
-          <div className="w-[550px] h-[350px] absolute bg-[rgb(67,126,156)] bottom-10 right-10 rounded-[30px]">
+          <div className="ele-3 w-[550px] h-[350px] absolute bg-[rgb(67,126,156)] bottom-10 right-10 rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-4 pb-3">
             甚平
             </h1>
-            <p className="px-8 dark:text-white">
+            <p className="ele-3 px-8 dark:text-white">
               <ul className="mb-1 text-sm">
               甚平とは、男性や子どもが着用する和装の室内着です。主に、夏に着用するため、半袖半ズボン仕様になっています。また、通気性の良い綿や麻の素材が使われているのも特徴です。現在は、縁日や花火大会で着用されています。
               </ul>
@@ -96,19 +96,19 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="w-[550px] h-[350px] absolute top-14 right-20 ">
+        <div className=" flex lg:w-[1252px] w-[1200px] h-[520px] relative">
+          <div className="ele-4 w-[550px] h-[350px] absolute top-14 right-20 ">
             <img
               className="w-full h-full border-r-2 border-x-[rgba(247,147,176,0.5)] rounded-[30px]"
               src=" https://tabiiro.jp/lpimg/leisure/206437/main/img1.jpg "
               alt=""
             />
           </div>
-          <div className="w-[550px] h-[350px] absolute bg-[rgb(247,147,176)] bottom-6 left-40 rounded-[30px]">
+          <div className="ele-4 w-[550px] h-[350px] absolute bg-[rgb(247,147,176)] bottom-6 left-48 rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-4 pb-3">
             着物
             </h1>
-            <p className="px-8 dark:text-white">
+            <p className=" ele-4 px-8 dark:text-white">
               <ul className="mb-1 text-sm">
               着物の起源は、弥生時代に袖の小さい「小袖」という衣服が民衆の間でひろまり、平安時代以降に着物文化が発展していきました。
               </ul>

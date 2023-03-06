@@ -20,6 +20,7 @@ export default function Culture() {
         <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
           {t("content.phongtuc")}
         </h1>
+        
         <CulturePart />
       </div>
       <div className="h-7"></div>
@@ -37,8 +38,9 @@ export default function Culture() {
           {t("content.trangphuc")}
         </h1>
 
-        <Slider />
-      </div>
+       
+            <Slider />
+          </div>
 
       {/* <!-- Lễ Hội  --> */}
       <div id="lehoi" className=" pb-20">
