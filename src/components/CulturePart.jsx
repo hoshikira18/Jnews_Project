@@ -90,7 +90,7 @@ export default function CulturePart() {
 
         <div className=" grid h-[450px] w-full grid-cols-2 gap-2 mt-4">
           <div className="grid grid-rows-2 gap-2 ">
-            <div className="bg-blue-50 ">
+            <div className="bg-gray-900 ">
               <div className="bg-blue-200 relative">
                 <div className=" bottom-0 z-10 absolute pl-2  h-[80px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                   <h1>神社仏閣</h1>
@@ -114,8 +114,8 @@ export default function CulturePart() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
-              <div className="bg-blue-200">
-                <div className="bg-blue-200 relative">
+              <div className="bg-gray-900">
+                <div className="bg-gray-900 relative">
                   <div className=" bottom-0 z-10 absolute pl-2  h-[80px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                     <h1>温泉</h1>
                     <p>温泉とは、地下から湧き出した温水のことです。</p>
@@ -135,7 +135,7 @@ export default function CulturePart() {
                   </a>
                 </div>
               </div>
-              <div className="bg-blue-400">
+              <div className="bg-gray-900">
                 <div className="bg-blue-200 relative">
                   <div className=" bottom-0 z-10 absolute pl-2  h-[80px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                     <h1>書道</h1>
@@ -158,7 +158,7 @@ export default function CulturePart() {
               </div>
             </div>
           </div>
-          <div className="bg-blue-200 ">
+          <div className="bg-gray-900 ">
             <div className="bg-blue-200 relative">
               <div className=" bottom-0 z-10 absolute pl-2 h-[100px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                 <h1>日本食</h1>
