@@ -14,10 +14,10 @@ export default function Culture() {
     <div className="h-[40000px] bg-white dark:bg-gray-900 ">
       <BreadCrumb />
 
-      {/* <!-- Văn hóa --> */}
+      {/* <!-- Phong tục--> */}
       <div id="vanhoa">
         <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
-          Văn Hóa
+        税関
         </h1>
         <CulturePart />
       </div>
@@ -25,7 +25,7 @@ export default function Culture() {
       {/* <!-- Am thuc  --> */}
       <div id="amthuc" className="pt-11">
         <h1 className="  py-[9px]   pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          Ẩm thực
+          和食
         </h1>
 
         <ExpandCard />
@@ -33,7 +33,7 @@ export default function Culture() {
       {/* <!-- Trang phuc --> */}
       <div id="trangphuc" className="h-[700px] pt-11 ">
         <h1 className="   py-[9px] pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          Trang Phục
+          衣服
         </h1>
 
         <Slider />
@@ -42,7 +42,7 @@ export default function Culture() {
       {/* <!-- Lễ Hội  --> */}
       <div id="lehoi" className="h-[1000px] ">
         <h1 className="   py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
-          Lễ Hội
+        祭日／祝日
         </h1>
 
         <ScrollTimeline />
