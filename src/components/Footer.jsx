@@ -9,20 +9,20 @@ function Footer() {
           <a href="https://flowbite.com/" className="flex items-center">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-4 h-10 sm:mr-3 sm:h-8"
+              className="mr-4 h-7 sm:mr-3 sm:h-8"
               alt=" Logo"
             />
-            <span className="self-center whitespace-nowrap text-5xl font-semibold dark:text-white sm:text-4xl">
+            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white sm:text-4xl">
               Jnews
             </span>
           </a>
         </div>
         <div className="grid grid-cols-2 gap-1 pl-2 dark:text-white sm:gap-3 md:gap-6 lg:grid-cols-3 lg:gap-x-[100px]">
           <div>
-            <h2 className="mb-6 text-3xl font-bold uppercase dark:text-white sm:text-xl md:text-sm">
+            <h2 className="mb-6 text-lg font-bold uppercase dark:text-white sm:text-xl md:text-sm">
               Members
             </h2>
-            <ul className="md:text-md text-2xl dark:text-gray-400 sm:text-lg">
+            <ul className="md:text-md text-sm dark:text-gray-400 sm:text-lg">
               <li>Đức Hiệp</li>
               <li>Sơn Tùng</li>
               <li>Hồng Phong</li>
@@ -32,11 +32,11 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-3xl font-bold uppercase dark:text-white sm:text-xl md:text-sm">
+            <h2 className="text-lg font-bold uppercase dark:text-white sm:text-xl md:mb-6 md:text-sm">
               Connected pages
             </h2>
-            <ul className="md:text-md text-xl dark:text-gray-400 sm:text-lg">
-              <li className="mb-4">
+            <ul className="md:text-md text-sm dark:text-gray-400 sm:text-lg">
+              <li className="md:mb-4">
                 <a href="src/pages/Home.jsx" className="hover:underline">
                   Jnews
                 </a>
@@ -50,10 +50,10 @@ function Footer() {
           </div>
           <div className="md:hidden"></div>
           <div>
-            <h2 className="mb-6 pt-5 text-3xl font-bold uppercase dark:text-white sm:pt-0 sm:text-xl md:text-sm">
-              Contact
+            <h2 className="pt-5 text-lg font-bold uppercase dark:text-white sm:pt-0 sm:text-xl md:mb-6 md:text-sm">
+              Contact us
             </h2>
-            <ul className="md:text-md text-xl dark:text-gray-400 sm:text-lg" s>
+            <ul className="md:text-md text-sm dark:text-gray-400 sm:text-lg" s>
               <li>Leader: Trần Văn Khuyến</li>
               <li>SĐT: 0919707102</li>
             </ul>
@@ -62,7 +62,7 @@ function Footer() {
       </div>
       <hr className="my-6 border-2 border-black dark:border-gray-700 sm:mx-auto lg:my-8" />
       <div className="grid grid-cols-2 lg:grid-cols-3 ">
-        <span className="text-base dark:text-gray-400 sm:text-center md:text-sm">
+        <span className="text-xs dark:text-gray-400 sm:text-center md:text-sm">
           © 2023{" "}
           <a href="" className="hover:underline">
             Team5™
@@ -70,14 +70,14 @@ function Footer() {
           . All Rights Reserved.
         </span>
         <div>
-          <h1 className="text-center text-xl font-semibold dark:text-gray-400 sm:text-lg md:text-sm">
+          <h1 className="text-center text-xs font-semibold dark:text-gray-400 sm:text-lg md:text-sm">
             Thanks for reading & have a nice day!
           </h1>
         </div>
         <div className="hidden lg:block">
           <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <a
-              href="#"
+              href="https://www.facebook.com/devK1803"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -127,7 +127,7 @@ function Footer() {
               <span class="sr-only">Twitter page</span>
             </a>
             <a
-              href="#"
+              href="https://github.com/tranvankhuyen/Jnews_Project"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg

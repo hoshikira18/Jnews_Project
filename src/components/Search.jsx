@@ -15,7 +15,7 @@ function Search() {
 
   return (
     <form
-      className="w-1/2 px-4 lg:flex lg:items-center"
+      className="min-[320px]:w-full min-[320px]:py-2 lg:flex lg:w-1/2 lg:items-center lg:px-4 lg:py-0"
       onSubmit={handleSearch}
     >
       <label

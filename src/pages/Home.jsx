@@ -227,9 +227,6 @@ function Home() {
         </div>
         <div className="box-border w-1/3 px-4 sm:hidden lg:col-span-1 lg:block">
           <Rankingboard />
-          <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:block lg:block">
-            <div className="h-full w-full bg-gray-100 dark:bg-gray-400"></div>
-          </div>
         </div>
       </div>
 

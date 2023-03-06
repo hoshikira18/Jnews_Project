@@ -64,7 +64,7 @@ function SliderAuto() {
   // console.log(posts);
 
   return !posts.length ? (
-    <div></div>
+    <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
     <div className="relative m-auto h-[400px] w-full max-w-[1400px]">
       <div

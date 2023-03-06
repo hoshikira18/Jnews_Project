@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
 function Scrollback() {
   const [backToTopButton, setBackToTopButon] = useState(false);
 
@@ -14,17 +15,17 @@ function Scrollback() {
   }, []);
 
   if (backToTopButton) {
-    // console.log("test");
+    console.log("test");
     return (
       <div style={{ backgroundColor: "white" }}>
         <button
-          className="rounded-full border border-[#ccc] bg-white motion-safe:hover:scale-110 "
+          className="relative flex items-center justify-between rounded-full border border-[#ccc] bg-white hover:border-2 motion-safe:hover:scale-110 dark:border-blue-800 dark:bg-slate-300"
           style={{
             position: "fixed",
             bottom: "50px",
             right: "50px",
-            height: "50px",
-            width: "50px",
+            height: "65px",
+            width: "65px",
           }}
           onClick={() => {
             window.scrollTo({
@@ -33,7 +34,10 @@ function Scrollback() {
             });
           }}
         >
-          ^
+          <div className="absolute top-1/2 left-6 -translate-y-1/2 cursor-pointer ">
+            {" "}
+            <AiOutlineArrowUp />{" "}
+          </div>
         </button>
       </div>
     );

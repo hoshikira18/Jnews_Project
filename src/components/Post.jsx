@@ -4,52 +4,86 @@ import { GoPrimitiveDot } from "react-icons/go";
 import useQueryPost from "../hook/useQueryPost";
 import { getPosts } from "../graphql/queries";
 import News from "../components/News";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import ReactPaginate from "react-paginate";
+import { useState } from "react";
 const Post = ({ post }) => {
   const { posts, error } = useQueryPost({ func: getPosts });
 
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(9);
+
+  // ...
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = ({ selected }) => {
+    setCurrentPage(selected + 1);
+  };
+
   return !posts.length ? (
-    <div></div>
+    <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
-    <div className="">
-      <div className="topic flex items-center bg-gray-50 p-4 dark:bg-gray-900 dark:text-blue-400">
-        <MdKeyboardArrowRight />
-        <p className="">{post.topic}</p>
-      </div>
-      <div className="flex w-full justify-center p-4">
-        <img className="w-[60%]" src={post.image.url} alt="" />
-      </div>
-
-      <div className="mx-auto w-[900px] bg-white p-4 pb-40 dark:bg-gray-800 dark:text-white">
-        <div className="title">
-          <h1 className="text-4xl font-bold lg:p-4">{post.title}</h1>
+    <div className="flex flex-col items-center">
+      <div className="sm:w-screen lg:w-[70%]">
+        <div className="topic flex items-center bg-gray-50 p-4 dark:bg-gray-900 dark:text-blue-400 ">
+          <MdKeyboardArrowRight />
+          <p className="">{post.topic}</p>
         </div>
-        <div className="date flex items-center lg:p-4">
-          <GoPrimitiveDot />
-          <p className="px-2">{post.time}</p>
+        <div className="flex w-full justify-center p-4">
+          <img className="min-[300px]:w-[100%]" src={post.image.url} alt="" />
         </div>
-        <div
-          className="content lg:p-4"
-          dangerouslySetInnerHTML={{ __html: post.content.html }}
-        ></div>
-      </div>
-      <div className="flex bg-gray-50 dark:bg-gray-900">
-        <div className="rcm-news p-4 md:w-full lg:w-2/3">
-          <p className="p-4 text-3xl font-bold text-slate-500">
-            Recommend for you
-          </p>
 
-          <div>
-            {posts.map((post) => {
-              return (
-                <div>
-                  <News post={post} />
-                </div>
-              );
-            })}
+        <div className="mx-auto bg-white p-4 pb-40 dark:bg-gray-800 dark:text-white min-[300px]:w-screen lg:w-[900px]">
+          <div className="title">
+            <h1 className="text-4xl font-bold lg:p-4">{post.title}</h1>
           </div>
+          <div className="date flex items-center lg:p-4">
+            <GoPrimitiveDot />
+            <p className="px-2">{post.time}</p>
+          </div>
+          <div
+            className="content lg:p-4"
+            dangerouslySetInnerHTML={{ __html: post.content.html }}
+          ></div>
         </div>
-        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:block lg:block">
-          <div className="h-full w-full bg-gray-100 dark:bg-gray-400"></div>
+      </div>
+      <div className="posts flex flex-col pt-10 sm:w-full lg:w-2/3">
+        <div className="flex items-center px-4">
+          <h1 className="font-bold dark:text-white ">Gợi ý cho bạn</h1>
+        </div>
+        <div className="w-full px-4">
+          {currentPosts.map((post) => {
+            return (
+              <div>
+                <News post={post} />
+              </div>
+            );
+          })}
+          <div className="paging pb-10">
+            <ReactPaginate
+              breakLabel={<div className="mr-3"> . . . </div>}
+              pageRangeDisplayed={3}
+              onPageChange={paginate}
+              pageCount={Math.ceil(posts.length / postsPerPage)}
+              previousLabel={
+                <div className="mr-3 flex h-8 w-8 items-center justify-center bg-gray-400">
+                  <BsChevronLeft className="flex items-center justify-center text-gray-600" />
+                </div>
+              }
+              nextLabel={
+                <div className="ml-3 flex h-8 w-8 items-center justify-center bg-gray-400">
+                  <BsChevronRight className="flex items-center justify-center text-gray-600" />
+                </div>
+              }
+              containerClassName="flex justify-center items-center"
+              pageClassName="w-8 h-8 rounded mr-1"
+              activeClassName="bg-gray-400 text-white"
+              pageLinkClassName="padding-10 w-8 h-8 flex justify-center items-center rounded hover:bg-gray-400 hover:text-white"
+            />
+          </div>
         </div>
       </div>
     </div>

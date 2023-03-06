@@ -7,7 +7,7 @@ function SearchResult() {
   const { posts, error } = useQueryPost({ func: getPostsBySearch });
   console.log(posts);
   return !posts.length ? (
-    <div></div>
+    <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
     <div className="min-h-screen">
       <div className="flex h-16 items-center py-2">

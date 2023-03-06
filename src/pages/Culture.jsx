@@ -7,19 +7,18 @@ import Slider from "../components/Slider";
 import BreadCrumb from "../components/BreadCrumb";
 import CulturePart from "../components/CulturePart";
 import Scrollbackbutton from "../components/Scrollbackbutton";
-// import ScrollTimeline from "../components/ScrollTimeline";
 import { useTranslation } from "react-i18next";
 
 export default function Culture() {
   const { t } = useTranslation();
   return (
-    <div className="h-[40000px] bg-white dark:bg-gray-900 ">
+    <div className="min-h-screen bg-white dark:bg-gray-900 ">
       <BreadCrumb />
 
       {/* <!-- Phong tục--> */}
       <div id="vanhoa">
         <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
-          {t("content.vanhoa")}
+          {t("content.phongtuc")}
         </h1>
         <CulturePart />
       </div>
@@ -42,8 +41,8 @@ export default function Culture() {
       </div>
 
       {/* <!-- Lễ Hội  --> */}
-      <div id="lehoi" className="h-[1000px] ">
-        <h1 className="   py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
+      <div id="lehoi" className=" pb-20">
+        <h1 className="py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
           {t("content.lehoi")}
         </h1>
 
@@ -52,10 +51,6 @@ export default function Culture() {
 
       {/* <!-- .........................................................Footer ..............................................................--> */}
 
-      <footer className="h-56 ">
-        <Footer />
-      </footer>
-      <div className="h-96"></div>
       <Scrollbackbutton />
     </div>
   );

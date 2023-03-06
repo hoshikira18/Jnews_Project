@@ -34,7 +34,7 @@ function Header() {
       </Link>
       {/* Hamburger */}
       <button
-        className="hamburger mr-10 text-4xl dark:text-white lg:hidden"
+        className="hamburger z-10 mr-10 text-4xl dark:text-white lg:hidden"
         onClick={() => {
           document.querySelector(".Nav").classList.toggle("min-[320px]:hidden");
         }}
@@ -42,7 +42,7 @@ function Header() {
         <HiOutlineMenu className="" />
       </button>
 
-      <div className="Nav flex dark:bg-gray-800 min-[320px]:fixed min-[320px]:top-16 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 lg:absolute lg:top-0 lg:right-0 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
+      <div className="Nav flex dark:bg-gray-800 min-[320px]:fixed min-[320px]:top-0 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:h-screen min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 min-[320px]:px-8 min-[320px]:pt-16 lg:absolute lg:top-0 lg:right-0 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
         {/* JNews, Culture */}
         <div className="flex min-[320px]:flex-col lg:relative lg:flex-row lg:items-center">
           <div
@@ -52,7 +52,7 @@ function Header() {
           >
             <button
               id="dropdownHoverButton"
-              class="min-[320px]:text-md flex justify-center after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-gray-700 lg:h-20 lg:w-20"
+              class="min-[320px]:justtify-start fter:absolute flex after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-xl min-[320px]:text-gray-700 min-[320px]:after:bottom-[-50px] lg:h-20 lg:w-20 lg:justify-center lg:text-[20px] lg:after:bottom-0"
             >
               Jnews{" "}
             </button>
@@ -84,11 +84,11 @@ function Header() {
               </ul>
             </div>
           </div>
-          <div className="min-[320px]:flex min-[320px]:h-12 min-[320px]:items-center lg:h-full">
+          <div className="min-[320px]:pya-2 min-[320px]:flex min-[320px]:h-12 min-[320px]:items-center lg:h-full">
             <Link
               to="/culture"
               element={Culture}
-              className="text-md after: flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300"
+              className="flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 min-[320px]:text-xl min-[320px]:after:bottom-[-50px] lg:text-[20px] lg:after:bottom-0"
             >
               Culture
             </Link>
@@ -99,11 +99,11 @@ function Header() {
 
         <Search />
 
-        <button className="flex items-center pr-4 min-[320px]:hidden lg:block">
+        <button className="flex items-center pr-4 min-[320px]:absolute min-[320px]:top-4 lg:relative lg:top-0 lg:block">
           <ButtonDarkmode />
         </button>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 min-[320px]:absolute min-[320px]:top-4 min-[320px]:left-20 lg:relative lg:left-0 lg:top-0">
           <select
             onChange={changeLanguage}
             class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"

@@ -22,7 +22,7 @@ function Rankingboard() {
     <div class="h-auto w-full pb-24 min-[300px]:hidden md:mx-5 lg:mx-2 lg:block  ">
       <div class="flex h-auto  w-full items-center py-4 pr-10 sm:pr-0 lg:h-10 lg:w-5/6 ">
         <span class="text-6x font-bold dark:text-slate-200 md:text-4xl lg:text-2xl">
-          Reading ranking
+          Bảng xếp hạng
         </span>
       </div>
       {/* <hr class="my-12 mx-16 flex w-5/6 justify-center border-2 border-gray-700 md:my-4 md:border lg:mx-0" /> */}
@@ -46,18 +46,6 @@ function Rankingboard() {
             })}
           </div>
         </div>
-        <button
-          onClick={Showmore}
-          class="inline-flex h-24 w-full items-center justify-center rounded-sm bg-gray-900 text-gray-400 hover:bg-gray-700 hover:text-white dark:border dark:border-t-2 dark:border-black md:h-20 lg:h-11"
-        >
-          <h1 class="text-4xl font-semibold lg:text-lg">{">"}</h1>
-          <span
-            id="button"
-            class="px-1 pt-[2px] text-4xl font-medium md:text-2xl lg:text-sm lg:font-light"
-          >
-            Show more
-          </span>
-        </button>
       </div>
     </div>
   );
