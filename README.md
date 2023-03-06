@@ -3,7 +3,7 @@ Jnews_Project is a website that serves as a bridge to help people in Vietnam qui
 ![image](https://user-images.githubusercontent.com/111911502/223172677-994cb4e7-580a-446b-8e90-636bfa8f5b23.png)
 ![image](https://user-images.githubusercontent.com/111911502/223173019-a0716c06-296b-407b-94d6-97253c6e6132.png)
 
-## Installation
+## Installation Instructions
 To install the app, use the package manager npm:
 ```
 	npm install --legacy-peer-deps
@@ -11,6 +11,19 @@ To install the app, use the package manager npm:
 To run the app in development mode, open http://localhost:3000 in your browser:
 ```
 	npm run start
+```
+## Installation
+1. Clone the project from Github:
+```
+	git clone https://github.com/tranvankhuyen/Jnews_Project.git
+```
+2. Navigate to the project directory:
+```
+	cd Jnews_Project
+```
+3. Install the dependencies:
+```
+	npm install --legacy-peer-deps
 ```
 ## Contribution Guidelines
    Please refer to https://www.nhk.or.jp/ for contribution guidelines.
