@@ -21,11 +21,23 @@ To run the app in development mode, open http://localhost:3000 in your browser:
 
 ## Contact
 Leader: Tran Van Khuyen _ Phone number: 0919707102
+~~~
+~~~
 Teamate:
+~~~
+~~~
 Pham Hong Phong
+~~~
+~~~
 Cao Duc Hiep
+~~~
+~~~
 Ton Manh Kien
+~~~
+~~~
 Vu Son Tung
+~~~
+~~~
 Nguyen Tra My
 
 # Deploy
