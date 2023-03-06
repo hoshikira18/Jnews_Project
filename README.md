@@ -30,6 +30,7 @@ To run the app in development mode, open http://localhost:3000 in your browser:
 
 ## Known Issues
    Jnews Page does not support multiple languages
+   
    Jnews Page posts have not been translated into Vietnamese.
 
 ## Contact
