@@ -16,6 +16,7 @@ class DemoKeyboard extends Component {
           this.sendIndex(index);
         }}
         enableMouseEvents
+        className="sm:overflow-x-scroll"
       >
         <div className="h-[500px] relative ">
           <div className=" w-full h-[230px] bottom-[20%] bg-gradient-to-r from-[rgba(221,113,103,0.5)] to-[rgba(180,31,17,0.5)] absolute">
@@ -105,7 +106,7 @@ class DemoKeyboard extends Component {
         </div>
 
         <div className="h-[500px] relative ">
-          <div className=" w-full h-[230px] bottom-[20%] bg-gradient-to-r from-[rgba(117,122,4,0.5)] to-[rgba(238,232,188,0.5)] absolute">
+           <div className=" w-full h-[230px] bottom-[20%] bg-gradient-to-r from-[rgba(117,122,4,0.5)] to-[rgba(251,121,0,0.5)] absolute"> {/*doimau */}
 
           </div>
           <div className="w-[650px] h-[450px] right-[10%] absolute">
@@ -130,7 +131,7 @@ class DemoKeyboard extends Component {
         </div>
 
         <div className="h-[500px] relative ">
-          <div className=" w-full h-[230px] bottom-[20%] bg-gradient-to-r from-[rgba(238,232,188,0.5)] to-[rgba(203,189,162,0.5)] absolute">
+          <div className=" w-full h-[230px] bottom-[20%] bg-gradient-to-r from-[rgba(251,121,0,0.5)] to-[rgba(203,189,162,0.5)] absolute">
 
           </div>
           <div className="w-[650px] h-[450px] right-[10%] absolute">
