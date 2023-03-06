@@ -6,7 +6,7 @@ export default function News({ post }) {
   console.log(post);
   return (
     //  <div className="border-t-4 border-sky-500 h-[230px] w-[750px] bg-slate-200 relative">
-    <div className="my-3 w-[100vw] bg-cyan-200 dark:bg-sky-700 sm:h-[120px] sm:w-full md:h-[200px]">
+    <div className="my-3 bg-cyan-200 dark:bg-sky-700 sm:h-[120px] sm:w-full md:h-[200px]">
       <div
         className=" my-3 flex w-full flex-col border-[2px] border-slate-300 bg-slate-100 py-3 drop-shadow-xl transition-all hover:translate-x-2 hover:translate-y-[-8px] 
                         dark:border-slate-500 dark:bg-gray-700 sm:h-[120px]

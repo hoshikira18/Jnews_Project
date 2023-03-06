@@ -36,7 +36,7 @@ function Home() {
             );
           })}
         </div>
-        <div className="box-border w-1/3 px-4 sm:hidden lg:col-span-1 lg:block">
+        <div className="box-border w-1/3 px-4 hidden lg:col-span-1 lg:block">
           <Rankingboard />
         </div>
       </div>
