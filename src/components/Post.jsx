@@ -48,8 +48,8 @@ const Post = ({ post }) => {
             })}
           </div>
         </div>
-        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4">
-          <div className="h-full w-full bg-gray-500"></div>
+        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:hidden lg:block">
+          <div className="bg-gray-1 00 h-full w-full"></div>
         </div>
       </div>
     </div>

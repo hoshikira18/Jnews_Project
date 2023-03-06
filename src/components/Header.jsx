@@ -24,7 +24,7 @@ function Header() {
           class="min-[320px]:mr-3 min-[320px]:h-9"
           alt="Flowbite Logo"
         />
-        <span class="self-center whitespace-nowrap font-semibold dark:text-white min-[320px]:text-2xl">
+        <span class="self-center whitespace-nowrap font-semibold dark:text-white min-[320px]:text-3xl">
           JNews
         </span>
       </Link>
@@ -38,7 +38,7 @@ function Header() {
         <HiOutlineMenu className="" />
       </button>
 
-      <div className="Nav flex dark:bg-gray-800 min-[320px]:fixed min-[320px]:top-16 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 lg:absolute lg:top-0 lg:right-10 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
+      <div className="Nav flex dark:bg-gray-800 min-[320px]:fixed min-[320px]:top-16 min-[320px]:right-0 min-[320px]:m-auto min-[320px]:hidden min-[320px]:w-1/2 min-[320px]:flex-col min-[320px]:bg-gray-300 min-[320px]:p-4 lg:absolute lg:top-0 lg:right-0 lg:flex lg:h-full lg:flex-row lg:justify-between lg:bg-gray-100 lg:p-0">
         {/* JNews, Culture */}
         <div className="flex min-[320px]:flex-col lg:relative lg:flex-row lg:items-center">
           <div

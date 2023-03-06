@@ -16,17 +16,13 @@ function Rankingboard() {
   }
 
   return (
-    <div class="h-auto w-full pb-24 md:mx-5 lg:mx-6   ">
-      <div class="flex h-auto w-full items-center justify-center pr-10 sm:pr-0 lg:h-10 lg:w-5/6 ">
-        <img
-          class="w-15 mx-4 h-16 md:mx-2 lg:h-7 lg:w-9"
-          src="https://cdn-icons-png.flaticon.com/512/81/81460.png"
-        />
-        <span class="text-center text-6xl font-medium dark:text-slate-200 md:text-4xl lg:text-2xl">
+    <div class="h-auto w-full pb-24 min-[300px]:hidden md:mx-5 lg:mx-2 lg:block  ">
+      <div class="flex h-auto  w-full items-center py-4 pr-10 sm:pr-0 lg:h-10 lg:w-5/6 ">
+        <span class="text-6x font-bold dark:text-slate-200 md:text-4xl lg:text-2xl">
           Reading ranking
         </span>
       </div>
-      <hr class="my-12 mx-16 flex w-5/6 justify-center border-2 border-gray-700 md:my-4 md:border lg:mx-0" />
+      {/* <hr class="my-12 mx-16 flex w-5/6 justify-center border-2 border-gray-700 md:my-4 md:border lg:mx-0" /> */}
       <div class=" h-auto rounded-md border-2 border-[#eee] bg-gray-100 dark:border-black dark:bg-gray-200 md:mx-0 lg:w-5/6 ">
         <div class="grid-rows grid h-auto w-full ">
           <div class="grid h-full w-full grid-rows-5  ">

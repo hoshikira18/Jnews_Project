@@ -15,7 +15,7 @@ function Search() {
 
   return (
     <form
-      className="w-2/3 px-4 lg:flex lg:items-center"
+      className="w-1/2 px-4 lg:flex lg:items-center"
       onSubmit={handleSearch}
     >
       <label

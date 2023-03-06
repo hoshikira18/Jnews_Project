@@ -66,7 +66,7 @@ function SliderAuto() {
   return !posts.length ? (
     <div></div>
   ) : (
-    <div className="relative m-auto h-[450px] w-full max-w-[1400px]">
+    <div className="relative m-auto h-[400px] w-full max-w-[1400px]">
       <div
         style={{ backgroundImage: `url(${posts[currentIndex].image.url})` }}
         className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
@@ -80,10 +80,10 @@ function SliderAuto() {
         <h1 className="text-4xl font-bold">{posts[currentIndex].title}</h1>
       </a>
 
-      <div className="absolute top-[200px] left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white ">
+      <div className="bg-black/15 absolute top-[150px] left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full p-2 text-2xl text-white ">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-      <div className="absolute  top-[200px] right-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
+      <div className="absolute  top-[150px] right-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
     </div>

@@ -9,9 +9,9 @@ function SearchResult() {
   return !posts.length ? (
     <div></div>
   ) : (
-    <div>
-      <div className="flex min-h-screen items-center py-2">
-        <h1 className="font-bold text-white">Search Result</h1>
+    <div className="min-h-screen">
+      <div className="flex h-16 items-center py-2">
+        <h1 className="font-bold dark:text-white">Search Result</h1>
       </div>
       {posts.map((post) => (
         <div>
