@@ -7,8 +7,9 @@ import returncard from "../javascripts/returncard.js";
 // hover:ml-3 hover:bottom-[50%] hover:left-1 hover:rotate-0
 function ExpandCard() {
   return (
-    <div className="background h-96 w-full bg-white dark:bg-gray-900 flex justify-center items-center overflow-x-scroll lg:overflow-hidden">
-      <div className="card-1 mx-4 md:ml-96 lg:ml-0" responsive>
+    <div className="background h-96 w-full bg-white dark:bg-gray-900 flex justify-center items-center overflow-x-scroll lg:overflow-hidden  ">
+      <div className="w-[1000px] h-8 pr-[350px] invisible md:hidden"> nothing here</div>
+      <div className="card-1 ml-96 lg:ml-0" responsive>
         <div
           className="item transition-all duration-200 h-80 w-20 rounded-[25px] brightness-75 relative "
           style={{
@@ -234,6 +235,7 @@ function ExpandCard() {
           ></div>
         </div>
       </div>
+      <div className="w-[1000px] h-8 pl-[20px] invisible md:hidden"> nothing here</div>
       <div className="card-3 mx-4 hidden" responsive>
         <div
           className="item transition-all duration-200 h-80 w-20 rounded-[25px] brightness-75  relative"
