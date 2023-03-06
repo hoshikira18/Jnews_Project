@@ -25,15 +25,15 @@ export default function Culture() {
       <div className="h-7"></div>
       {/* <!-- Am thuc  --> */}
       <div id="amthuc" className="pt-11">
-        <h1 className="  py-[9px]   pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
+        <h1 className="  py-[9px]   pl-7 lg:text-2xl md:text-3xl text-4xl font-bold hover:text-blue-600 dark:text-gray-200">
           和食
         </h1>
 
         <ExpandCard />
       </div>
       {/* <!-- Trang phuc --> */}
-      <div id="trangphuc" className="lg:h-[700px] md:h-[770px] h-[850px] pt-11 ">
-        <h1 className="   py-[9px] pl-7 lg:text-3xl md:text-3xl text-4xl font-bold hover:text-blue-600 dark:text-gray-200">
+      <div id="trangphuc" className="lg:h-[700px] md:h-[700px] h-[850px] pt-11 ">
+        <h1 className="   py-[9px] pl-7 lg:text-2xl md:text-3xl text-4xl font-bold hover:text-blue-600 dark:text-gray-200">
         衣服
         </h1>
 
@@ -43,7 +43,7 @@ export default function Culture() {
 
       {/* <!-- Lễ Hội  --> */}
       <div id="lehoi" className="h-[1000px] ">
-        <h1 className="   py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
+        <h1 className="   py-[9px]  pl-7 lg:text-2xl md:text-3xl text-4xl font-bold  hover:text-blue-600 dark:text-gray-200">
         祭日／祝日
         </h1>
 

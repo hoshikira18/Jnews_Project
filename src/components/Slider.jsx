@@ -5,33 +5,33 @@ import { Back } from "../javascripts/Slider";
 
 export default function () {
   return (
-    <div className="slide rounded overflow-hidden relative">
+    <div className="slide rounded lg:overflow-hidden relative pt-3 overflow-x-scroll">
       <div className="dieuhuong text-6xl flex ">
         <div
           className="absolute top-1/2 -translate-y-1/2 cursor-pointer opacity-60 transition-all
-          dark:text-white hover:scale-125 bg-opacity-50 dark:hover:text-blue-700 z-50 "
+          dark:text-white hover:scale-125 bg-opacity-50 dark:hover:text-blue-700 z-50 lg:block hidden "
           onClick={Back}
         >
           <AiOutlineDoubleLeft />
         </div>
         <div
           className="absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer opacity-60 transition-all 
-          dark:text-white hover:scale-125 dark:hover:text-blue-700 bg-opacity-50 z-50  "
+          dark:text-white hover:scale-125 dark:hover:text-blue-700 bg-opacity-50 z-50 lg:block hidden "
           onClick={Next}
         >
           <AiOutlineDoubleRight />
         </div>
       </div>
-      <div className="chuyen-slide w-[7000px] float-left flex transition-all ease-in duration-500 ">
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="item sm:w-[550px] sm:h-[350px] absolute top-14 left-[10vw] hover:translate-">
+      <div className="chuyen-slide md:w-[4700px] w-[7000px] float-left flex transition-all ease-in duration-500 ">
+        <div className=" flex lg:w-[1252px] md:w-[1200px] w-[1252px] h-[520px] relative">
+          <div className="item sm:w-[550px] sm:h-[350px] h-[440px] absolute top-14 left-[10vw] hover:translate-">
             <img
               className="w-full h-full border-r-2 border-x-rgba(220,206,197,0.5) rounded-[30px]"
               src="https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/5622/%E2%91%A2Guide_2020%2C4Q_34_3.jpg"
               alt=""
             />
           </div>
-          <div className="item w-[550px] h-[350px] absolute bg-[rgba(220,206,197,1)] bottom-10 right-[7vw] rounded-[30px]">
+          <div className="item md:w-[550px] w-[500px] md:h-[350px] h-[400px] absolute bg-[rgba(220,206,197,1)] bottom-10 right-[7vw] rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-4 pb-3">
               浴衣
             </h1>
@@ -49,15 +49,15 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="w-[550px] h-[350px] absolute top-14 right-[10vw] ">
+        <div className=" flex lg:w-[1252px] w-[1200px] h-[520px] relative">
+          <div className="w-[550px] h-[350px] absolute top-14 right-[8vw] ">
             <img
               className="w-full h-full border-r-2 border-r-[rgba(211,65,117,0.5)] rounded-[30px]"
               src="https://studio-foret.jp/wp-content/uploads/2020/03/DSC_7583-e1592810518378.jpg"
               alt=""
             />
           </div>
-          <div className="w-[460px] h-[300px] absolute bg-[rgb(214,89,133)] bottom-8 left-[12vw] rounded-[30px]">
+          <div className="w-[460px] md:h-[300px] h-[380px] absolute bg-[rgb(214,89,133)] bottom-8 left-[8vw] rounded-[30px]">
             <h1 className="text-center dark:text-white font-bold text-2xl pt-6 pb-3">
             袴
             </h1>
@@ -74,8 +74,8 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
-          <div className="w-[550px] h-[350px] absolute top-12 left-[13vw] ">
+        <div className=" flex lg:w-[1252px] w-[1200px] h-[520px] relative">
+          <div className="md:w-[550px] w-[400px] md:h-[350px] h-[400px] absolute top-11 left-[13vw] ">
             <img
               className="w-full h-full border-r-2 border-x-[rgba(67,126,156,0.5)] rounded-[30px]"
               src="https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/5622/%E2%91%A2Guide_2020%2C4Q_34_4.jpg?fbclid=IwAR0Dqwy4n53Dbx5s-ThY3gHp8rL1RZSaSGbKFxfWhlyHRVTRVqy_20uU1kQ"
@@ -96,7 +96,7 @@ export default function () {
             </p>
           </div>
         </div>
-        <div className=" flex w-[1252px] h-[520px] relative">
+        <div className=" flex lg:w-[1252px] w-[1200px] h-[520px] relative">
           <div className="w-[550px] h-[350px] absolute top-14 right-20 ">
             <img
               className="w-full h-full border-r-2 border-x-[rgba(247,147,176,0.5)] rounded-[30px]"
