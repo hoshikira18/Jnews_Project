@@ -52,7 +52,7 @@ function Header() {
           >
             <button
               id="dropdownHoverButton"
-              class="min-[320px]:justtify-start fter:absolute flex after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-xl min-[320px]:text-gray-700 min-[320px]:after:bottom-[-50px] lg:h-20 lg:w-20 lg:justify-center lg:text-[20px] lg:after:bottom-0"
+              class="min-[320px]:justtify-start flex after:absolute after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 dark:hover:text-white min-[320px]:inline-flex min-[320px]:h-12 min-[320px]:w-full min-[320px]:items-center min-[320px]:px-4 min-[320px]:text-center min-[320px]:text-xl min-[320px]:text-gray-700 min-[320px]:after:bottom-[-50px] lg:h-20 lg:w-20 lg:justify-center lg:text-[17px] lg:after:bottom-0"
             >
               Jnews{" "}
             </button>
@@ -88,7 +88,7 @@ function Header() {
             <Link
               to="/culture"
               element={Culture}
-              className="flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 min-[320px]:text-xl min-[320px]:after:bottom-[-50px] lg:text-[20px] lg:after:bottom-0"
+              className="flex w-20 items-center justify-center text-gray-700 after:absolute after:bottom-0 after:h-1.5 after:w-0 after:bg-red-500 after:transition-all after:duration-300 after:content-[''] hover:text-black after:hover:w-20 dark:text-gray-300 min-[320px]:text-xl min-[320px]:after:bottom-[-50px] lg:text-[17px] lg:after:bottom-0"
             >
               Culture
             </Link>
