@@ -11,7 +11,7 @@ const Post = ({ post }) => {
     <div></div>
   ) : (
     <div className="">
-      <div className="topic flex items-center bg-gray-50 p-4 dark:bg-gray-800 dark:text-blue-400">
+      <div className="topic flex items-center bg-gray-50 p-4 dark:bg-gray-900 dark:text-blue-400">
         <MdKeyboardArrowRight />
         <p className="">{post.topic}</p>
       </div>
@@ -48,8 +48,8 @@ const Post = ({ post }) => {
             })}
           </div>
         </div>
-        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:hidden lg:block">
-          <div className="bg-gray-1 00 h-full w-full"></div>
+        <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:block lg:block">
+          <div className="h-full w-full bg-gray-100 dark:bg-gray-400"></div>
         </div>
       </div>
     </div>

@@ -8,8 +8,10 @@ import BreadCrumb from "../components/BreadCrumb";
 import CulturePart from "../components/CulturePart";
 import Scrollbackbutton from "../components/Scrollbackbutton";
 // import ScrollTimeline from "../components/ScrollTimeline";
+import { useTranslation } from "react-i18next";
 
 export default function Culture() {
+  const { t } = useTranslation();
   return (
     <div className="h-[40000px] bg-white dark:bg-gray-900 ">
       <BreadCrumb />
@@ -17,7 +19,7 @@ export default function Culture() {
       {/* <!-- Phong tục--> */}
       <div id="vanhoa">
         <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
-        税関
+          {t("content.vanhoa")}
         </h1>
         <CulturePart />
       </div>
@@ -25,7 +27,7 @@ export default function Culture() {
       {/* <!-- Am thuc  --> */}
       <div id="amthuc" className="pt-11">
         <h1 className="  py-[9px]   pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          和食
+          {t("content.amthuc")}
         </h1>
 
         <ExpandCard />
@@ -33,7 +35,7 @@ export default function Culture() {
       {/* <!-- Trang phuc --> */}
       <div id="trangphuc" className="h-[700px] pt-11 ">
         <h1 className="   py-[9px] pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          衣服
+          {t("content.trangphuc")}
         </h1>
 
         <Slider />
@@ -42,7 +44,7 @@ export default function Culture() {
       {/* <!-- Lễ Hội  --> */}
       <div id="lehoi" className="h-[1000px] ">
         <h1 className="   py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
-        祭日／祝日
+          {t("content.lehoi")}
         </h1>
 
         <ScrollTimeline />

@@ -27,7 +27,7 @@ function Home() {
     setCurrentPage(selected + 1);
   };
   return !posts.length ? (
-    <div></div>
+    <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
     <div className="z-10 w-full pb-10">
       <div class="must-watch mb-5 lg:flex">
@@ -60,56 +60,83 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex h-[400px] px-4 dark:text-white">
-        <div className="w-2/3">
+      <div className="flex  px-4 dark:text-white min-[300px]:flex-col lg:flex-row">
+        <div className="h-[400px] min-[300px]:w-full lg:w-2/3">
           <h1 className="font-bold">Đáng chú ý</h1>
           <div className="flex">
-            <a href={`detail/${posts[10].slug}`} className="w-[45%] py-4 pr-4">
+            <a
+              href={`detail/${posts[10].slug}`}
+              className="w-[45%] py-4 pr-4 min-[300px]:hidden lg:block"
+            >
               <img src={posts[10].image.url} alt="" />
               <div className="py-2 ">
-                <h3 className=" text-sm font-medium">{posts[10].title}</h3>
+                <h3 className=" text-md font-bold">{posts[10].title}</h3>
                 <div className="flex py-1">
                   <p className="px-1 text-sm">{posts[10].topic}</p>
                   <p className="px-1 text-sm"> -{posts[10].time}</p>
                 </div>
               </div>
             </a>
-            <div className="flex w-[55%] flex-col py-4 px-2">
+            <div className="flex h-[400px] flex-col py-4 px-2 min-[300px]:w-full lg:w-[55%]">
               <a
                 href={`detail/${posts[11].slug}`}
-                className="min-h-1/3 relative flex h-1/3 w-full pb-2 "
+                className="min-h-1/3 h-1/3 w-full pb-2 min-[300px]:flex "
               >
-                <img className="h-[70px]" src={posts[11].image.url} alt="" />
+                <img
+                  className="min-[300px]:h-[100px] lg:h-[70px]"
+                  src={posts[11].image.url}
+                  alt=""
+                />
                 <div className="px-2">
-                  <h3 className=" text-sm font-medium">{posts[11].title}</h3>
+                  <h3 className=" min-[300px]:text-md font-bold lg:text-sm">
+                    {posts[11].title}
+                  </h3>
                   <div className="flex py-1">
-                    <p className="px-1 text-sm">{posts[11].topic}</p>
+                    <p className="min-[300px]:text-md px-1 lg:text-sm">
+                      {posts[11].topic}
+                    </p>
                     <p className="px-1 text-sm"> -{posts[11].time}</p>
                   </div>
                 </div>
               </a>
               <a
                 href={`detail/${posts[12].slug}`}
-                className="min-h-1/3 relative flex h-1/3 w-full pb-2 "
+                className="min-h-1/3 h-1/3 w-full pb-2 min-[300px]:flex "
               >
-                <img className="h-[70px]" src={posts[12].image.url} alt="" />
+                <img
+                  className="min-[300px]:h-[100px] lg:h-[70px]"
+                  src={posts[12].image.url}
+                  alt=""
+                />
                 <div className="px-2">
-                  <h3 className=" text-sm font-medium">{posts[12].title}</h3>
+                  <h3 className=" min-[300px]:text-md font-bold lg:text-sm">
+                    {posts[12].title}
+                  </h3>
                   <div className="flex py-1">
-                    <p className="px-1 text-sm">{posts[12].topic}</p>
+                    <p className="min-[300px]:text-md px-1 lg:text-sm">
+                      {posts[12].topic}
+                    </p>
                     <p className="px-1 text-sm"> -{posts[12].time}</p>
                   </div>
                 </div>
               </a>
               <a
                 href={`detail/${posts[17].slug}`}
-                className="min-h-1/3 relative flex h-1/3 w-full pb-2 "
+                className="min-h-1/3 h-1/3 w-full pb-2 min-[300px]:flex "
               >
-                <img className="h-[70px]" src={posts[17].image.url} alt="" />
+                <img
+                  className="min-[300px]:h-[100px] lg:h-[70px]"
+                  src={posts[17].image.url}
+                  alt=""
+                />
                 <div className="px-2">
-                  <h3 className=" text-sm font-medium">{posts[17].title}</h3>
+                  <h3 className=" min-[300px]:text-md font-bold lg:text-sm">
+                    {posts[17].title}
+                  </h3>
                   <div className="flex py-1">
-                    <p className="px-1 text-sm">{posts[17].topic}</p>
+                    <p className="min-[300px]:text-md px-1 lg:text-sm">
+                      {posts[17].topic}
+                    </p>
                     <p className="px-1 text-sm"> -{posts[17].time}</p>
                   </div>
                 </div>
@@ -117,7 +144,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="flex w-1/3 flex-col px-4">
+        <div className="flex h-[400px] w-1/3 flex-col px-4 min-[300px]:hidden lg:flex">
           <h1 className="font-bold">Trending</h1>
           <a
             href={`detail/${posts[14].slug}`}
@@ -125,7 +152,7 @@ function Home() {
           >
             <img className="h-[70px]" src={posts[14].image.url} alt="" />
             <div className="px-2">
-              <h3 className=" text-sm font-medium">{posts[14].title}</h3>
+              <h3 className=" text-sm font-bold">{posts[14].title}</h3>
               <div className="flex py-1">
                 <p className="px-1 text-sm">{posts[14].topic}</p>
                 <p className="px-1 text-sm"> -{posts[14].time}</p>
@@ -138,7 +165,7 @@ function Home() {
           >
             <img className="h-[70px]" src={posts[15].image.url} alt="" />
             <div className="px-2">
-              <h3 className=" text-sm font-medium">{posts[15].title}</h3>
+              <h3 className=" text-sm font-bold">{posts[15].title}</h3>
               <div className="flex py-1">
                 <p className="px-1 text-sm">{posts[15].topic}</p>
                 <p className="px-1 text-sm"> -{posts[15].time}</p>
@@ -151,7 +178,7 @@ function Home() {
           >
             <img className="h-[70px]" src={posts[16].image.url} alt="" />
             <div className="px-2">
-              <h3 className=" text-sm font-medium">{posts[16].title}</h3>
+              <h3 className=" text-sm font-bold">{posts[16].title}</h3>
               <div className="flex py-1">
                 <p className="px-1 text-sm">{posts[16].topic}</p>
                 <p className="px-1 text-sm"> -{posts[16].time}</p>
@@ -200,6 +227,9 @@ function Home() {
         </div>
         <div className="box-border w-1/3 px-4 sm:hidden lg:col-span-1 lg:block">
           <Rankingboard />
+          <div className="ads sticky top-10 right-0 mt-24 h-[700px] w-1/3 px-4 min-[320px]:block lg:block">
+            <div className="h-full w-full bg-gray-100 dark:bg-gray-400"></div>
+          </div>
         </div>
       </div>
 

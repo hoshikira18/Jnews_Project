@@ -5,9 +5,13 @@ import Culture from "../pages/Culture";
 import dropdownNav from "../javascripts/dropdownNav";
 import Home from "../pages/Home";
 import { HiOutlineMenu } from "react-icons/hi";
-import SearchResult from "./SearchResult";
 import Search from "./Search";
+import i18n from "../translation/i18n";
+
 function Header() {
+  function changeLanguage(e) {
+    i18n.changeLanguage(e.target.value);
+  }
   return (
     <div
       id="header"
@@ -98,6 +102,26 @@ function Header() {
         <button className="flex items-center pr-4 min-[320px]:hidden lg:block">
           <ButtonDarkmode />
         </button>
+
+        <div className="flex items-center space-x-4">
+          <select
+            onChange={changeLanguage}
+            class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+          >
+            <option
+              value="vi"
+              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+            >
+              VN
+            </option>
+            <option
+              value="jp"
+              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+            >
+              JP
+            </option>
+          </select>
+        </div>
       </div>
     </div>
   );

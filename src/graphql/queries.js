@@ -73,3 +73,19 @@ export const getPostsBySearch = async (slug) => {
 
   return result.newspapers;
 };
+
+export const getPostsByTag = async () => {
+  const query = gql`
+    query getPostsByTag {
+      newspapers {
+        title
+        slug
+        tag
+      }
+    }
+  `;
+
+  const result = await request(graphcmc, query);
+
+  return result.newspapers;
+};
