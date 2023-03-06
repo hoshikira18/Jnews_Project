@@ -8,7 +8,7 @@ const publicRoutes = [
   { path: "/culture", component: Culture },
   { path: "/detail/:slug", component: Detail },
   { path: "/search/:slug", component: SearchResult },
-  { path: "/error", component: Error404 },
+  { path: "/error ", component: Error404 },
 ];
 
 export default publicRoutes;
