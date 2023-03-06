@@ -89,8 +89,8 @@ export default function CulturePart() {
         </div>
 
         <div className=" grid lg:h-[450px] h-auto w-full lg:grid-cols-2 grid-cols-1 lg:gap-2 gap-3 mt-4">
-          <div className="grid grid-rows-2 lg:gap-2 gap-3 ">
-            <div className="bg-blue-50 ">
+          <div className="grid grid-rows-2 gap-2 ">
+            <div className="bg-blue-900 ">
               <div className="bg-blue-200 relative">
                 <div className=" bottom-0 z-10 absolute lg:pl-2 pl-4 lg:h-[80px] md:h-[100px] h-[135px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl  text-white">
                   <h1 className='lg:text-xl md:text-2xl text-4xl'>神社仏閣</h1>
@@ -114,9 +114,9 @@ export default function CulturePart() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
-              <div className="bg-blue-200">
-                <div className="bg-blue-200 relative">
-                  <div className=" bottom-0 z-10 absolute lg:pl-2 pl-4 lg:h-[80px] md:h-[100px] h-[135px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl  text-white">
+              <div className="bg-gray-900">
+                <div className="bg-gray-900 relative">
+                  <div className=" bottom-0 z-10 absolute pl-2  lg:h-[80px] md:h-[100px] h-[135px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl text-white">
                     <h1 className='lg:text-xl md:text-2xl text-4xl'>温泉</h1>
                     <p>温泉とは、地下から湧き出した温水のことです。</p>
                   </div>
@@ -135,7 +135,7 @@ export default function CulturePart() {
                   </a>
                 </div>
               </div>
-              <div className="bg-blue-400">
+              <div className="bg-gray-900">
                 <div className="bg-blue-200 relative">
                   <div className="bottom-0 z-10 absolute lg:pl-2 pl-4 lg:h-[80px] md:h-[100px] h-[135px] bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full lg:text-base md:text-xl text-3xl  text-white">
                     <h1 className='lg:text-xl md:text-2xl text-4xl'>書道</h1>
@@ -158,7 +158,7 @@ export default function CulturePart() {
               </div>
             </div>
           </div>
-          <div className="bg-blue-200 ">
+          <div className="bg-gray-900 ">
             <div className="bg-blue-200 relative">
               <div className=" bottom-0 z-10 absolute lg:pl-2 pl-3 lg:pr-2 pr-3 lg:h-[100px] md:h-[135px] h-[155px] lg:text-base md:text-xl text-3xl bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] w-full  text-white">
                 <h1 className='lg:text-xl md:text-2xl text-4xl'>日本食</h1>
