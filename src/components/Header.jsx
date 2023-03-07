@@ -106,17 +106,17 @@ function Header() {
         <div className="flex items-center space-x-4 min-[320px]:absolute min-[320px]:top-4 min-[320px]:left-20 lg:relative lg:left-0 lg:top-0">
           <select
             onChange={changeLanguage}
-            class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+            class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
           >
             <option
               value="vi"
-              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+              class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
             >
               VN
             </option>
             <option
               value="jp"
-              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+              class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
             >
               JP
             </option>
