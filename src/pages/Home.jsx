@@ -208,18 +208,18 @@ function Home({ lang }) {
                 onPageChange={paginate}
                 pageCount={Math.ceil(posts.length / postsPerPage)}
                 previousLabel={
-                  <div className="mr-3 flex h-8 w-8 items-center justify-center bg-gray-400">
+                  <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400">
                     <BsChevronLeft className="flex items-center justify-center text-gray-600" />
                   </div>
                 }
                 nextLabel={
-                  <div className="ml-3 flex h-8 w-8 items-center justify-center bg-gray-400">
+                  <div className="ml-3 flex h-8 w-8 items-center justify-center rounded-full bg-gray-400">
                     <BsChevronRight className="flex items-center justify-center text-gray-600" />
                   </div>
                 }
                 containerClassName="flex justify-center items-center"
-                pageClassName="w-8 h-8 rounded mr-1"
-                activeClassName="bg-gray-400 text-white"
+                pageClassName="w-8 h-8 dark:text-white rounded mr-1"
+                activeClassName="bg-gray-400 dark:bg-blue-500 border dark:border-gray-300 text-white"
                 pageLinkClassName="padding-10 w-8 h-8 flex justify-center items-center rounded hover:bg-gray-400 hover:text-white"
               />
             </div>

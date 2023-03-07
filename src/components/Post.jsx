@@ -79,8 +79,8 @@ const Post = ({ post }) => {
                 </div>
               }
               containerClassName="flex justify-center items-center"
-              pageClassName="w-8 h-8 rounded mr-1"
-              activeClassName="bg-gray-400 text-white"
+              pageClassName="w-8 h-8 dark:text-white rounded mr-1"
+              activeClassName="bg-gray-400 text-white dark:bg-blue-500 border dark:border-gray-300"
               pageLinkClassName="padding-10 w-8 h-8 flex justify-center items-center rounded hover:bg-gray-400 hover:text-white"
             />
           </div>
