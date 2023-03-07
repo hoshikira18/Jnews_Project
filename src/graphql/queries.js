@@ -17,6 +17,7 @@ export const getPosts = async () => {
         }
         slug
         description
+        language
       }
     }
   `;
