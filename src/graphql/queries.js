@@ -2,7 +2,31 @@ import { request, gql } from "graphql-request";
 
 const graphcmc = process.env.REACT_APP_API;
 
-export const getPosts = async () => {
+export const getPosts = async (slug) => {
+  const query = gql`
+    query MyQuery($slug: String!) {
+      newspapers(where: { language: $slug }) {
+        title
+        time
+        topic
+        content {
+          text
+        }
+        image {
+          url
+        }
+        slug
+        description
+      }
+    }
+  `;
+
+  const result = await request(graphcmc, query, { slug });
+  const awnser = await result.newspapers;
+  return awnser;
+};
+
+export const getPostss = async () => {
   const query = gql`
     query MyQuery {
       newspapers {
@@ -17,7 +41,6 @@ export const getPosts = async () => {
         }
         slug
         description
-        language
       }
     }
   `;

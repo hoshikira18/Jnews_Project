@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { getPosts } from "../graphql/queries";
+import { getPostss } from "../graphql/queries";
 import useQueryPost from "../hook/useQueryPost";
 
 // import { RxDotFilled } from "react-icons/rx";
 function SliderAuto() {
-  const { posts, error } = useQueryPost({ func: getPosts });
+  const { posts, error } = useQueryPost({ func: getPostss });
 
   const slides = [
     {

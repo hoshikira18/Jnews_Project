@@ -8,10 +8,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import Search from "./Search";
 import i18n from "../translation/i18n";
 
-function Header() {
-  function changeLanguage(e) {
-    i18n.changeLanguage(e.target.value);
-  }
+function Header({ changeLanguage }) {
   return (
     <div
       id="header"

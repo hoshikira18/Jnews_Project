@@ -6,8 +6,8 @@ import News from "./News";
 function SearchResult() {
   const { posts, error } = useQueryPost({ func: getPostsBySearch });
   console.log(posts);
-  return !posts.length ? (
-    <div className="flex h-screen w-screen items-center justify-center"></div>
+  return posts.length == 0 ? (
+    <div className="flex h-screen w-screen items-center justify-center">no</div>
   ) : (
     <div className="min-h-screen">
       <div className="flex h-16 items-center py-2">
