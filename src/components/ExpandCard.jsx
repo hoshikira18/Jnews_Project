@@ -31,10 +31,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-28 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title1")}
+            {t("content_culture.hiep_title1")}
           </div>
           <p className="info absolute top-[55%] z-10  mx-[5%] hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title1_1")}
+            {t("content_culture.hiep_title1_1")}
           </p>
           <div className="background absolute bottom-0 z-0 hidden h-[70%] w-full rounded-[15px] bg-gradient-to-b from-[rgba(255,255,255,0)] to-[rgba(55,26,26,0.95)] transition-all duration-200"></div>
         </div>
@@ -57,10 +57,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-28 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title2")}
+            {t("content_culture.hiep_title2")}
           </div>
           <p className="info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title2_1")}
+            {t("content_culture.hiep_title2_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full rounded-[15px]
@@ -86,10 +86,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-32 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title3")}
+            {t("content_culture.hiep_title3")}
           </div>
           <p className="info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title3_1")}
+            {t("content_culture.hiep_title3_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -114,10 +114,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-28 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title4")}
+            {t("content_culture.hiep_title4")}
           </div>
           <p className="info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title4_1")}
+            {t("content_culture.hiep_title4_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -143,10 +143,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-28 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title5")}
+            {t("content_culture.hiep_title5")}
           </div>
           <p className=" info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title5_1")}
+            {t("content_culture.hiep_title5_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -171,10 +171,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0  z-20 ml-[47.5%] w-32 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title6")}
+            {t("content_culture.hiep_title6")}
           </div>
           <p className=" info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title6_1")}
+            {t("content_culture.hiep_title6_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -199,10 +199,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-32 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title7")}
+            {t("content_culture.hiep_title7")}
           </div>
           <p className=" info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title7_1")}
+            {t("content_culture.hiep_title7_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -227,10 +227,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0 z-20 ml-[47.5%] w-32 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title8")}
+            {t("content_culture.hiep_title8")}
           </div>
           <p className=" info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title8_1")}
+            {t("content_culture.hiep_title8_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full
@@ -259,10 +259,10 @@ function ExpandCard() {
             onMouseLeave={returncard}
           ></div>
           <div className="item-text absolute inset-x-0 bottom-0  z-20 ml-[47.5%] w-32 origin-left -rotate-90 text-left text-lg font-bold text-white transition-all duration-200">
-            {t("content.hiep_title9")}
+            {t("content_culture.hiep_title9")}
           </div>
           <p className=" info absolute top-[55%] left-[5%] z-10 hidden w-[284px] text-sm font-extralight text-white transition-all duration-200">
-            {t("content.hiep_title9_1")}
+            {t("content_culture.hiep_title9_1")}
           </p>
           <div
             className="background absolute bottom-0 z-0 hidden h-[70%] w-full

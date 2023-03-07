@@ -7,8 +7,8 @@ export default function CulturePart() {
     <div>
       <div className=" grid h-auto w-full grid-cols-1 gap-3 lg:h-[450px] lg:grid-cols-2 lg:gap-2 ">
         <div className="relative  bg-blue-200">
-          <div className="absolute bottom-0 z-10 h-[140px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-3 pr-3 text-3xl text-white md:h-[110px] md:text-xl lg:h-[100px] lg:pl-2 lg:pr-2  lg:text-base">
-            {t("content.title1")}
+          <div className="absolute bottom-0 z-10 h-[50px] w-full truncate bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-3 pr-3 text-xl text-white md:h-[110px] md:text-xl lg:h-[50px] lg:pl-2 lg:pr-2  lg:text-base">
+            {t("content_culture.title1")}
           </div>
           <a
             href="https://we-xpats.com/ja/guide/as/jp/detail/6517/"
@@ -27,8 +27,8 @@ export default function CulturePart() {
         <div className="grid grid-rows-2 gap-3 lg:gap-2">
           <div className="bg-gray-900 ">
             <div className="relative h-[600px] w-full bg-blue-200 md:h-[400px] lg:h-auto">
-              <div className=" absolute bottom-0 z-10 h-[100px] w-full bg-gradient-to-t from-[rgba(164,13,126,0.5)] to-[rgba(240,191,224,0.2)] pl-4 text-3xl text-white md:h-[65px] md:text-xl lg:h-[50px] lg:pl-2  lg:text-base">
-                {t("content.title2")}
+              <div className="absolute bottom-0 z-10 h-[50px] w-full truncate bg-gradient-to-t from-[rgba(164,13,126,0.5)] to-[rgba(240,191,224,0.2)] pl-4 text-xl text-white md:h-[65px] md:text-xl lg:h-[50px] lg:pl-2  lg:text-base">
+                {t("content_culture.title2")}
               </div>
               <a
                 className=""
@@ -49,8 +49,8 @@ export default function CulturePart() {
           <div className="grid grid-cols-2 gap-2">
             <div className="bg-gray-900">
               <div className="relative bg-blue-200">
-                <div className="absolute bottom-0 z-10 h-[100px]  w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-2 text-3xl text-white md:h-[65px] md:text-xl lg:h-[50px]  lg:text-base">
-                  {t("content.title3")}
+                <div className="absolute bottom-0 z-10 h-[50px] w-full  truncate bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-2 text-xl text-white md:h-[65px] md:text-xl lg:h-[50px]  lg:text-base">
+                  {t("content_culture.title3")}
                 </div>
                 <a
                   href=" https://thegate12.com/jp/article/422"
@@ -69,8 +69,8 @@ export default function CulturePart() {
             </div>
             <div className="bg-gray-900">
               <div className="relative bg-blue-200">
-                <div className=" absolute bottom-0 z-10 h-[100px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-2 text-3xl text-white md:h-[65px] md:text-xl lg:h-[50px] lg:text-base">
-                  {t("content.title4")}
+                <div className="absolute bottom-0 z-10 h-[50px] w-full truncate bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-2 text-xl text-white md:h-[65px] md:text-xl lg:h-[50px] lg:text-base">
+                  {t("content_culture.title4")}
                 </div>
                 <a
                   href="https://yufuan.net/theater/?id=5334 "
@@ -95,11 +95,13 @@ export default function CulturePart() {
         <div className="grid grid-rows-2 gap-3 lg:gap-2 ">
           <div className="bg-blue-50 ">
             <div className="relative bg-blue-200">
-              <div className=" absolute bottom-0 z-10 h-[135px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-3xl text-white md:h-[100px] md:text-xl lg:h-[80px] lg:pl-2  lg:text-base">
-                <h1 className="text-4xl md:text-2xl lg:text-xl">
-                  {t("content.title5")}
+              <div className=" absolute bottom-0 z-10 h-[80px] w-full  bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-xl text-white md:h-[50px] md:text-xl lg:h-[50px] lg:pl-2  lg:text-base">
+                <h1 className="truncate text-3xl md:text-2xl lg:text-xl">
+                  {t("content_culture.title5")}
                 </h1>
-                <p>{t("content.title5_1")}</p>
+                <p className="w-[90%] truncate">
+                  {t("content_culture.title5_1")}
+                </p>
               </div>
               <a
                 href="https://maido-bob.osaka/2020/08/17/shrines-and-temples/"
@@ -119,11 +121,11 @@ export default function CulturePart() {
           <div className="grid grid-cols-2 gap-2">
             <div className="bg-blue-200">
               <div className="relative bg-blue-200">
-                <div className=" absolute bottom-0 z-10 h-[135px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-3xl text-white md:h-[100px] md:text-xl lg:h-[80px] lg:pl-2  lg:text-base">
-                  <h1 className="text-4xl md:text-2xl lg:text-xl">
-                    {t("content.title6")}{" "}
+                <div className=" md:h-[100px]lg:h-[80px] absolute bottom-0 z-10 h-[80px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-white lg:pl-2">
+                  <h1 className="text-3xl md:text-2xl lg:text-xl">
+                    {t("content_culture.title6")}{" "}
                   </h1>
-                  <p>{t("content.title6_1")} 。</p>
+                  <p className="truncate">{t("content_culture.title6_1")} 。</p>
                 </div>
                 <a
                   href="https://www.jalan.net/news/article/578322/"
@@ -142,11 +144,11 @@ export default function CulturePart() {
             </div>
             <div className="bg-blue-400">
               <div className="relative bg-blue-200">
-                <div className="absolute bottom-0 z-10 h-[135px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-3xl text-white md:h-[100px] md:text-xl lg:h-[80px] lg:pl-2  lg:text-base">
-                  <h1 className="text-4xl md:text-2xl lg:text-xl">
-                    {t("content.title7")}
+                <div className="absolute bottom-0 z-10 h-[80px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-4 text-white md:h-[100px] md:text-xl lg:h-[80px] lg:pl-2  lg:text-base">
+                  <h1 className="text-3xl md:text-2xl lg:text-xl">
+                    {t("content_culture.title7")}
                   </h1>
-                  <p>{t("content.title7_1")}</p>
+                  <p className="truncate">{t("content_culture.title7_1")}</p>
                 </div>
                 <a
                   href="https://haa.athuman.com/media/japanese/culture/1818/#:~:text=%E6%9B%B8%E9%81%93%E3%81%A8%E3%81%AF%E3%80%81%E3%80%8C%E6%AF%9B%E7%AD%86%E3%80%8D,%E3%81%A7%E3%81%82%E3%82%8B%E3%81%A8%E3%82%82%E3%81%84%E3%81%88%E3%81%BE%E3%81%99%E3%80%82"
@@ -167,11 +169,11 @@ export default function CulturePart() {
         </div>
         <div className="bg-blue-200 ">
           <div className="relative bg-blue-200">
-            <div className=" absolute bottom-0 z-10 h-[155px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-3 pr-3 text-3xl text-white md:h-[135px] md:text-xl lg:h-[100px] lg:pl-2 lg:pr-2  lg:text-base">
-              <h1 className="text-4xl md:text-2xl lg:text-xl">
-                {t("content.title8")}
+            <div className=" absolute bottom-0 z-10 h-[80px] w-full bg-gradient-to-t from-[rgba(20,10,87,0.5)] to-[rgba(96,96,138,0.2)] pl-3 pr-3 text-white md:h-[135px] md:text-xl lg:h-[80px] lg:pl-2 lg:pr-2  lg:text-base">
+              <h1 className="text-3xl md:text-2xl lg:text-xl">
+                {t("content_culture.title8")}
               </h1>
-              <p>{t("content.title8_1")}.</p>
+              <p className="truncate">{t("content_culture.title8_1")}.</p>
             </div>
             <a
               href="https://www.meiji.co.jp/meiji-shokuiku/japaneseculture/washoku/"

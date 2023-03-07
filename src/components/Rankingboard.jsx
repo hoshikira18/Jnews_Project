@@ -1,7 +1,10 @@
 import React from "react";
 import useQueryPost from "../hook/useQueryPost";
 import { getPosts, getPostsBySearch, getPostsByTag } from "../graphql/queries";
-function Rankingboard() {
+import { useTranslation } from "react-i18next";
+
+function Rankingboard({ posts }) {
+  const { t } = useTranslation();
   function Showmore() {
     let button = document.getElementById("button");
     let show = document.getElementById("more");
@@ -15,21 +18,19 @@ function Rankingboard() {
       button.innerHTML = " Show More";
     }
   }
-  const { posts, error } = useQueryPost({ func: getPostsByTag });
-  const postsRanking = posts.filter((post) => post.tag === "ranking-board");
-  console.log(posts);
+
   return (
-    <div class="h-auto w-full pb-24 min-[300px]:hidden md:mx-5 lg:mx-2 lg:block  ">
+    <div class="sticky top-5 h-auto w-full pb-24 min-[300px]:hidden md:mx-5 lg:mx-2 lg:block">
       <div class="flex h-auto  w-full items-center py-4 pr-10 sm:pr-0 lg:h-10 lg:w-5/6 ">
         <span class="text-6x font-bold dark:text-slate-200 md:text-4xl lg:text-2xl">
-          Bảng xếp hạng
+          {t("home.home4")}
         </span>
       </div>
       {/* <hr class="my-12 mx-16 flex w-5/6 justify-center border-2 border-gray-700 md:my-4 md:border lg:mx-0" /> */}
       <div class=" h-auto rounded-md border-2 border-[#eee] bg-gray-100 dark:border-black dark:bg-gray-200 md:mx-0 lg:w-5/6 ">
         <div class="grid-rows grid h-auto w-full ">
           <div class="grid h-full w-full grid-rows-5  ">
-            {postsRanking.map((post, index) => {
+            {posts.map((post, index) => {
               return (
                 <div class="flex h-[8rem] w-full flex-row items-center divide-x-4 divide-black border border-[#eee] dark:border-black md:divide-x-2 lg:h-[4rem] lg:divide-x ">
                   <div class="mr-1 basis-1/12 pt-3 text-center text-5xl font-medium md:text-4xl lg:pt-1 lg:text-lg">

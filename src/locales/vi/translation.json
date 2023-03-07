@@ -1,5 +1,5 @@
 {
-  "content": {
+  "content_culture": {
       "phongtuc": "Văn Hóa",
       "amthuc": "Ẩm thực",
       "trangphuc": "Trang phục",
@@ -82,6 +82,18 @@
       "Du nhập từ những món mỳ của Trung Quốc, sau đó được dung hòa với văn hóa ẩm thực Nhật Bản, tạo thành mỳ Ramen như hiện nay. Là sự kết hợp linh hoạt giữa 5 nguyên liệu chính là mỳ, nước lèo, nước sốt, hải sản, dầu ăn để tạo nên vô vàn công thức nấu Ramen, thể hiện qua sự đa dạng từ mùi vị đến cách điệu của nó có thể kể đến như Ramen nước tương shouyu, Ramen miso, Ramen muối, Ramen Tonkatsu thịt chiên xù, Tsukemen ramen nhúng,...",
     "hiep_title9": "Súp miso",
     "hiep_title9_1": "Một món súp được làm bằng cách hòa tan miso trong súp và thêm rau, hải sản, thịt, rong biển, v.v. Điều này có lẽ là do mỗi loại miso có hương vị đặc trưng riêng và vì sử dụng đậu nành làm nguyên liệu nên nó được coi là nguồn bổ sung protein có giá trị dinh dưỡng."
+
+  },
+  "header": {
+    "header_culture": "Văn hóa",
+    "header_search": "Tìm kiếm"
+  },
+
+  "home": {
+    "home1": "Đáng chú ý",
+    "home2": "Xu hướng",
+    "home3": "Tin mới nhất",
+    "home4": "Bảng xếp hạng"
   }
 
 }

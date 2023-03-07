@@ -15,7 +15,6 @@ function Scrollback() {
   }, []);
 
   if (backToTopButton) {
-    console.log("test");
     return (
       <div style={{ backgroundColor: "white" }}>
         <button

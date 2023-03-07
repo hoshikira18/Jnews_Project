@@ -1,14 +1,18 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { GoPrimitiveDot } from "react-icons/go";
-import useQueryPost from "../hook/useQueryPost";
-import { getPosts } from "../graphql/queries";
 import News from "../components/News";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
-const Post = ({ post }) => {
-  const { posts, error } = useQueryPost({ func: getPosts });
+import { useEffect } from "react";
+import { getPosts } from "../graphql/queries";
+const Post = ({ post, lang }) => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    getPosts(lang).then((newPosts) => setPosts(newPosts));
+  }, [lang]);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
@@ -24,7 +28,9 @@ const Post = ({ post }) => {
   };
 
   return !posts.length ? (
-    <div className="flex h-screen w-screen items-center justify-center"></div>
+    <div className="flex h-screen w-screen items-center justify-center">
+      ádasd
+    </div>
   ) : (
     <div className="flex flex-col items-center">
       <div className="sm:w-screen lg:w-[70%]">
@@ -32,7 +38,7 @@ const Post = ({ post }) => {
           <MdKeyboardArrowRight />
           <p className="">{post.topic}</p>
         </div>
-        <div className="flex w-full justify-center p-4">
+        <div className="flex w-full justify-center px-4 pb-4">
           <img className="min-[300px]:w-[100%]" src={post.image.url} alt="" />
         </div>
 

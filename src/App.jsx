@@ -19,7 +19,7 @@ function App() {
         <div className="relative z-50 bg-gray-100 drop-shadow-sm dark:bg-gray-800">
           <Header changeLanguage={changeLanguage} />
         </div>
-        <div className="bg-gray-50 dark:bg-gray-900 sm:w-full lg:m-auto lg:w-[1280px]">
+        <div className="bg-gray-50 dark:bg-gray-900 min-[300px]:w-full lg:m-auto lg:w-[1280px]">
           <Routes>
             {publicRoutes.map((route, index) => {
               return (
@@ -31,7 +31,9 @@ function App() {
             })}
           </Routes>
         </div>
-        <Footer />
+        <div className="sm:w-full lg:w-[1280px] lg:dark:bg-gray-900 xl:m-auto xl:w-full">
+          <Footer />
+        </div>
       </div>
     </BrowserRouter>
   );

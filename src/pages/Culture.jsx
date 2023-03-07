@@ -18,7 +18,7 @@ export default function Culture() {
       {/* <!-- Phong tục--> */}
       <div id="phongtuc">
         <h1 className=" py-[9px] pl-7 text-2xl font-bold hover:text-blue-600  dark:text-gray-200">
-          {t("content.phongtuc")}
+          {t("content_culture.phongtuc")}
         </h1>
 
         <CulturePart />
@@ -27,7 +27,7 @@ export default function Culture() {
       {/* <!-- Am thuc  --> */}
       <div id="amthuc" className="pt-11">
         <h1 className="  py-[9px]   pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          {t("content.amthuc")}
+          {t("content_culture.amthuc")}
         </h1>
 
         <ExpandCard />
@@ -35,7 +35,7 @@ export default function Culture() {
       {/* <!-- Trang phuc --> */}
       <div id="trangphuc" className="h-[700px] pt-11 ">
         <h1 className="   py-[9px] pl-7 text-2xl font-bold hover:text-blue-600 dark:text-gray-200">
-          {t("content.trangphuc")}
+          {t("content_culture.trangphuc")}
         </h1>
 
         <Slider />
@@ -44,7 +44,7 @@ export default function Culture() {
       {/* <!-- Lễ Hội  --> */}
       <div id="lehoi" className=" pb-20">
         <h1 className="py-[9px]  pl-7 text-2xl font-bold  hover:text-blue-600 dark:text-gray-200">
-          {t("content.lehoi")}
+          {t("content_culture.lehoi")}
         </h1>
 
         <ScrollTimeline />
