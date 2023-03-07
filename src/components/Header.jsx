@@ -24,7 +24,7 @@ function Header() {
         class="flex items-center min-[320px]:ml-8 min-[320px]:flex min-[320px]:items-center lg:ml-4"
       >
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
+          src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/335015347_1232957353999225_7131239353336809680_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=G2ZU0XTV-AEAX_TJhVU&_nc_ht=scontent.fhan2-5.fna&oh=03_AdRbauZD_CLq0sONBQhwhAXGIue4Rd_qykmOwYFtN7F3iQ&oe=642E0CFC"
           class="min-[320px]:mr-3 min-[320px]:h-9"
           alt="Flowbite Logo"
         />
@@ -106,17 +106,17 @@ function Header() {
         <div className="flex items-center space-x-4 min-[320px]:absolute min-[320px]:top-4 min-[320px]:left-20 lg:relative lg:left-0 lg:top-0">
           <select
             onChange={changeLanguage}
-            class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+            class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
           >
             <option
               value="vi"
-              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+              class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
             >
               VN
             </option>
             <option
               value="jp"
-              class="rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700"
+              class="rounded dark:bg-gray-700 dark:border-gray-600 py-2 px-4 focus:ring-blue-500 focus:border-blue-500 font-bold dark:text-white bg-gray-50 border border-gray-300 text-gray-900 "
             >
               JP
             </option>

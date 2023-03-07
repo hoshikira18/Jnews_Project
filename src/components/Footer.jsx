@@ -6,9 +6,9 @@ function Footer() {
     <footer className="border border-[#eee] bg-white p-8 dark:bg-black sm:p-6">
       <div className="pl-3 md:flex md:justify-between md:pl-10">
         <div className="mb-6 md:mb-0">
-          <a href="https://flowbite.com/" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
+              src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/335015347_1232957353999225_7131239353336809680_n.png?_nc_cat=109&ccb=1-7&_nc_sid=ae9488&_nc_ohc=G2ZU0XTV-AEAX_TJhVU&_nc_ht=scontent.fhan2-5.fna&oh=03_AdRbauZD_CLq0sONBQhwhAXGIue4Rd_qykmOwYFtN7F3iQ&oe=642E0CFC"
               className="mr-4 h-7 sm:mr-3 sm:h-8"
               alt=" Logo"
             />
@@ -37,12 +37,12 @@ function Footer() {
             </h2>
             <ul className="md:text-md text-sm dark:text-gray-400 sm:text-lg">
               <li className="md:mb-4">
-                <a href="src/pages/Home.jsx" className="hover:underline">
+                <a href="/" className="hover:underline">
                   Jnews
                 </a>
               </li>
               <li>
-                <a href="src/pages/Culture.jsx" className="hover:underline">
+                <a href="/culture" className="hover:underline">
                   Culture
                 </a>
               </li>
