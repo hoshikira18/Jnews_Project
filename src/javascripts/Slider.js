@@ -13,33 +13,30 @@ function Next() {
   }
   var index2;
   ChuyenSlide.style.marginLeft = "-" + Chuyen + "px";
-  // console.log(Chuyen,' ',Max);
-  var classname='ele-'+ index.toString(10) ;
+  var classname = "ele-" + index.toString(10);
   var items = document.getElementsByClassName(classname);
-  for (var i=0; i<items.length;i++){
-    Object.assign(items[i].style,{
-      transform:'scale(0.1,0.1)',
-      transition:'transform 1s',
-     });     
+  for (var i = 0; i < items.length; i++) {
+    Object.assign(items[i].style, {
+      transform: "scale(0.1,0.1)",
+      transition: "transform 1s",
+    });
   }
 
-  if (index<4) index2 = index + 1;
+  if (index < 4) index2 = index + 1;
   else index2 = 1;
-  var classname='ele-'+ index2.toString(10) ;
-  // console.log(classname);
+  var classname = "ele-" + index2.toString(10);
   var items = document.getElementsByClassName(classname);
-  for (var i=0; i<items.length;i++){
-    Object.assign(items[i].style,{
-      transform:'scale(1,1)',
-      transition:'transform 1s',
-     });     
+  for (var i = 0; i < items.length; i++) {
+    Object.assign(items[i].style, {
+      transform: "scale(1,1)",
+      transition: "transform 1s",
+    });
   }
-  
+
   index++;
-  if (index==5){ 
-    index=1; 
-   }  
-  
+  if (index == 5) {
+    index = 1;
+  }
 }
 
 function Back() {
@@ -55,31 +52,30 @@ function Back() {
   }
   var index2;
   ChuyenSlide.style.marginLeft = "-" + Chuyen + "px";
-  // console.log(Chuyen,' ',Max);
-  var classname='ele-'+ index.toString(10) ;
+  var classname = "ele-" + index.toString(10);
   var items = document.getElementsByClassName(classname);
-  for (var i=0; i<items.length;i++){
-    Object.assign(items[i].style,{
-      transform:'scale(0.1,0.1)',
-      transition:'transform 1s',
-     });     
+  for (var i = 0; i < items.length; i++) {
+    Object.assign(items[i].style, {
+      transform: "scale(0.1,0.1)",
+      transition: "transform 1s",
+    });
   }
-  if (index>1) index2 = index-1;
+  if (index > 1) index2 = index - 1;
   else index2 = 4;
-  var classname='ele-'+ index2.toString(10) ;
-  // console.log(classname);
+  var classname = "ele-" + index2.toString(10);
   var items = document.getElementsByClassName(classname);
-  for (var i=0; i<items.length;i++){
-    Object.assign(items[i].style,{
-      transform:'scale(1,1)',
-      transition:'transform 1s',
-     });     
+  for (var i = 0; i < items.length; i++) {
+    Object.assign(items[i].style, {
+      transform: "scale(1,1)",
+      transition: "transform 1s",
+    });
   }
-  
+
   index--;
-  if (index==0) {
-    index=4;
+  if (index == 0) {
+    index = 4;
   }
+
 }
 
 export default Next;
