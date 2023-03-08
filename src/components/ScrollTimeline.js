@@ -28,12 +28,15 @@ class App extends Component {
           style={{
             width: "100%",
             height: "120px",
-            margin: "0 auto",          
+            margin: "0 auto",
             fontSize: "14px",
-            color:"rgb(101,171,237)"
+            color: "rgb(101,171,237)",
           }}
         >
-          <HorizontalTimeline 
+          <HorizontalTimeline
+            getLabel={function (date) {
+              return date.slice(0, 7);
+            }}
             styles={{
               foreground: "rgb(101,171,250)",
               outline: "gray",
@@ -42,7 +45,16 @@ class App extends Component {
             indexClick={(index) => {
               this.setState({ value: index, previous: this.state.value });
             }}
-            values={VALUES}
+            values={[
+              "Jan 1",
+              "Feb 3",
+              "Mar 3",
+              "May 5",
+              "July 7",
+              "Jul 15",
+              "Sep 29",
+              "Nov 15",
+            ]}
           />
         </div>
         <div className="">

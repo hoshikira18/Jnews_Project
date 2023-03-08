@@ -1,14 +1,18 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { GoPrimitiveDot } from "react-icons/go";
-import useQueryPost from "../hook/useQueryPost";
-import { getPosts } from "../graphql/queries";
 import News from "../components/News";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import ReactPaginate from "react-paginate";
 import { useState } from "react";
-const Post = ({ post }) => {
-  const { posts, error } = useQueryPost({ func: getPosts });
+import { useEffect } from "react";
+import { getPosts } from "../graphql/queries";
+const Post = ({ post, lang }) => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    getPosts(lang).then((newPosts) => setPosts(newPosts));
+  }, [lang]);
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(9);
@@ -24,7 +28,9 @@ const Post = ({ post }) => {
   };
 
   return !posts.length ? (
-    <div className="flex h-screen w-screen items-center justify-center"></div>
+    <div className="flex h-screen w-screen items-center justify-center">
+      ádasd
+    </div>
   ) : (
     <div className="flex flex-col items-center">
       <div className="sm:w-screen lg:w-[70%]">
@@ -32,25 +38,27 @@ const Post = ({ post }) => {
           <MdKeyboardArrowRight />
           <p className="">{post.topic}</p>
         </div>
-        <div className="flex w-full justify-center p-4">
+        <div className="flex w-full justify-center px-4 pb-0 lg:pb-4">
           <img className="min-[300px]:w-[100%]" src={post.image.url} alt="" />
         </div>
 
         <div className="mx-auto bg-white p-4 pb-40 dark:bg-gray-800 dark:text-white min-[300px]:w-screen lg:w-[900px]">
           <div className="title">
-            <h1 className="text-4xl font-bold lg:p-4">{post.title}</h1>
+            <h1 className=" text-justify text-2xl font-bold md:text-3xl lg:p-4 lg:text-4xl">
+              {post.title}
+            </h1>
           </div>
-          <div className="date flex items-center lg:p-4">
+          <div className="date flex items-center py-4 lg:p-4">
             <GoPrimitiveDot />
             <p className="px-2">{post.time}</p>
           </div>
           <div
-            className="content lg:p-4"
+            className="content px-3 text-justify md:text-xl lg:p-4"
             dangerouslySetInnerHTML={{ __html: post.content.html }}
           ></div>
         </div>
       </div>
-      <div className="posts flex flex-col pt-10 sm:w-full lg:w-2/3">
+      {/* <div className="posts flex flex-col pt-10 sm:w-full lg:w-2/3">
         <div className="flex items-center px-4">
           <h1 className="font-bold dark:text-white ">Gợi ý cho bạn</h1>
         </div>
@@ -79,13 +87,13 @@ const Post = ({ post }) => {
                 </div>
               }
               containerClassName="flex justify-center items-center"
-              pageClassName="w-8 h-8 rounded mr-1"
-              activeClassName="bg-gray-400 text-white"
+              pageClassName="w-8 h-8 dark:text-white rounded mr-1"
+              activeClassName="bg-gray-400 text-white dark:bg-blue-500 border dark:border-gray-300"
               pageLinkClassName="padding-10 w-8 h-8 flex justify-center items-center rounded hover:bg-gray-400 hover:text-white"
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

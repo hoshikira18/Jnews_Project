@@ -1,16 +1,14 @@
 import React from "react";
-// eslint-disable-next-line
 import { FaRegFileCode } from "react-icons/fa";
-// eslint-disable-next-line
 export default function News({ post }) {
   console.log(post);
   return (
     //  <div className="border-t-4 border-sky-500 h-[230px] w-[750px] bg-slate-200 relative">
-    <div className="my-3 w-[100vw] bg-cyan-200 dark:bg-sky-700 sm:h-[120px] sm:w-full md:h-[200px]">
+    <div className="my-3 rounded-md bg-cyan-200 dark:bg-sky-700 sm:h-[120px] sm:w-full md:h-[180px]">
       <div
-        className=" my-3 flex w-full flex-col border-[2px] border-slate-300 bg-slate-100 py-3 drop-shadow-xl transition-all hover:translate-x-2 hover:translate-y-[-8px] 
+        className=" my-3 flex w-full flex-col rounded-md border-[2px] border-slate-300 bg-slate-100 py-3 drop-shadow-xl transition-all hover:translate-x-2 hover:translate-y-[-8px] 
                         dark:border-slate-500 dark:bg-gray-700 sm:h-[120px]
-                        sm:flex-row md:h-[200px]"
+                        sm:flex-row md:h-[180px]"
       >
         {/* bỏ absolute*/}
         <div className="translate-x-5 sm:translate-x-0 sm:scale-100 ">
@@ -58,7 +56,7 @@ export default function News({ post }) {
               {post.time}{" "}
             </h3>
           </div>
-          <p className="relative overflow-hidden text-ellipsis bg-gradient-to-b dark:text-slate-300 sm:text-xs md:text-sm">
+          <p className="relative truncate bg-gradient-to-b dark:text-slate-300 sm:text-xs md:text-sm">
             {post.description}
           </p>
         </div>

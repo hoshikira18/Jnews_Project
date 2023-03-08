@@ -1,59 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { getPosts } from "../graphql/queries";
+import { getPostss } from "../graphql/queries";
 import useQueryPost from "../hook/useQueryPost";
 
 // import { RxDotFilled } from "react-icons/rx";
-function SliderAuto() {
-  const { posts, error } = useQueryPost({ func: getPosts });
-
-  const slides = [
-    {
-      URL: "https://images.unsplash.com/photo-1601585612823-0d8787c1e019?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      title: "First slide",
-      describtion: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-      link: "google.com",
-    },
-    {
-      URL: "https://images.unsplash.com/photo-1675510183229-c50371163c19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      title: "Second slide",
-      describtion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "google.com",
-    },
-    {
-      URL: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-      title: "Third slide",
-      describtion:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      link: "google.com",
-    },
-    {
-      URL: "https://images.unsplash.com/photo-1546900703-cf06143d1239?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80",
-      title: "Fourth slide",
-      describtion:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      link: "google.com",
-    },
-    {
-      URL: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      title: "Fifth slide",
-      describtion:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      link: "google.com",
-    },
-  ];
+function SliderAuto({ posts }) {
   const [currentIndex, setcurrentIndex] = useState(0);
 
   const prevSlide = () => {
-    setcurrentIndex(currentIndex === 0 ? slides.length - 1 : currentIndex - 1);
+    setcurrentIndex(currentIndex === 0 ? posts.length - 1 : currentIndex - 1);
   };
 
   const nextSlide = () => {
-    setcurrentIndex(currentIndex === slides.length - 1 ? 0 : currentIndex + 1);
+    setcurrentIndex(currentIndex === posts.length - 1 ? 0 : currentIndex + 1);
   };
 
   useEffect(() => {
-    let length = slides.length;
+    let length = posts.length;
     const interval = setInterval(() => {
       setcurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
     }, 2500);
@@ -66,19 +29,29 @@ function SliderAuto() {
   return !posts.length ? (
     <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
-    <div className="relative m-auto h-[400px] w-full max-w-[1400px]">
+    <div className="relative m-auto h-[400px] w-full max-w-[1400px] rounded ">
       <div
         style={{ backgroundImage: `url(${posts[currentIndex].image.url})` }}
-        className="rouded-2xl h-full w-full bg-cover bg-center duration-500"
+        className="h-full w-full rounded-md bg-cover bg-center duration-500 after:absolute after:bottom-0 after:h-[100%] after:w-full after:rounded after:bg-black/20 after:content-['']"
       ></div>
       {/* create link embed title */}
 
       <a
         href={`detail/${posts[currentIndex].slug}`}
-        className="absolute bottom-10 left-[4%] text-3xl font-bold text-white hover:underline"
+        className="absolute bottom-10 left-[4%] font-bold text-white hover:underline"
       >
-        <h1 className="text-4xl font-bold">{posts[currentIndex].title}</h1>
+        <h1 className="z-50 font-bold">{posts[currentIndex].title}</h1>
       </a>
+      <div className="bg-gradient absolute bottom-0 w-full p-4">
+        <div className="flex items-center space-x-3 lg:px-4">
+          <div className="md:text-md text-xl font-light leading-none text-zinc-200 lg:text-xs">
+            {posts[currentIndex].topic}
+          </div>
+          <span className="md:text-md text-lg font-light text-gray-200 lg:text-xs">
+            {posts[currentIndex].time}
+          </span>
+        </div>
+      </div>
 
       <div className="bg-black/15 absolute top-[150px] left-5 -translate-x-0 translate-y-1/2 cursor-pointer rounded-full p-2 text-2xl text-white ">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />

@@ -2,7 +2,32 @@ import { request, gql } from "graphql-request";
 
 const graphcmc = process.env.REACT_APP_API;
 
-export const getPosts = async () => {
+export const getPosts = async (lang) => {
+  const query = gql`
+    query MyQuery($lang: String!) {
+      newspapers(where: { language: $lang }) {
+        title
+        time
+        topic
+        content {
+          text
+        }
+        image {
+          url
+        }
+        slug
+        description
+        tag
+      }
+    }
+  `;
+
+  const result = await request(graphcmc, query, { lang });
+  const awnser = await result.newspapers;
+  return awnser;
+};
+
+export const getPostss = async () => {
   const query = gql`
     query MyQuery {
       newspapers {
@@ -74,10 +99,10 @@ export const getPostsBySearch = async (slug) => {
   return result.newspapers;
 };
 
-export const getPostsByTag = async () => {
+export const getPostsByTag = async (tag) => {
   const query = gql`
-    query getPostsByTag {
-      newspapers {
+    query getPostsByTag ($tag: String!)) {
+      newspapers(where: { tag: $tag }) {
         title
         slug
         tag
@@ -85,7 +110,7 @@ export const getPostsByTag = async () => {
     }
   `;
 
-  const result = await request(graphcmc, query);
+  const result = await request(graphcmc, query, { tag });
 
   return result.newspapers;
 };

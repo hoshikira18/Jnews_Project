@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import removeVietnameseTones from "../javascripts/removeVietnameseTones";
-
+import { useTranslation } from "react-i18next";
 function Search() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   function handleSearch(e) {
@@ -46,7 +47,7 @@ function Search() {
           type="search"
           id="default-search"
           class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-sm text-gray-900 outline-none focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-          placeholder="Search News"
+          placeholder={t("header.header_search")}
           required
           value={search}
           onChange={(e) => setSearch(removeVietnameseTones(e.target.value))}
