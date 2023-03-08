@@ -18,6 +18,11 @@ Jnews_Project is a website that serves as a bridge to help people in Vietnam qui
 	npm install --legacy-peer-deps
 ```
 
+## Run
+```
+	npm run start
+```
+
 ## Contact
 Leader: Tran Van Khuyen _ Phone number: 0919707102
 
