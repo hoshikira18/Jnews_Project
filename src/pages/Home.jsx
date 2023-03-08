@@ -12,7 +12,6 @@ import { useTranslation } from "react-i18next";
 function Home({ lang }) {
   const { t } = useTranslation();
   const [posts, setPosts] = useState([]);
-  console.log(posts);
 
   useEffect(() => {
     getPosts(lang).then((newPosts) => setPosts(newPosts));
@@ -76,10 +75,10 @@ function Home({ lang }) {
           <div className="flex">
             <a
               href={`detail/${remarkable[0].slug}`}
-              className="w-[50%] py-4 pr-4 min-[300px]:hidden lg:block"
+              className="w-[50%] py-4 pr-4 transition-all duration-500 hover:scale-[1.05/] min-[300px]:hidden lg:block"
             >
               <img
-                className="rounded-md "
+                className="rounded-md  "
                 src={remarkable[0].image.url}
                 alt=""
               />

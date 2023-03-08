@@ -6,13 +6,12 @@ import { BiErrorAlt } from "react-icons/bi";
 
 function SearchResult() {
   const { posts, error } = useQueryPost({ func: getPostsBySearch });
-  console.log(posts);
   return posts.length == 0 ? (
     <>
       <div className="min-h-screen">
         <div className="flex justify-center pt-60 ">
           <BiErrorAlt className=" h-32 w-32 dark:text-white md:h-20 md:w-20" />
-          <div className="px-3 text-4xl font-bold dark:text-white md:text-2xl">
+          <div className="flex items-center px-3 text-xl font-bold dark:text-white md:text-2xl">
             Sorry we don't have what you are looking for!{" "}
           </div>
         </div>

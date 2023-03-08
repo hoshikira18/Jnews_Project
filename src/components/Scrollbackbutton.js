@@ -18,7 +18,7 @@ function Scrollback() {
     return (
       <div style={{ backgroundColor: "white" }}>
         <button
-          className="relative flex items-center justify-between rounded-full border border-[#ccc] bg-white hover:border-2 motion-safe:hover:scale-110 dark:border-blue-800 dark:bg-slate-300"
+          className="relative z-10 flex items-center justify-between rounded-full border border-[#ccc] bg-white hover:border-2 motion-safe:hover:scale-110 dark:border-blue-800 dark:bg-slate-300"
           style={{
             position: "fixed",
             bottom: "50px",

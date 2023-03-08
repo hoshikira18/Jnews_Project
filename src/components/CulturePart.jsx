@@ -112,7 +112,7 @@ export default function CulturePart() {
                     style={{
                       backgroundImage: `url(https://readyfor.jp/s3/readyfor-img/project_photos/13349/medium/faf2abb14ad2fa54665825f9f50e5a66b746c2cf.jpg?1501390035)`,
                     }}
-                    className=" h-[620px] bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out hover:scale-110 md:h-[410px] lg:h-[230px]"
+                    className=" h-[620px] bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out hover:scale-110  md:h-[410px] lg:h-[230px]"
                   ></div>
                 </div>
               </a>
