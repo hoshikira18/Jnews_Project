@@ -3,7 +3,9 @@ import { CiLocationOn } from "react-icons/ci";
 import { CgMail } from "react-icons/cg";
 import { BsPerson, BsPeople } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div>
       <footer class="relative bottom-0 left-0 right-0 h-full border-t border-sky-900 px-4 py-8 dark:bg-zinc-900/75 min-[300px]:w-full md:px-12 lg:px-10">
@@ -25,14 +27,14 @@ function Footer() {
                 rel="noreferrer"
                 class="max-w-xs transition-all  hover:text-blue-600  dark:text-white"
               >
-                ベトナム、ハノイ、タンロン大路の29キロメートル、ホアラックハイテクノロジーパーク、FPT大学。
+                {t("footer.footer1")}
               </a>
             </div>
             <div class="flex items-center space-x-3 hover:text-blue-600  dark:text-white">
               <div className="text-3xl text-blue-600">
                 <BsPeople />
               </div>
-              <div className="pl-1">連絡: Phong - Tùng - Hiệp - Kiên - My</div>
+              <div className="pl-1">{t("footer.footer2")}</div>
             </div>
           </div>
           <div class="mb-3 flex flex-col space-y-3 md:mb-0">
@@ -41,7 +43,7 @@ function Footer() {
                 <BsPerson />
               </div>
               <div className="hover:text-blue-600  dark:text-white">
-                <p>プロジェクト•リーダー:</p>
+                <p>{t("footer.footer3")}</p>
                 <p class="font-semibold">Trần Văn Khuyến</p>
               </div>
             </div>

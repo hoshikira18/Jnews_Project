@@ -94,6 +94,19 @@
     "home2": "Xu hướng",
     "home3": "Tin mới nhất",
     "home4": "Bảng xếp hạng"
+  },
+  "footer": {
+    "footer1": "Khu Công nghệ cao Hòa Lạc, Đại học FPT, 29 Km Đường Thăng Long, Hà Nội, Việt Nam.",
+    "footer2": "Liên quan: Phong - Tùng - Hiệp - Kiên - My ",
+    "footer3": "Trưởng dự án:"
+  },
+  "breadcrumb": {
+    "breadcrumb1": "Trang Chủ",
+    "breadcrumb2": "Phong tục",
+    "breadcrumb3": "Món ăn",
+    "breadcrumb4": "Trang phục",
+    "breadcrumb5": "Lễ hội"
   }
+ 
 
 }

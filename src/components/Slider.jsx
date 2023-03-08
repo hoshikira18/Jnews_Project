@@ -33,7 +33,7 @@ export default function () {
               alt=""
             />
           </div>
-          <div className="ele-1 absolute bottom-10 right-[7vw] h-[400px] w-[500px] rounded-[30px] bg-[rgba(220,206,197,1)] md:h-[350px] md:w-[550px]">
+          <div className="ele-1 absolute bottom-10 right-[7vw] min-h-[400px] w-[500px] rounded-[30px] bg-[rgba(220,206,197,1)] md:min-h-[350px] md:w-[550px]">
             <h1 className="pt-4 pb-3 text-center text-2xl font-bold dark:text-white">
               {t("content_culture.trangphuc1")}
             </h1>
@@ -58,7 +58,7 @@ export default function () {
               alt=""
             />
           </div>
-          <div className="ele-2 absolute bottom-8 left-[10vw] h-[380px] w-[460px] rounded-[30px] bg-[rgb(214,89,133)] md:h-[300px]">
+          <div className="ele-2 absolute bottom-8 left-[10vw] min-h-[380px] w-[460px] rounded-[30px] bg-[rgb(214,89,133)] md:min-h-[300px]">
             <h1 className="pt-6 pb-3 text-center text-2xl font-bold dark:text-white">
               {t("content_culture.trangphuc2")}
             </h1>
@@ -76,14 +76,14 @@ export default function () {
           </div>
         </div>
         <div className="relative flex h-[520px] w-[1200px] lg:w-[1252px]">
-          <div className="ele-3 absolute top-12 left-[13vw] h-[400px] w-[400px] md:h-[350px] md:w-[550px] ">
+          <div className="ele-3 absolute top-12 left-[13vw] min-h-[400px] w-[400px] md:min-h-[350px] md:w-[550px] ">
             <img
               className=" h-full w-full rounded-[30px] border-r-2 border-x-[rgba(67,126,156,0.5)]"
               src="https://s3.ap-southeast-1.amazonaws.com/we-xpats.com/uploads/article/5622/%E2%91%A2Guide_2020%2C4Q_34_4.jpg?fbclid=IwAR0Dqwy4n53Dbx5s-ThY3gHp8rL1RZSaSGbKFxfWhlyHRVTRVqy_20uU1kQ"
               alt=""
             />
           </div>
-          <div className="ele-3 absolute bottom-10 right-10 h-[350px] w-[550px] rounded-[30px] bg-[rgb(67,126,156)]">
+          <div className="ele-3 absolute bottom-10 right-10 min-h-[350px] w-[550px] rounded-[30px] bg-[rgb(67,126,156)]">
             <h1 className="pt-4 pb-3 text-center text-2xl font-bold dark:text-white">
               {t("content_culture.trangphuc3")}
             </h1>
@@ -105,7 +105,7 @@ export default function () {
               alt=""
             />
           </div>
-          <div className="ele-4 absolute bottom-6 left-48 h-[350px] w-[550px] rounded-[30px] bg-[rgb(247,147,176)]">
+          <div className="ele-4 absolute bottom-6 left-48 min-h-[350px] w-[550px] rounded-[30px] bg-[rgb(247,147,176)]">
             <h1 className="pt-4 pb-3 text-center text-2xl font-bold dark:text-white">
               {t("content_culture.trangphuc4")}
             </h1>
