@@ -3,17 +3,6 @@ import ReactDOM from "react-dom";
 import HorizontalTimeline from "react-horizontal-timeline";
 import DemoKeyboard from "../javascripts/Timeline";
 
-const VALUES = [
-  "Jan 1 2023",
-  "Feb 3 2023",
-  "Mar 3 2023",
-  "May 5 2023",
-  "July 7 2023",
-  "Jul 15 2023",
-  "Sep 29 2023",
-  "Nov 15 2023",
-];
-
 class App extends Component {
   state = { value: 0, previous: 0 };
 

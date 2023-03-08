@@ -28,9 +28,7 @@ const Post = ({ post, lang }) => {
   };
 
   return !posts.length ? (
-    <div className="flex h-screen w-screen items-center justify-center">
-      ádasd
-    </div>
+    <div className="flex h-screen w-screen items-center justify-center"></div>
   ) : (
     <div className="flex flex-col items-center">
       <div className="sm:w-screen lg:w-[70%]">

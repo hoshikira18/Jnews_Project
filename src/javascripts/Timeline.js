@@ -30,7 +30,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-14  left-[4%] h-[220px] w-[300px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.9)] dark:text-white md:bottom-14 md:bottom-0  md:left-[15%] md:h-[280px] md:w-[360px]">
+          <div className="absolute bottom-14  left-[4%] min-h-[220px] w-[300px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.9)] dark:text-white md:bottom-0  md:left-[15%] md:min-h-[280px] md:w-[360px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgb(221,113,103)] md:pt-8 md:text-4xl">
               {t("content_culture.lehoi1")}
             </h1>
@@ -49,7 +49,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-5 left-[10%] h-[300px] w-[335px] bg-[rgba(225,230,235,0.9)] dark:bg-[rgba(31,41,55,0.8)] dark:text-white  md:bottom-0 md:h-[370px] md:w-[530px] md:bg-[rgba(203,213,225,0.9)]">
+          <div className="absolute bottom-5 left-[10%] min-h-[300px] w-[335px] bg-[rgba(225,230,235,0.9)] dark:bg-[rgba(31,41,55,0.8)] dark:text-white  md:bottom-0 md:min-h-[370px] md:w-[530px] md:bg-[rgba(203,213,225,0.9)]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgb(221,113,103)]  md:pt-8 md:text-4xl">
               {t("content_culture.lehoi2")}
             </h1>
@@ -70,7 +70,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-24 left-[7%] h-[230px] w-[340px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.83)] dark:text-white md:bottom-[7%]  md:left-[10%] md:h-[280px] md:w-[470px]">
+          <div className="absolute bottom-24 left-[7%] min-h-[230px] w-[340px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.83)] dark:text-white md:bottom-[7%]  md:left-[10%] md:min-h-[280px] md:w-[470px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgba(120,106,37,0.8)] md:pt-8 md:text-4xl">
               {t("content_culture.lehoi3")}
             </h1>
@@ -90,7 +90,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-4 left-[7%] h-[300px] w-[380px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)] dark:text-white md:bottom-0  md:left-[10%] md:h-[300px] md:w-[530px]">
+          <div className="absolute bottom-4 left-[7%] min-h-[300px] w-[380px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)] dark:text-white md:bottom-0  md:left-[10%] md:min-h-[300px] md:w-[530px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgba(92,158,232,0.5)]  md:pt-8 md:text-4xl">
               {t("content_culture.lehoi4")}
             </h1>
@@ -111,7 +111,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-0 left-[10%]  h-[330px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)]  dark:text-white md:h-[380px] md:w-[530px]">
+          <div className="absolute bottom-0 left-[10%]  min-h-[330px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)]  dark:text-white md:min-h-[380px] md:w-[530px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgb(131,113,41)]  md:pt-8 md:text-4xl">
               {t("content_culture.lehoi5")}
             </h1>
@@ -132,7 +132,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-0 left-[10%] h-[350px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.75)]  dark:text-white md:h-[380px] md:w-[540px]">
+          <div className="absolute bottom-0 left-[10%] min-h-[350px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.75)]  dark:text-white md:min-h-[380px] md:w-[540px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgba(251,121,0,0.5)]  md:pt-8 md:text-4xl">
               {t("content_culture.lehoi6")}
             </h1>
@@ -152,7 +152,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-0 left-[10%] h-[340px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)]  dark:text-white md:h-[350px] md:w-[530px]">
+          <div className="absolute bottom-0 left-[10%] min-h-[340px] bg-[rgba(203,213,225,0.9)] dark:bg-[rgba(31,41,55,0.7)]  dark:text-white md:min-h-[350px] md:w-[530px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgba(253,253,240,0.7)]  md:pt-8 md:text-3xl">
               <ul>(Lunar calendar Aug15th)</ul>
               <ul>{t("content_culture.lehoi7")}</ul>
@@ -173,7 +173,7 @@ class DemoKeyboard extends Component {
               alt=""
             />
           </div>
-          <div className="absolute bottom-10 left-[5%] h-[270px] bg-[rgba(203,213,225,0.7)] dark:bg-[rgba(31,41,55,0.75)] dark:text-white  md:bottom-0 md:h-[340px] md:w-[530px]">
+          <div className="absolute bottom-10 left-[5%] min-h-[270px] bg-[rgba(203,213,225,0.7)] dark:bg-[rgba(31,41,55,0.75)] dark:text-white  md:bottom-0 md:h-[340px] md:w-[530px]">
             <h1 className="pt-4 text-center text-xl font-medium text-[rgba(199,95,224,0.5)]  md:pt-8 md:text-4xl">
               {t("content_culture.lehoi8")}{" "}
             </h1>
