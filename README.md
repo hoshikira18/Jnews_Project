@@ -1,6 +1,6 @@
 # Jnews_Project
 Jnews_Project is a website that serves as a bridge to help people in Vietnam quickly and accurately update news from Japan. In addition, it also helps Vietnamese people to better understand the customs and culture of the Land of the Rising Sun.
-![image](![github](https://user-images.githubusercontent.com/81480245/223667859-ff5203cd-4d82-45d0-9de5-aaa43adc378f.png))
+![alt text](https://user-images.githubusercontent.com/81480245/223667859-ff5203cd-4d82-45d0-9de5-aaa43adc378f.png)
 
 
 ## Installation
