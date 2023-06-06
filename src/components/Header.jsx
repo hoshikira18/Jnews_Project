@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import { HiOutlineMenu } from "react-icons/hi";
 import Search from "./Search";
 import { useTranslation } from "react-i18next";
+import logo from "../assets/image/logo.png";
 
 function Header({ changeLanguage }) {
   const { t } = useTranslation();
@@ -21,11 +22,7 @@ function Header({ changeLanguage }) {
         element={Home}
         class="min-[320px]:ml-8 min-[320px]:flex min-[320px]:items-center lg:ml-4"
       >
-        <img
-          src="./assets/image/favicon.png"
-          class=" min-[320px]:h-9"
-          alt="Flowbite Logo"
-        />
+        <img src={logo} class=" min-[320px]:h-9" alt="Flowbite Logo" />
         <span class="self-center whitespace-nowrap font-semibold dark:text-white min-[320px]:text-2xl">
           JNEWS
         </span>
