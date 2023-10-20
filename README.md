@@ -39,6 +39,6 @@ Vu Son Tung
 Nguyen Tra My
 
 # Deploy
-[App](https://jnews-git-master-tranvankhuyen.vercel.app/)
+[App](https://jnews-project-psi.vercel.app/)
 
 
