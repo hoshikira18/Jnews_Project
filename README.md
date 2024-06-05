@@ -26,6 +26,13 @@ Jnews is a one project of "Team 5" collaborators in JS Club recruitment Gen 11. 
 ```
 	npm run start
 ```
+# Know Issues:
+
+Posts in Jculture are not supported in Vietnamese language.
+
+Responsive design may not work optimally on mobile devices.
+
+The slider in Jculture may have some issues, particularly when the mouse moves too fast.
 
 ## Contact
 Leader: Tran Van Khuyen _ Phone number: 0919707102
